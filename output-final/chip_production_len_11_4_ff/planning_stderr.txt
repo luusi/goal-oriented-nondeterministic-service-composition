@@ -1,4 +1,5 @@
-+ cd ./planners/mynd
-+ rm -f ./output.sas
-+ ./translator-fond/translate.py /tmp/tmph8xwek13/domain_compiled.pddl /tmp/tmph8xwek13/problem_compiled.pddl
-+ java -Xmx16g -cp target/mynd-1.0-SNAPSHOT.jar mynd.MyNDPlanner -search aostar ./output.sas -heuristic ff -exportDot /tmp/tmph8xwek13/policy.dot -dumpPlan
++ cd ./planners/downward
++ rm -f '*.pddl'
++ ./fast-downward.py /tmp/tmpkie0jeh4/domain_compiled.pddl /tmp/tmpkie0jeh4/problem_compiled.pddl --evaluator 'hff=ff()' --search 'astar(hff,verbosity=verbose)'
+WARNING: overflow on h^add! Costs clamped to 100000000
++ cd ../../

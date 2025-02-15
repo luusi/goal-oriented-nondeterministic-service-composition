@@ -34,11 +34,16 @@ def services_to_pddl(services: Sequence[Service], formula_pddl: str) -> Tuple[st
     pddl += f"    ({_START_SYMB})\n"
     pddl += "  )\n"
 
+    pddl += f"(:action {_START_ACTION}\n"
+    pddl += f"    :precondition ({_START_SYMB})\n"
+    pddl += f"    :effect (not ({_START_SYMB}))\n"
+    pddl += ")\n"
+
     for action in actions:
         for idx, service in enumerate(services):
             for state in sorted(service.states):
                 action_str = f"(:action {action}_{idx}_{state}\n"
-                action_str += f"    :precondition (current_state_{idx} s{idx}_{state})\n"
+                action_str += f"    :precondition (and (not ({_START_SYMB})) (current_state_{idx} s{idx}_{state}))\n"
                 action_str += f"    :effect (and\n"
                 next_states = sorted(service.transition_function.get(state, {}).get(action, set()))
                 if len(next_states) == 0:

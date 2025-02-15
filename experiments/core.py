@@ -16,6 +16,11 @@ class Heuristic(Enum):
     FF = "ff"
 
 
+class Encoding(Enum):
+    TB = "TB"
+    LTLFOND2FOND = "ltlfond2fond"
+
+
 class ActionMode(Enum):
     MODE_1 = "1"
     MODE_2 = "2"
@@ -28,31 +33,65 @@ class RunArgs:
     domain_filepath: Path
     problem_filepath: Path
     service_accepting_condition_filepath: Path
-    action_mode: ActionMode
+    timeout: Optional[float]
     heuristic: Heuristic
-    planner_args: Sequence[str]
-    timeout: Optional[float] = None
 
-    def tolist(self):
+    def tolist(self) -> list:
         return [
             self.domain_filepath,
             self.problem_filepath,
             self.service_accepting_condition_filepath,
-            self.action_mode,
+            self.timeout,
             self.heuristic,
-            self.planner_args,
-            self.timeout
         ]
 
-    def savejson(self, output: Path):
+    def to_json(self):
         obj = dict(
+            timeout=self.timeout,
             heuristic=self.heuristic.value,
-            action_mode=self.action_mode.value,
-            planner_args=self.planner_args,
-            timeout=self.timeout
         )
+        return obj
+
+    def savejson(self, output: Path):
+        obj = self.to_json()
         with open(output, "w") as f:
             json.dump(obj, f)
+
+
+@dataclasses.dataclass
+class DetRunArgs(RunArgs):
+    action_mode: ActionMode
+    planner_args: Sequence[str]
+
+    def tolist(self) -> list:
+        result = super().tolist()
+        result.append(self.action_mode)
+        result.append(self.planner_args)
+        return result
+
+    def to_json(self):
+        obj = super().to_json()
+        obj["action_mode"] = self.action_mode.value
+        obj["planner_args"] = self.planner_args
+        return obj
+
+
+@dataclasses.dataclass
+class NondetRunArgs(RunArgs):
+    goal_filepath: Path
+    planner_args: Sequence[str]
+
+    def tolist(self) -> list:
+        result = super().tolist()
+        result.append(self.goal_filepath)
+        result.append(self.planner_args)
+        return result
+
+    def to_json(self):
+        obj = super().to_json()
+        obj["planner_args"] = self.planner_args
+        return obj
+
 
 
 @dataclasses.dataclass
@@ -68,9 +107,17 @@ class Result:
         return f"{self.total=}\n{self.returncode=}\n{self.timed_out=}"
 
 
+
+def transform_goal_strong_next(goal_formula: str) -> str:
+    return f"{_START_SYMB} & X[!]({goal_formula})"
+
+
+def transform_goal_next(goal_formula: str) -> str:
+    return f"{_START_SYMB} & X({goal_formula})"
+
+
 def composition_problem_to_pddl(services: Sequence[Service], goal_formula: str) -> tuple[str, str]:
-    formula_str = f"{_START_SYMB} & X[!]({goal_formula})"
-    formula = parse_ltl(formula_str)
+    formula = parse_ltl(goal_formula)
     formula_pddl = rewrite(formula)
 
     domain, problem = services_to_pddl(services, formula_pddl)

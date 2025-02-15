@@ -1,27 +1,27 @@
-+ TB_encode /tmp/tmpyy0w_36k/domain.pddl /tmp/tmpyy0w_36k/problem.pddl 3
-++ realpath /tmp/tmpyy0w_36k/domain.pddl
-+ local _DOMAIN_FILE=/tmp/tmpyy0w_36k/domain.pddl
-++ realpath /tmp/tmpyy0w_36k/problem.pddl
-+ local _PROBLEM_FILE=/tmp/tmpyy0w_36k/problem.pddl
++ TB_encode /tmp/tmp4yabx6i2/domain.pddl /tmp/tmp4yabx6i2/problem.pddl 3
+++ realpath /tmp/tmp4yabx6i2/domain.pddl
++ local _DOMAIN_FILE=/tmp/tmp4yabx6i2/domain.pddl
+++ realpath /tmp/tmp4yabx6i2/problem.pddl
++ local _PROBLEM_FILE=/tmp/tmp4yabx6i2/problem.pddl
 + local _ACTION_MODE=3
-+ _COMPILED_DOMAIN_FILE=/tmp/tmpyy0w_36k/domain_compiled.pddl
-+ _COMPILED_PROBLEM_FILE=/tmp/tmpyy0w_36k/problem_compiled.pddl
-++ dirname /tmp/tmpyy0w_36k/domain.pddl
-+ FINAL_CONDITION_FILE=/tmp/tmpyy0w_36k/services_condition.txt
-++ cat /tmp/tmpyy0w_36k/services_condition.txt
++ _COMPILED_DOMAIN_FILE=/tmp/tmp4yabx6i2/domain_compiled.pddl
++ _COMPILED_PROBLEM_FILE=/tmp/tmp4yabx6i2/problem_compiled.pddl
+++ dirname /tmp/tmp4yabx6i2/domain.pddl
++ FINAL_CONDITION_FILE=/tmp/tmp4yabx6i2/services_condition.txt
+++ cat /tmp/tmp4yabx6i2/services_condition.txt
 + FINAL_CONDITION='(current_state_0 s0_handler_cleaning_0)  (current_state_1 s1_handler_film_deposition_0) '
 + [[ -z 3 ]]
 + [[ 3 != \1 ]]
 + [[ 3 != \2 ]]
 + [[ 3 != \3 ]]
 + cd prologex
-+ ./convert.sh /tmp/tmpyy0w_36k/domain.pddl /tmp/tmpyy0w_36k/problem.pddl dp 3
-% 512,650 inferences, 0.055 CPU in 0.055 seconds (100% CPU, 9243537 Lips)
-+ cp ../prologex/tmp/domain-problem_problem_dp.pddl /tmp/tmpyy0w_36k/domain_compiled.pddl
-+ cp ../prologex/tmp/problem_dp.pddl /tmp/tmpyy0w_36k/problem_compiled.pddl
++ ./convert.sh /tmp/tmp4yabx6i2/domain.pddl /tmp/tmp4yabx6i2/problem.pddl dp 3
+% 514,215 inferences, 0.051 CPU in 0.051 seconds (100% CPU, 10066065 Lips)
++ cp ../prologex/tmp/domain-problem_problem_dp.pddl /tmp/tmp4yabx6i2/domain_compiled.pddl
++ cp ../prologex/tmp/problem_dp.pddl /tmp/tmp4yabx6i2/problem_compiled.pddl
 + cd ../
-+ python3 scripts/fix_tb_oneof.py --domain-file /tmp/tmpyy0w_36k/domain_compiled.pddl
++ python3 scripts/fix_tb_oneof.py --domain-file /tmp/tmp4yabx6i2/domain_compiled.pddl
 + [[ 3 == \1 ]]
 + [[ 3 == \2 ]]
 + [[ 3 == \3 ]]
-+ sed -i 's/(:goal (and/(:goal (and (current_state_0 s0_handler_cleaning_0)  (current_state_1 s1_handler_film_deposition_0) /g' /tmp/tmpyy0w_36k/problem_compiled.pddl
++ sed -i 's/(:goal (and/(:goal (and (current_state_0 s0_handler_cleaning_0)  (current_state_1 s1_handler_film_deposition_0) /g' /tmp/tmp4yabx6i2/problem_compiled.pddl

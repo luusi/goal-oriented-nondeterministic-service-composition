@@ -1,13 +1,13 @@
 import argparse
-import shutil
 from pathlib import Path
 
 import numpy as np
-from matplotlib import pyplot as plt, patches
+from matplotlib import pyplot as plt
 import matplotlib.lines as mlines
 
 from experiments.core import ActionMode, Heuristic
-from experiments.plotting.utils import ExpType, AllResultDirs, PlanningConfig
+from experiments.plotting.utils import ExpType, AllResultDirs, PlanningConfig, action_mode_to_color, \
+    action_mode_to_marker, LTLFOND2FONDCOLOR, LTLFOND2FONDMARKER
 import matplotlib as mpl
 
 
@@ -16,30 +16,6 @@ def parse_args():
     parser.add_argument("--input-dir", type=str, required=True)
     parser.add_argument("--output-dir", type=str, default="output-plots")
     return parser.parse_args()
-
-
-def action_mode_to_color(mode: ActionMode):
-    match mode:
-        case ActionMode.MODE_1:
-            return 'red'
-        case ActionMode.MODE_2:
-            return 'blue'
-        case ActionMode.MODE_3:
-            return 'green'
-        case ActionMode.MODE_4:
-            return 'orange'
-
-
-def action_mode_to_marker(mode: ActionMode):
-    match mode:
-        case ActionMode.MODE_1:
-            return 'o'
-        case ActionMode.MODE_2:
-            return 'X'
-        case ActionMode.MODE_3:
-            return '*'
-        case ActionMode.MODE_4:
-            return 'P'
 
 
 def main():
@@ -78,7 +54,8 @@ def main():
         legend_osa = mlines.Line2D([], [], color=action_mode_to_color(ActionMode.MODE_2), marker=action_mode_to_marker(ActionMode.MODE_2), markeredgecolor="black", markeredgewidth=0.25, linestyle="solid", label='OSA')
         legend_pg = mlines.Line2D([], [], color=action_mode_to_color(ActionMode.MODE_3), marker=action_mode_to_marker(ActionMode.MODE_3), markeredgecolor="black", markeredgewidth=0.25, linestyle="solid", label='PG')
         legend_osapluspg = mlines.Line2D([], [], color=action_mode_to_color(ActionMode.MODE_4), marker=action_mode_to_marker(ActionMode.MODE_4), markeredgecolor="black", markeredgewidth=0.25, linestyle="solid", label='OSA+PG')
-        encoding_legend = ax.legend(handles=[legend_simple, legend_osa, legend_pg, legend_osapluspg], loc='upper left', title='Encoding', bbox_to_anchor=(0, 0.825))
+        legend_ltlfond2fond = mlines.Line2D([], [], color=LTLFOND2FONDCOLOR, marker=LTLFOND2FONDMARKER, markeredgecolor="black", markeredgewidth=0.25, linestyle="solid", label='ltlfond2fond')
+        encoding_legend = ax.legend(handles=[legend_simple, legend_osa, legend_pg, legend_osapluspg, legend_ltlfond2fond], loc='upper left', title='Encoding', bbox_to_anchor=(0, 0.825))
         ax.add_artist(encoding_legend)
 
         for action_mode in ActionMode:

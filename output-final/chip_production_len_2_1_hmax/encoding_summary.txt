@@ -1,3 +1,3 @@
-self.total=0.2018788260029396
+self.total=0.23632931988686323
 self.returncode=0
 self.timed_out=False

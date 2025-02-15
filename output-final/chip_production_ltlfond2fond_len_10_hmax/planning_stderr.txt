@@ -1,0 +1,5 @@
++ cd ./planners/downward
++ rm -f '*.pddl'
++ ./fast-downward.py /tmp/tmp6043ajsc/domain_compiled.pddl /tmp/tmp6043ajsc/problem_compiled.pddl --evaluator 'hhmax=hmax()' --search 'astar(hhmax,verbosity=verbose)'
+b'\nWarning: :types specification not allowed here (cf. PDDL BNF)\n'
++ cd ../../

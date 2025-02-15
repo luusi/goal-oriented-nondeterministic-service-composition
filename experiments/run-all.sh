@@ -11,11 +11,14 @@ if [ -d "$WORKDIR" ]; then
 fi
 /bin/rm -rf ${WORKDIR}
 
-python3 ./experiments/entrypoints/run_chip_production_nondet_unsolvable.py --workdir $WORKDIR --timeout $TIMEOUT
-python3 ./experiments/entrypoints/run_chip_production_nondet.py            --workdir $WORKDIR --timeout $TIMEOUT
 python3 ./experiments/entrypoints/run_chip_production.py                   --workdir $WORKDIR --timeout $TIMEOUT
-python3 ./experiments/entrypoints/run_garden.py                            --workdir $WORKDIR --timeout $TIMEOUT
+python3 ./experiments/entrypoints/run_electric_motor.py                    --workdir $WORKDIR --timeout $TIMEOUT
+python3 ./experiments/entrypoints/run_chip_production_ltlfond2fond.py      --workdir $WORKDIR --timeout $TIMEOUT
+python3 ./experiments/entrypoints/run_electric_motor_ltlfond2fond.py       --workdir $WORKDIR --timeout $TIMEOUT
+python3 ./experiments/entrypoints/run_chip_production_nondet.py            --workdir $WORKDIR --timeout $TIMEOUT
+python3 ./experiments/entrypoints/run_chip_production_nondet_unsolvable.py --workdir $WORKDIR --timeout $TIMEOUT
 python3 ./experiments/entrypoints/run_electric_motor_nondet.py             --workdir $WORKDIR --timeout $TIMEOUT
 python3 ./experiments/entrypoints/run_electric_motor_nondet_unsolvable.py  --workdir $WORKDIR --timeout $TIMEOUT
+python3 ./experiments/entrypoints/run_garden.py                            --workdir $WORKDIR --timeout $TIMEOUT
 
 echo "All experiment have been run!"

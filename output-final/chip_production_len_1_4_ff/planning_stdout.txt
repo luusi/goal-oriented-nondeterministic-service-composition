@@ -1,31 +1,39 @@
+INFO     planner time limit: None
+INFO     planner memory limit: None
+
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: None
+INFO     translator memory limit: None
+INFO     translator command line string: /home/ubuntu/.local/share/virtualenvs/ltlf-goal-oriented-service-composition-Ma6B0MlL/bin/python3 /home/ubuntu/ltlf-goal-oriented-service-composition/planners/downward/builds/release/bin/translate/translate.py /tmp/tmp7stbj_zs/domain_compiled.pddl /tmp/tmp7stbj_zs/problem_compiled.pddl --sas-file output.sas
 Parsing...
-Parsing: [0.000s CPU, 0.001s wall-clock]
+Parsing: [0.000s CPU, 0.002s wall-clock]
 Normalizing task... [0.000s CPU, 0.000s wall-clock]
 Instantiating...
 Generating Datalog program... [0.000s CPU, 0.000s wall-clock]
 Normalizing Datalog program...
-Normalizing Datalog program: [0.000s CPU, 0.001s wall-clock]
+Normalizing Datalog program: [0.000s CPU, 0.002s wall-clock]
 Preparing model... [0.000s CPU, 0.000s wall-clock]
-Generated 50 rules.
+Generated 52 rules.
 Computing model... [0.000s CPU, 0.000s wall-clock]
-45 relevant atoms
+46 relevant atoms
 0 auxiliary atoms
-45 final queue length
-56 total queue pushes
+46 final queue length
+58 total queue pushes
 Completing instantiation... [0.000s CPU, 0.000s wall-clock]
-Instantiating: [0.000s CPU, 0.002s wall-clock]
+Instantiating: [0.000s CPU, 0.003s wall-clock]
 Computing fact groups...
 Finding invariants...
-33 initial candidates
-Finding invariants: [3.240s CPU, 3.244s wall-clock]
+34 initial candidates
+Finding invariants: [3.710s CPU, 3.711s wall-clock]
 Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
 Instantiating groups... [0.000s CPU, 0.000s wall-clock]
 Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
 Choosing groups...
-18 uncovered facts
+20 uncovered facts
 Choosing groups: [0.000s CPU, 0.000s wall-clock]
 Building translation key... [0.000s CPU, 0.000s wall-clock]
-Computing fact groups: [3.250s CPU, 3.245s wall-clock]
+Computing fact groups: [3.710s CPU, 3.712s wall-clock]
 Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
 Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
 Building mutex information...
@@ -33,47 +41,131 @@ Building mutex information: [0.000s CPU, 0.000s wall-clock]
 Translating task...
 Processing axioms...
 Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Translator axioms removed by simplifying: 0
 Processing axioms: [0.000s CPU, 0.000s wall-clock]
 Translating task: [0.000s CPU, 0.001s wall-clock]
-17 effect conditions simplified
+20 effect conditions simplified
 0 implied preconditions added
 Detecting unreachable propositions...
 0 operators removed
-4 propositions removed
-Detecting unreachable propositions: [0.000s CPU, 0.000s wall-clock]
-Translator variables: 20
+0 axioms removed
+3 propositions removed
+Detecting unreachable propositions: [0.010s CPU, 0.000s wall-clock]
+Reordering and filtering variables...
+21 of 21 variables necessary.
+1 of 3 mutex groups necessary.
+11 of 11 operators necessary.
+0 of 0 axiom rules necessary.
+Reordering and filtering variables: [0.000s CPU, 0.000s wall-clock]
+Translator variables: 21
 Translator derived variables: 0
-Translator facts: 48
+Translator facts: 50
 Translator goal facts: 6
-Translator mutex groups: 3
-Translator total mutex groups size: 14
-Translator operators: 10
+Translator mutex groups: 1
+Translator total mutex groups size: 3
+Translator operators: 11
 Translator axioms: 0
-Translator task size: 225
-Translator peak memory: 126220 KB
+Translator task size: 216
+Translator peak memory: 214148 KB
 Writing output... [0.000s CPU, 0.000s wall-clock]
-Done! [3.250s CPU, 3.249s wall-clock]
-Heuristic: FF-heuristic.
-Algorithm: AO*-search
-The protagonist has got a winning strategy.
-INITIAL IS PROVEN!
+Done! [3.720s CPU, 3.719s wall-clock]
+translate exit code: 0
 
-Result: Strong plan found.
+INFO     Running search (release).
+INFO     search stdin: output.sas
+INFO     search time limit: None
+INFO     search memory limit: None
+INFO     search command line string: /home/ubuntu/ltlf-goal-oriented-service-composition/planners/downward/builds/release/bin/downward --evaluator 'hff=ff()' --search 'astar(hff,verbosity=verbose)' --internal-plan-file sas_plan < output.sas
+[t=0.000088s, 9984 KB] reading input...
+[t=0.000242s, 9984 KB] done reading input!
+[t=0.001076s, 10248 KB] Simplifying 58 unary operators... done! [56 unary operators]
+[t=0.001152s, 10248 KB] time to simplify: 0.000088s
+[t=0.001169s, 10248 KB] Initializing additive heuristic...
+[t=0.001177s, 10248 KB] Initializing FF heuristic...
+[t=0.001204s, 10248 KB] Building successor generator...done!
+[t=0.001234s, 10248 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.001241s, 10248 KB] time for successor generation creation: 0.000009s
+[t=0.001249s, 10248 KB] Variables: 21
+[t=0.001256s, 10248 KB] FactPairs: 50
+[t=0.001262s, 10248 KB] Bytes per state: 4
+[t=0.001277s, 10248 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+[t=0.001302s, 10248 KB] New best heuristic value for ff: 10
+[t=0.001310s, 10248 KB] g=0, 1 evaluated, 0 expanded
+[t=0.001317s, 10248 KB] f = 10, 1 evaluated, 0 expanded
+[t=0.001326s, 10248 KB] Initial heuristic value for ff: 10
+[t=0.001347s, 10248 KB] pruning method: none
+[t=0.001362s, 10248 KB] f = 11, 2 evaluated, 1 expanded
+[t=0.001376s, 10248 KB] New best heuristic value for ff: 9
+[t=0.001383s, 10248 KB] g=2, 3 evaluated, 2 expanded
+[t=0.001394s, 10248 KB] New best heuristic value for ff: 8
+[t=0.001403s, 10248 KB] g=3, 4 evaluated, 3 expanded
+[t=0.001417s, 10248 KB] f = 14, 6 evaluated, 4 expanded
+[t=0.001438s, 10248 KB] f = 16, 10 evaluated, 8 expanded
+[t=0.001463s, 10248 KB] f = 18, 16 evaluated, 14 expanded
+[t=0.001478s, 10248 KB] New best heuristic value for ff: 7
+[t=0.001485s, 10248 KB] g=11, 18 evaluated, 16 expanded
+[t=0.001494s, 10248 KB] New best heuristic value for ff: 6
+[t=0.001501s, 10248 KB] g=12, 19 evaluated, 17 expanded
+[t=0.001511s, 10248 KB] New best heuristic value for ff: 5
+[t=0.001517s, 10248 KB] g=13, 20 evaluated, 18 expanded
+[t=0.001529s, 10248 KB] New best heuristic value for ff: 4
+[t=0.001537s, 10248 KB] g=14, 22 evaluated, 19 expanded
+[t=0.001557s, 10248 KB] f = 22, 27 evaluated, 24 expanded
+[t=0.001575s, 10248 KB] f = 24, 31 evaluated, 28 expanded
+[t=0.001600s, 10248 KB] New best heuristic value for ff: 3
+[t=0.001607s, 10248 KB] g=21, 37 evaluated, 34 expanded
+[t=0.001616s, 10248 KB] New best heuristic value for ff: 2
+[t=0.001624s, 10248 KB] g=22, 38 evaluated, 35 expanded
+[t=0.001635s, 10248 KB] New best heuristic value for ff: 1
+[t=0.001642s, 10248 KB] g=23, 40 evaluated, 36 expanded
+[t=0.001651s, 10248 KB] New best heuristic value for ff: 0
+[t=0.001658s, 10248 KB] g=24, 41 evaluated, 37 expanded
+[t=0.001665s, 10248 KB] Solution found!
+[t=0.001673s, 10248 KB] Actual search time: 0.000326s
+o_copy  (1)
+o_sync_q_1s  (1)
+o_sync_q_2s  (1)
+o_sync_q_3s_1  (1)
+o_sync_q_4s  (1)
+o_sync_q_5s  (1)
+o_sync_q_6s  (1)
+o_sync_q_7s  (1)
+startaction  (1)
+o_copy  (1)
+o_sync_q_1s  (1)
+o_sync_q_2s  (1)
+o_sync_q_3s_2  (1)
+o_sync_q_4s  (1)
+o_sync_q_5s  (1)
+o_sync_q_6s  (1)
+o_sync_q_7s  (1)
+cleaning_0_handler_cleaning_0  (1)
+o_copy  (1)
+o_sync_q_1s  (1)
+o_sync_q_2s  (1)
+o_sync_q_3s_1  (1)
+o_sync_q_4s  (1)
+o_sync_q_5s  (1)
+[t=0.001680s, 10248 KB] Plan length: 24 step(s).
+[t=0.001680s, 10248 KB] Plan cost: 24
+[t=0.001680s, 10248 KB] Expanded 38 state(s).
+[t=0.001680s, 10248 KB] Reopened 0 state(s).
+[t=0.001680s, 10248 KB] Evaluated 41 state(s).
+[t=0.001680s, 10248 KB] Evaluations: 41
+[t=0.001680s, 10248 KB] Generated 41 state(s).
+[t=0.001680s, 10248 KB] Dead ends: 1 state(s).
+[t=0.001680s, 10248 KB] Expanded until last jump: 28 state(s).
+[t=0.001680s, 10248 KB] Reopened until last jump: 0 state(s).
+[t=0.001680s, 10248 KB] Evaluated until last jump: 31 state(s).
+[t=0.001680s, 10248 KB] Generated until last jump: 31 state(s).
+[t=0.001680s, 10248 KB] Number of registered states: 41
+[t=0.001680s, 10248 KB] Int hash set load factor: 41/64 = 0.640625
+[t=0.001680s, 10248 KB] Int hash set resizes: 6
+[t=0.001680s, 10248 KB] Search time: 0.000404s
+[t=0.001680s, 10248 KB] Total time: 0.001680s
+Solution found.
+Peak memory: 10248 KB
+Remove intermediate file output.sas
+search exit code: 0
 
-Time needed for preprocess (Parsing, PDBs, ...):    0.008 seconds.
-Time needed for search:                             0.004 seconds.
-Time needed:                                        0.012 seconds.
-Total Garbage Collections: 1
-Total Garbage Collection Time: 0 seconds.
-
-Out of 22 nodes, 16 are proven
-Number of node expansions: 19
-Policy entries: 15
-Number of sensing applications in policy: 0
-
-29 (cleaning) (f_copy) (f_world) (q_1t) (q_2t) (q_3t) (q_4t) (q_5t) (q_6t) (q_7t) (f_ok) (f_sync) (q_1) (q_1s) (q_1d) (q_2) (q_2d) (q_2s) (q_3) (q_3d) (q_3s) (q_4) (q_4d) (q_4s) (q_5) (q_5d) (q_5s) (q_6) (q_6s) 
-%%
-9 (o_copy) (o_sync_q_1s) (o_sync_q_2s) (o_sync_q_3s_1) (o_sync_q_4s) (o_sync_q_5s) (o_sync_q_6s) (o_sync_q_7s) (cleaning_0_handler_cleaning_0) 
-%%
-policy 15 3 1 10 12 0 4 3 10 11 13 1 6 4 10 11 14 17 23 2 8 5 10 11 14 16 18 23 27 3 9 6 10 11 14 16 18 19 23 27 4 9 7 10 11 14 16 18 19 22 27 5 9 8 10 11 14 16 18 19 22 27 6 9 9 10 11 14 16 18 19 22 27 7 8 2 10 14 16 18 19 22 27 8 9 0 1 10 14 16 18 19 22 27 0 10 0 3 10 11 14 16 19 20 22 28 1 10 0 4 10 11 14 16 19 20 22 28 2 10 0 5 10 11 14 16 19 20 22 28 3 10 0 6 10 11 14 16 19 22 26 28 4 10 0 7 10 11 14 16 19 22 26 28 5 
-Dot file: /tmp/tmp1fdlg12p/policy.dot
+INFO     Planner time: 3.86s

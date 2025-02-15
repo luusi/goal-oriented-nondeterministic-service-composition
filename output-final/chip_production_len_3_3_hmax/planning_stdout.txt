@@ -1,266 +1,217 @@
+INFO     planner time limit: None
+INFO     planner memory limit: None
+
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: None
+INFO     translator memory limit: None
+INFO     translator command line string: /home/ubuntu/.local/share/virtualenvs/ltlf-goal-oriented-service-composition-Ma6B0MlL/bin/python3 /home/ubuntu/ltlf-goal-oriented-service-composition/planners/downward/builds/release/bin/translate/translate.py /tmp/tmp0l7bn8jw/domain_compiled.pddl /tmp/tmp0l7bn8jw/problem_compiled.pddl --sas-file output.sas
 Parsing...
-Parsing: [0.010s CPU, 0.004s wall-clock]
+Parsing: [0.000s CPU, 0.005s wall-clock]
 Normalizing task... [0.000s CPU, 0.000s wall-clock]
 Instantiating...
 Generating Datalog program... [0.000s CPU, 0.000s wall-clock]
 Normalizing Datalog program...
-Normalizing Datalog program: [0.000s CPU, 0.001s wall-clock]
+Normalizing Datalog program: [0.000s CPU, 0.002s wall-clock]
 Preparing model... [0.000s CPU, 0.001s wall-clock]
-Generated 113 rules.
-Computing model... [0.000s CPU, 0.000s wall-clock]
-96 relevant atoms
+Generated 115 rules.
+Computing model... [0.010s CPU, 0.000s wall-clock]
+97 relevant atoms
 0 auxiliary atoms
-96 final queue length
-111 total queue pushes
+97 final queue length
+113 total queue pushes
 Completing instantiation... [0.000s CPU, 0.001s wall-clock]
-Instantiating: [0.000s CPU, 0.004s wall-clock]
+Instantiating: [0.010s CPU, 0.004s wall-clock]
 Computing fact groups...
 Finding invariants...
-77 initial candidates
-Finding invariants: [8.410s CPU, 8.403s wall-clock]
-Checking invariant weight... [0.010s CPU, 0.009s wall-clock]
-Instantiating groups... [0.010s CPU, 0.003s wall-clock]
+78 initial candidates
+Finding invariants: [5.040s CPU, 5.049s wall-clock]
+Checking invariant weight... [0.010s CPU, 0.005s wall-clock]
+Instantiating groups... [0.000s CPU, 0.002s wall-clock]
 Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
 Choosing groups...
-50 uncovered facts
-Choosing groups: [0.010s CPU, 0.004s wall-clock]
+51 uncovered facts
+Choosing groups: [0.000s CPU, 0.001s wall-clock]
 Building translation key... [0.000s CPU, 0.000s wall-clock]
-Computing fact groups: [8.440s CPU, 8.429s wall-clock]
+Computing fact groups: [5.050s CPU, 5.059s wall-clock]
 Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
-Building dictionary for full mutex groups... [0.000s CPU, 0.002s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
 Building mutex information...
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-not in strips_to_sas, left out: Atom q_12()
-Building mutex information: [0.000s CPU, 0.003s wall-clock]
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
 Translating task...
 Processing axioms...
 Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Translator axioms removed by simplifying: 0
 Processing axioms: [0.000s CPU, 0.000s wall-clock]
-Translating task: [0.010s CPU, 0.005s wall-clock]
-33 effect conditions simplified
+Translating task: [0.010s CPU, 0.003s wall-clock]
+34 effect conditions simplified
 0 implied preconditions added
 Detecting unreachable propositions...
-3 operators removed
-28 propositions removed
+1 operators removed
+0 axioms removed
+10 propositions removed
 Detecting unreachable propositions: [0.000s CPU, 0.001s wall-clock]
-Translator variables: 50
+Reordering and filtering variables...
+49 of 49 variables necessary.
+0 of 608 mutex groups necessary.
+31 of 31 operators necessary.
+0 of 0 axiom rules necessary.
+Reordering and filtering variables: [0.000s CPU, 0.001s wall-clock]
+Translator variables: 49
 Translator derived variables: 0
-Translator facts: 101
+Translator facts: 100
 Translator goal facts: 21
-Translator mutex groups: 1142
-Translator total mutex groups size: 2592
-Translator operators: 29
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 31
 Translator axioms: 0
-Translator task size: 3157
-Translator peak memory: 206744 KB
-Writing output... [0.000s CPU, 0.003s wall-clock]
-Done! [8.460s CPU, 8.452s wall-clock]
-Heuristic: HMAX heuristic.
-Algorithm: AO*-search
-The protagonist has got a winning strategy.
-INITIAL IS PROVEN!
+Translator task size: 551
+Translator peak memory: 203908 KB
+Writing output... [0.000s CPU, 0.000s wall-clock]
+Done! [5.070s CPU, 5.075s wall-clock]
+translate exit code: 0
 
-Result: Strong plan found.
+INFO     Running search (release).
+INFO     search stdin: output.sas
+INFO     search time limit: None
+INFO     search memory limit: None
+INFO     search command line string: /home/ubuntu/ltlf-goal-oriented-service-composition/planners/downward/builds/release/bin/downward --evaluator 'hhmax=hmax()' --search 'astar(hhmax,verbosity=verbose)' --internal-plan-file sas_plan < output.sas
+[t=0.000106s, 9984 KB] reading input...
+[t=0.000420s, 9984 KB] done reading input!
+[t=0.001341s, 10248 KB] Simplifying 98 unary operators... done! [90 unary operators]
+[t=0.001404s, 10248 KB] time to simplify: 0.000078s
+[t=0.001432s, 10248 KB] Initializing HSP max heuristic...
+[t=0.001465s, 10248 KB] Building successor generator...done!
+[t=0.001510s, 10248 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.001518s, 10248 KB] time for successor generation creation: 0.000023s
+[t=0.001527s, 10248 KB] Variables: 49
+[t=0.001534s, 10248 KB] FactPairs: 100
+[t=0.001541s, 10248 KB] Bytes per state: 8
+[t=0.001557s, 10248 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+[t=0.001587s, 10248 KB] New best heuristic value for hmax: 16
+[t=0.001599s, 10248 KB] g=0, 1 evaluated, 0 expanded
+[t=0.001607s, 10248 KB] f = 16, 1 evaluated, 0 expanded
+[t=0.001617s, 10248 KB] Initial heuristic value for hmax: 16
+[t=0.001628s, 10248 KB] pruning method: none
+[t=0.001648s, 10248 KB] f = 17, 2 evaluated, 1 expanded
+[t=0.001661s, 10248 KB] f = 18, 3 evaluated, 2 expanded
+[t=0.001676s, 10248 KB] f = 19, 5 evaluated, 3 expanded
+[t=0.001687s, 10248 KB] New best heuristic value for hmax: 15
+[t=0.001694s, 10248 KB] g=4, 6 evaluated, 4 expanded
+[t=0.001706s, 10248 KB] New best heuristic value for hmax: 14
+[t=0.001714s, 10248 KB] g=5, 7 evaluated, 5 expanded
+[t=0.001726s, 10248 KB] New best heuristic value for hmax: 13
+[t=0.001733s, 10248 KB] g=6, 8 evaluated, 6 expanded
+[t=0.001746s, 10248 KB] New best heuristic value for hmax: 12
+[t=0.001754s, 10248 KB] g=7, 9 evaluated, 7 expanded
+[t=0.001769s, 10248 KB] New best heuristic value for hmax: 11
+[t=0.001776s, 10248 KB] g=8, 11 evaluated, 8 expanded
+[t=0.001797s, 10248 KB] f = 20, 14 evaluated, 10 expanded
+[t=0.001812s, 10248 KB] f = 24, 16 evaluated, 12 expanded
+[t=0.001851s, 10248 KB] New best heuristic value for hmax: 10
+[t=0.001859s, 10248 KB] g=14, 25 evaluated, 17 expanded
+[t=0.001874s, 10248 KB] New best heuristic value for hmax: 9
+[t=0.001882s, 10248 KB] g=15, 27 evaluated, 18 expanded
+[t=0.001899s, 10248 KB] New best heuristic value for hmax: 8
+[t=0.001907s, 10248 KB] g=16, 30 evaluated, 19 expanded
+[t=0.001944s, 10248 KB] New best heuristic value for hmax: 7
+[t=0.001951s, 10248 KB] g=17, 38 evaluated, 20 expanded
+[t=0.002015s, 10248 KB] f = 25, 56 evaluated, 28 expanded
+[t=0.002119s, 10248 KB] f = 26, 85 evaluated, 47 expanded
+[t=0.002193s, 10248 KB] f = 27, 106 evaluated, 63 expanded
+[t=0.002233s, 10248 KB] f = 28, 116 evaluated, 72 expanded
+[t=0.002247s, 10248 KB] f = 29, 118 evaluated, 74 expanded
+[t=0.002271s, 10248 KB] f = 30, 121 evaluated, 84 expanded
+[t=0.002283s, 10248 KB] f = 31, 121 evaluated, 88 expanded
+[t=0.002296s, 10248 KB] f = 32, 121 evaluated, 94 expanded
+[t=0.002342s, 10248 KB] New best heuristic value for hmax: 6
+[t=0.002350s, 10248 KB] g=26, 130 evaluated, 100 expanded
+[t=0.002365s, 10248 KB] New best heuristic value for hmax: 5
+[t=0.002372s, 10248 KB] g=27, 132 evaluated, 101 expanded
+[t=0.002390s, 10248 KB] New best heuristic value for hmax: 4
+[t=0.002397s, 10248 KB] g=28, 135 evaluated, 102 expanded
+[t=0.002449s, 10248 KB] f = 33, 150 evaluated, 110 expanded
+[t=0.002521s, 10248 KB] f = 34, 172 evaluated, 124 expanded
+[t=0.002587s, 10248 KB] f = 35, 193 evaluated, 138 expanded
+[t=0.002635s, 10248 KB] f = 36, 208 evaluated, 149 expanded
+[t=0.002659s, 10248 KB] f = 37, 214 evaluated, 154 expanded
+[t=0.002681s, 10248 KB] f = 38, 217 evaluated, 162 expanded
+[t=0.002692s, 10248 KB] f = 39, 217 evaluated, 166 expanded
+[t=0.002706s, 10248 KB] f = 40, 217 evaluated, 172 expanded
+[t=0.002743s, 10248 KB] New best heuristic value for hmax: 3
+[t=0.002751s, 10248 KB] g=37, 228 evaluated, 179 expanded
+[t=0.002764s, 10248 KB] New best heuristic value for hmax: 2
+[t=0.002771s, 10248 KB] g=38, 230 evaluated, 180 expanded
+[t=0.002784s, 10248 KB] New best heuristic value for hmax: 1
+[t=0.002792s, 10248 KB] g=39, 232 evaluated, 181 expanded
+[t=0.002815s, 10248 KB] f = 41, 238 evaluated, 186 expanded
+[t=0.002854s, 10248 KB] f = 42, 249 evaluated, 196 expanded
+[t=0.002872s, 10248 KB] New best heuristic value for hmax: 0
+[t=0.002880s, 10248 KB] g=42, 253 evaluated, 200 expanded
+[t=0.002888s, 10248 KB] Solution found!
+[t=0.002896s, 10248 KB] Actual search time: 0.001267s
+o_copy  (1)
+o_sync_q_15s  (1)
+o_sync_q_4s  (1)
+o_sync_q_8s  (1)
+o_world  (1)
+startaction  (1)
+o_copy  (1)
+o_sync_q_21s  (1)
+o_sync_q_5s_2  (1)
+o_world  (1)
+cleaning_0_handler_cleaning_0  (1)
+o_copy  (1)
+o_sync_q_5s_1  (1)
+o_sync_q_12s  (1)
+o_sync_q_20s  (1)
+o_sync_q_16s  (1)
+o_sync_q_21s  (1)
+o_sync_q_1s  (1)
+o_sync_q_10s  (1)
+o_sync_q_11s  (1)
+o_sync_q_6s_2  (1)
+o_world  (1)
+film_deposition_1_handler_film_deposition_0  (1)
+o_copy  (1)
+o_sync_q_6s_1  (1)
+o_sync_q_13s  (1)
+o_sync_q_19s  (1)
+o_sync_q_17s  (1)
+o_sync_q_21s  (1)
+o_sync_q_9s  (1)
+o_sync_q_2s  (1)
+o_sync_q_11s  (1)
+o_sync_q_7s_2  (1)
+o_world  (1)
+resist_coating_2_handler_resist_coating_0  (1)
+o_copy  (1)
+o_sync_q_7s_1  (1)
+o_sync_q_14s  (1)
+o_sync_q_18s  (1)
+o_sync_q_9s  (1)
+o_sync_q_10s  (1)
+o_sync_q_3s  (1)
+[t=0.002904s, 10248 KB] Plan length: 42 step(s).
+[t=0.002904s, 10248 KB] Plan cost: 42
+[t=0.002904s, 10248 KB] Expanded 201 state(s).
+[t=0.002904s, 10248 KB] Reopened 0 state(s).
+[t=0.002904s, 10248 KB] Evaluated 253 state(s).
+[t=0.002904s, 10248 KB] Evaluations: 253
+[t=0.002904s, 10248 KB] Generated 494 state(s).
+[t=0.002904s, 10248 KB] Dead ends: 41 state(s).
+[t=0.002904s, 10248 KB] Expanded until last jump: 196 state(s).
+[t=0.002904s, 10248 KB] Reopened until last jump: 0 state(s).
+[t=0.002904s, 10248 KB] Evaluated until last jump: 249 state(s).
+[t=0.002904s, 10248 KB] Generated until last jump: 486 state(s).
+[t=0.002904s, 10248 KB] Number of registered states: 253
+[t=0.002904s, 10248 KB] Int hash set load factor: 253/256 = 0.988281
+[t=0.002904s, 10248 KB] Int hash set resizes: 8
+[t=0.002904s, 10248 KB] Search time: 0.001347s
+[t=0.002904s, 10248 KB] Total time: 0.002904s
+Solution found.
+Peak memory: 10248 KB
+Remove intermediate file output.sas
+search exit code: 0
 
-Time needed for preprocess (Parsing, PDBs, ...):    0.008 seconds.
-Time needed for search:                             0.052 seconds.
-Time needed:                                        0.06 seconds.
-Total Garbage Collections: 1
-Total Garbage Collection Time: 0 seconds.
-
-Out of 244 nodes, 143 are proven
-Number of node expansions: 194
-Policy entries: 37
-Number of sensing applications in policy: 0
-
-52 (cleaning) (f_copy) (f_sync) (f_world) (film_deposition) (q_15s) (q_10d) (q_10s) (q_11d) (q_11s) (q_12d) (q_12s) (q_15d) (q_13d) (q_13s) (q_14d) (q_14s) (q_15) (q_16d) (q_16s) (q_17d) (q_17s) (q_18d) (q_18s) (q_19d) (q_19s) (q_1d) (q_1s) (q_20d) (q_20s) (q_21) (q_21s) (q_2d) (q_2s) (q_3d) (q_3s) (q_4d) (q_4s) (q_5) (q_5d) (q_5s) (q_6) (q_6d) (q_6s) (q_7) (q_7d) (q_7s) (q_8d) (q_8s) (q_9d) (q_9s) (resist_coating) 
-%%
-28 (o_copy) (o_sync_q_15s) (o_sync_q_8s) (o_sync_q_4s) (o_world) (cleaning_0_handler_cleaning_0) (o_sync_q_5s_1) (o_sync_q_12s) (o_sync_q_20s) (o_sync_q_16s) (o_sync_q_6s_2) (o_sync_q_10s) (o_sync_q_21s) (o_sync_q_1s) (o_sync_q_11s) (film_deposition_1_handler_film_deposition_0) (o_sync_q_6s_1) (o_sync_q_13s) (o_sync_q_19s) (o_sync_q_17s) (o_sync_q_7s_2) (o_sync_q_2s) (o_sync_q_9s) (resist_coating_2_handler_resist_coating_0) (o_sync_q_7s_1) (o_sync_q_14s) (o_sync_q_3s) (o_sync_q_18s) 
-%%
-policy 37 2 1 17 0 2 2 5 1 4 2 12 37 48 2 6 2 12 30 37 38 47 3 6 2 12 30 36 38 47 4 6 3 12 30 36 38 47 5 7 0 1 12 30 36 38 47 0 7 0 2 12 31 36 40 47 6 8 0 2 11 12 31 36 39 47 7 10 0 2 10 12 27 29 31 36 39 47 8 12 0 2 7 10 12 19 27 28 31 36 39 47 9 14 0 2 7 9 10 12 18 27 28 31 36 39 43 47 10 15 0 2 7 9 10 12 18 27 28 30 31 36 39 41 47 11 14 0 2 9 10 12 18 27 28 30 31 36 39 41 47 12 13 0 2 9 10 12 18 27 28 30 36 39 41 47 13 13 0 2 9 10 12 18 26 28 30 36 39 41 47 14 12 0 2 10 12 18 26 28 30 36 39 41 47 4 12 0 3 10 12 18 26 28 30 36 39 41 47 15 12 1 4 10 12 18 26 28 30 36 39 41 47 0 12 2 4 10 12 18 26 28 31 36 39 43 47 16 13 2 4 10 12 14 18 26 28 31 36 39 42 47 17 15 2 4 10 12 13 18 25 26 28 31 33 36 39 42 47 18 17 2 4 10 12 13 18 21 24 26 28 31 33 36 39 42 47 50 19 19 2 4 9 10 12 13 18 20 24 26 28 31 33 36 39 42 46 47 50 20 20 2 4 9 10 12 13 18 20 24 26 28 30 31 33 36 39 42 44 47 50 14 20 2 4 8 10 12 13 18 20 24 26 28 30 31 33 36 39 42 44 47 50 21 20 2 4 8 10 12 13 18 20 24 26 28 30 31 32 36 39 42 44 47 50 22 19 2 4 8 10 12 13 18 20 24 26 28 30 31 32 36 39 42 44 47 12 18 2 4 8 10 12 13 18 20 24 26 28 30 32 36 39 42 44 47 4 18 3 4 8 10 12 13 18 20 24 26 28 30 32 36 39 42 44 47 23 18 1 8 10 12 13 18 20 24 26 28 30 32 36 39 42 44 47 51 0 18 2 8 10 12 13 18 20 24 26 28 31 32 36 39 42 46 47 51 24 19 2 8 10 12 13 16 18 20 24 26 28 31 32 36 39 42 45 47 51 25 21 2 8 10 12 13 15 18 20 23 24 26 28 31 32 35 36 39 42 45 47 51 26 21 2 8 10 12 13 15 18 20 23 24 26 28 31 32 34 36 39 42 45 47 51 27 23 2 7 8 10 12 13 15 18 20 22 24 26 28 31 32 34 36 39 42 45 47 50 51 11 23 2 6 8 10 12 13 15 18 20 22 24 26 28 31 32 34 36 39 42 45 47 50 51 22 
-Dot file: /tmp/tmpvsf31f5v/policy.dot
+INFO     Planner time: 5.21s

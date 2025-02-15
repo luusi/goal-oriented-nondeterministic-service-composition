@@ -1,0 +1,252 @@
+INFO     planner time limit: None
+INFO     planner memory limit: None
+
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: None
+INFO     translator memory limit: None
+INFO     translator command line string: /home/ubuntu/.local/share/virtualenvs/ltlf-goal-oriented-service-composition-Ma6B0MlL/bin/python3 /home/ubuntu/ltlf-goal-oriented-service-composition/planners/downward/builds/release/bin/translate/translate.py /tmp/tmp6043ajsc/domain_compiled.pddl /tmp/tmp6043ajsc/problem_compiled.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.010s CPU, 0.009s wall-clock]
+Normalizing task... [0.000s CPU, 0.001s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.001s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.000s CPU, 0.003s wall-clock]
+Preparing model... [0.000s CPU, 0.002s wall-clock]
+Generated 311 rules.
+Computing model... [0.000s CPU, 0.001s wall-clock]
+266 relevant atoms
+0 auxiliary atoms
+266 final queue length
+390 total queue pushes
+Completing instantiation... [0.010s CPU, 0.001s wall-clock]
+Instantiating: [0.010s CPU, 0.007s wall-clock]
+Computing fact groups...
+Finding invariants...
+39 initial candidates
+Finding invariants: [6.010s CPU, 6.011s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+47 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.000s CPU, 0.000s wall-clock]
+Computing fact groups: [6.010s CPU, 6.012s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Translator axioms removed by simplifying: 0
+Processing axioms: [0.000s CPU, 0.000s wall-clock]
+Translating task: [0.000s CPU, 0.003s wall-clock]
+117 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+21 propositions removed
+Detecting unreachable propositions: [0.000s CPU, 0.002s wall-clock]
+Reordering and filtering variables...
+38 of 38 variables necessary.
+0 of 1 mutex groups necessary.
+139 of 139 operators necessary.
+0 of 0 axiom rules necessary.
+Reordering and filtering variables: [0.000s CPU, 0.001s wall-clock]
+Translator variables: 38
+Translator derived variables: 0
+Translator facts: 77
+Translator goal facts: 1
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 139
+Translator axioms: 0
+Translator task size: 1023
+Translator peak memory: 210052 KB
+Writing output... [0.000s CPU, 0.001s wall-clock]
+Done! [6.030s CPU, 6.036s wall-clock]
+translate exit code: 0
+
+INFO     Running search (release).
+INFO     search stdin: output.sas
+INFO     search time limit: None
+INFO     search memory limit: None
+INFO     search command line string: /home/ubuntu/ltlf-goal-oriented-service-composition/planners/downward/builds/release/bin/downward --evaluator 'hhmax=hmax()' --search 'astar(hhmax,verbosity=verbose)' --internal-plan-file sas_plan < output.sas
+[t=0.000101s, 9984 KB] reading input...
+[t=0.000626s, 9984 KB] done reading input!
+[t=0.001470s, 10380 KB] Simplifying 268 unary operators... done! [89 unary operators]
+[t=0.001591s, 10380 KB] time to simplify: 0.000137s
+[t=0.001617s, 10380 KB] Initializing HSP max heuristic...
+[t=0.001647s, 10380 KB] Building successor generator...done!
+[t=0.001723s, 10380 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.001730s, 10380 KB] time for successor generation creation: 0.000054s
+[t=0.001739s, 10380 KB] Variables: 38
+[t=0.001745s, 10380 KB] FactPairs: 77
+[t=0.001752s, 10380 KB] Bytes per state: 8
+[t=0.001767s, 10380 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+[t=0.001787s, 10380 KB] New best heuristic value for hmax: 23
+[t=0.001797s, 10380 KB] g=0, 1 evaluated, 0 expanded
+[t=0.001805s, 10380 KB] f = 23, 1 evaluated, 0 expanded
+[t=0.001814s, 10380 KB] Initial heuristic value for hmax: 23
+[t=0.001835s, 10380 KB] pruning method: none
+[t=0.001856s, 10380 KB] f = 25, 4 evaluated, 1 expanded
+[t=0.001873s, 10380 KB] New best heuristic value for hmax: 22
+[t=0.001880s, 10380 KB] g=3, 7 evaluated, 3 expanded
+[t=0.001891s, 10380 KB] New best heuristic value for hmax: 21
+[t=0.001897s, 10380 KB] g=4, 8 evaluated, 4 expanded
+[t=0.001912s, 10380 KB] f = 27, 10 evaluated, 6 expanded
+[t=0.001941s, 10380 KB] f = 29, 17 evaluated, 12 expanded
+[t=0.001962s, 10380 KB] New best heuristic value for hmax: 20
+[t=0.001969s, 10380 KB] g=9, 22 evaluated, 16 expanded
+[t=0.002001s, 10380 KB] f = 30, 32 evaluated, 17 expanded
+[t=0.002020s, 10380 KB] f = 31, 35 evaluated, 18 expanded
+[t=0.002037s, 10380 KB] f = 32, 37 evaluated, 20 expanded
+[t=0.002057s, 10380 KB] New best heuristic value for hmax: 19
+[t=0.002066s, 10380 KB] g=13, 40 evaluated, 22 expanded
+[t=0.002079s, 10380 KB] New best heuristic value for hmax: 18
+[t=0.002088s, 10380 KB] g=14, 41 evaluated, 23 expanded
+[t=0.002171s, 10380 KB] f = 33, 70 evaluated, 34 expanded
+[t=0.002220s, 10380 KB] f = 34, 86 evaluated, 40 expanded
+[t=0.002377s, 10380 KB] f = 35, 132 evaluated, 85 expanded
+[t=0.002400s, 10380 KB] New best heuristic value for hmax: 17
+[t=0.002407s, 10380 KB] g=18, 138 evaluated, 88 expanded
+[t=0.002418s, 10380 KB] New best heuristic value for hmax: 16
+[t=0.002425s, 10380 KB] g=19, 139 evaluated, 89 expanded
+[t=0.002486s, 10380 KB] f = 36, 159 evaluated, 100 expanded
+[t=0.002555s, 10380 KB] f = 37, 183 evaluated, 113 expanded
+[t=0.002730s, 10380 KB] f = 38, 244 evaluated, 166 expanded
+[t=0.002758s, 10380 KB] New best heuristic value for hmax: 15
+[t=0.002765s, 10380 KB] g=23, 250 evaluated, 169 expanded
+[t=0.002775s, 10380 KB] New best heuristic value for hmax: 14
+[t=0.002782s, 10380 KB] g=24, 251 evaluated, 170 expanded
+[t=0.002943s, 10380 KB] f = 39, 305 evaluated, 206 expanded
+[t=0.003040s, 10380 KB] f = 40, 335 evaluated, 233 expanded
+[t=0.003387s, 10380 KB] f = 41, 453 evaluated, 342 expanded
+[t=0.003411s, 10380 KB] New best heuristic value for hmax: 13
+[t=0.003418s, 10380 KB] g=28, 459 evaluated, 345 expanded
+[t=0.003427s, 10380 KB] New best heuristic value for hmax: 12
+[t=0.003435s, 10380 KB] g=29, 460 evaluated, 346 expanded
+[t=0.003733s, 10380 KB] f = 42, 555 evaluated, 421 expanded
+[t=0.003898s, 10380 KB] f = 43, 608 evaluated, 460 expanded
+[t=0.004236s, 10380 KB] f = 44, 730 evaluated, 552 expanded
+[t=0.004261s, 10380 KB] New best heuristic value for hmax: 11
+[t=0.004268s, 10380 KB] g=33, 736 evaluated, 555 expanded
+[t=0.004278s, 10380 KB] New best heuristic value for hmax: 10
+[t=0.004285s, 10380 KB] g=34, 737 evaluated, 556 expanded
+[t=0.004644s, 10380 KB] f = 45, 870 evaluated, 658 expanded
+[t=0.005053s, 10380 KB] f = 46, 1007 evaluated, 782 expanded
+[t=0.005614s, 10380 KB] f = 47, 1178 evaluated, 935 expanded
+[t=0.005644s, 10380 KB] New best heuristic value for hmax: 9
+[t=0.005653s, 10380 KB] g=38, 1184 evaluated, 938 expanded
+[t=0.005663s, 10380 KB] New best heuristic value for hmax: 8
+[t=0.005672s, 10380 KB] g=39, 1185 evaluated, 939 expanded
+[t=0.006197s, 10380 KB] f = 48, 1367 evaluated, 1089 expanded
+[t=0.006617s, 10380 KB] f = 49, 1516 evaluated, 1210 expanded
+[t=0.007386s, 10380 KB] f = 50, 1790 evaluated, 1452 expanded
+[t=0.007412s, 10380 KB] New best heuristic value for hmax: 7
+[t=0.007419s, 10380 KB] g=43, 1796 evaluated, 1455 expanded
+[t=0.007428s, 10380 KB] New best heuristic value for hmax: 6
+[t=0.007435s, 10380 KB] g=44, 1797 evaluated, 1456 expanded
+[t=0.008480s, 10380 KB] f = 51, 2131 evaluated, 1725 expanded
+[t=0.009151s, 10380 KB] f = 52, 2367 evaluated, 1921 expanded
+[t=0.010097s, 10508 KB] f = 53, 2710 evaluated, 2198 expanded
+[t=0.010126s, 10508 KB] New best heuristic value for hmax: 5
+[t=0.010134s, 10508 KB] g=48, 2716 evaluated, 2201 expanded
+[t=0.010143s, 10508 KB] New best heuristic value for hmax: 4
+[t=0.010150s, 10508 KB] g=49, 2717 evaluated, 2202 expanded
+[t=0.011192s, 10508 KB] f = 54, 3107 evaluated, 2505 expanded
+[t=0.012379s, 10508 KB] f = 55, 3539 evaluated, 2875 expanded
+[t=0.014016s, 10508 KB] f = 56, 4057 evaluated, 3317 expanded
+[t=0.014041s, 10508 KB] New best heuristic value for hmax: 3
+[t=0.014049s, 10508 KB] g=53, 4063 evaluated, 3320 expanded
+[t=0.014059s, 10508 KB] New best heuristic value for hmax: 2
+[t=0.014065s, 10508 KB] g=54, 4064 evaluated, 3321 expanded
+[t=0.014076s, 10508 KB] New best heuristic value for hmax: 1
+[t=0.014083s, 10508 KB] g=55, 4066 evaluated, 3322 expanded
+[t=0.014105s, 10508 KB] New best heuristic value for hmax: 0
+[t=0.014112s, 10508 KB] g=56, 4075 evaluated, 3323 expanded
+[t=0.014121s, 10508 KB] Solution found!
+[t=0.014129s, 10508 KB] Actual search time: 0.012292s
+trans_aut_q1_t2  (1)
+start_sync  (1)
+sync_q3_pos  (1)
+continue  (1)
+startaction  (1)
+trans_aut_q3_t4  (1)
+start_sync  (1)
+sync_q3_pos  (1)
+continue  (1)
+cleaning_0_handler_cleaning_0  (1)
+trans_aut_q3_t5  (1)
+start_sync  (1)
+sync_q4_pos  (1)
+continue  (1)
+film_deposition_1_handler_film_deposition_0  (1)
+trans_aut_q4_t16  (1)
+start_sync  (1)
+sync_q5_pos  (1)
+continue  (1)
+resist_coating_2_handler_resist_coating_0  (1)
+trans_aut_q5_t27  (1)
+start_sync  (1)
+sync_q6_pos  (1)
+continue  (1)
+exposure_3_handler_exposure_0  (1)
+trans_aut_q6_t38  (1)
+start_sync  (1)
+sync_q7_pos  (1)
+continue  (1)
+development_4_handler_development_0  (1)
+trans_aut_q7_t49  (1)
+start_sync  (1)
+sync_q8_pos  (1)
+continue  (1)
+etching_5_handler_etching_0  (1)
+trans_aut_q8_t60  (1)
+start_sync  (1)
+sync_q9_pos  (1)
+continue  (1)
+impurities_implantation_6_handler_impurities_implantation_0  (1)
+trans_aut_q9_t71  (1)
+start_sync  (1)
+sync_q10_pos  (1)
+continue  (1)
+activation_7_handler_activation_0  (1)
+trans_aut_q10_t82  (1)
+start_sync  (1)
+sync_q11_pos  (1)
+continue  (1)
+resist_stripping_8_handler_resist_stripping_0  (1)
+trans_aut_q11_t93  (1)
+start_sync  (1)
+sync_q12_pos  (1)
+continue  (1)
+assembly_9_handler_assembly_0  (1)
+trans_aut_q12_t104  (1)
+[t=0.014136s, 10508 KB] Plan length: 56 step(s).
+[t=0.014136s, 10508 KB] Plan cost: 56
+[t=0.014136s, 10508 KB] Expanded 3324 state(s).
+[t=0.014136s, 10508 KB] Reopened 0 state(s).
+[t=0.014136s, 10508 KB] Evaluated 4076 state(s).
+[t=0.014136s, 10508 KB] Evaluations: 4076
+[t=0.014136s, 10508 KB] Generated 14402 state(s).
+[t=0.014136s, 10508 KB] Dead ends: 24 state(s).
+[t=0.014136s, 10508 KB] Expanded until last jump: 3317 state(s).
+[t=0.014136s, 10508 KB] Reopened until last jump: 0 state(s).
+[t=0.014136s, 10508 KB] Evaluated until last jump: 4057 state(s).
+[t=0.014136s, 10508 KB] Generated until last jump: 14380 state(s).
+[t=0.014136s, 10508 KB] Number of registered states: 4076
+[t=0.014136s, 10508 KB] Int hash set load factor: 4076/8192 = 0.497559
+[t=0.014136s, 10508 KB] Int hash set resizes: 13
+[t=0.014136s, 10508 KB] Search time: 0.012370s
+[t=0.014136s, 10508 KB] Total time: 0.014136s
+Solution found.
+Peak memory: 10508 KB
+Remove intermediate file output.sas
+search exit code: 0
+
+INFO     Planner time: 6.20s

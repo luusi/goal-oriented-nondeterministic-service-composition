@@ -1,0 +1,1 @@
+/tmp/tmp7hi_mikr/domain.pddl /tmp/tmp7hi_mikr/problem.pddl /tmp/tmp7hi_mikr/goal.ltl

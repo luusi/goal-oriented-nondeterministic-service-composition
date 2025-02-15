@@ -1,0 +1,1 @@
+/tmp/tmpoxiixs44/domain.pddl /tmp/tmpoxiixs44/problem.pddl /tmp/tmpoxiixs44/goal.ltl

@@ -1,1 +1,13 @@
+INFO     planner time limit: None
+INFO     planner memory limit: None
+
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: None
+INFO     translator memory limit: None
+INFO     translator command line string: /home/ubuntu/.local/share/virtualenvs/ltlf-goal-oriented-service-composition-Ma6B0MlL/bin/python3 /home/ubuntu/ltlf-goal-oriented-service-composition/planners/downward/builds/release/bin/translate/translate.py /tmp/tmpkdp_c1s1/domain_compiled.pddl /tmp/tmpkdp_c1s1/problem_compiled.pddl --sas-file output.sas
 Parsing...
+translate exit code: 30
+
+Driver aborting after translate
+INFO     Planner time: 0.15s

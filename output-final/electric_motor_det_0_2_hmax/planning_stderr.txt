@@ -1,0 +1,4 @@
++ cd ./planners/downward
++ rm -f '*.pddl'
++ ./fast-downward.py /tmp/tmpxnvjh0sy/domain_compiled.pddl /tmp/tmpxnvjh0sy/problem_compiled.pddl --evaluator 'hhmax=hmax()' --search 'astar(hhmax,verbosity=verbose)'
++ cd ../../

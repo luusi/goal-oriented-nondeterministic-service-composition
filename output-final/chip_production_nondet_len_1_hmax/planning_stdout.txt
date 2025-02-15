@@ -1,0 +1,79 @@
+Parsing...
+Parsing: [0.000s CPU, 0.001s wall-clock]
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.000s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.000s CPU, 0.002s wall-clock]
+Preparing model... [0.000s CPU, 0.000s wall-clock]
+Generated 48 rules.
+Computing model... [0.000s CPU, 0.000s wall-clock]
+56 relevant atoms
+0 auxiliary atoms
+56 final queue length
+67 total queue pushes
+Completing instantiation... [0.000s CPU, 0.000s wall-clock]
+Instantiating: [0.000s CPU, 0.002s wall-clock]
+Computing fact groups...
+Finding invariants...
+13 initial candidates
+Finding invariants: [0.010s CPU, 0.005s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+13 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.000s CPU, 0.000s wall-clock]
+Computing fact groups: [0.010s CPU, 0.005s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.000s CPU, 0.000s wall-clock]
+Translating task: [0.000s CPU, 0.000s wall-clock]
+14 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+1 propositions removed
+Detecting unreachable propositions: [0.000s CPU, 0.000s wall-clock]
+Translator variables: 14
+Translator derived variables: 0
+Translator facts: 29
+Translator goal facts: 2
+Translator mutex groups: 1
+Translator total mutex groups size: 3
+Translator operators: 14
+Translator axioms: 0
+Translator task size: 146
+Translator peak memory: 23588 KB
+Writing output... [0.000s CPU, 0.000s wall-clock]
+Done! [0.010s CPU, 0.010s wall-clock]
+Heuristic: HMAX heuristic.
+Algorithm: AO*-search
+The protagonist has got a winning strategy.
+INITIAL IS PROVEN!
+
+Result: Strong plan found.
+
+Time needed for preprocess (Parsing, PDBs, ...):    0.007 seconds.
+Time needed for search:                             0.006 seconds.
+Time needed:                                        0.013 seconds.
+Total Garbage Collections: 1
+Total Garbage Collection Time: 0 seconds.
+
+Out of 46 nodes, 27 are proven
+Number of node expansions: 32
+Policy entries: 17
+Number of sensing applications in policy: 0
+
+16 (cleaning) (current_state_0 s0_handler_cleaning_0) (current_state_0 s0_handler_cleaning_broken) (dummy_goal) (newautstate q2) (newautstate q3) (newautstate q4) (oldautstate q1) (oldautstate q2) (oldautstate q3) (oldautstate q4) (repair) (startsymb) (sync_mode) (trans_mode) (world_mode) 
+%%
+11 (trans_aut_q1_t2) (start_sync) (sync_q3_pos) (continue) (startaction) (trans_aut_q3_t4) (cleaning_0_handler_cleaning_0) (trans_aut_q3_t5) (sync_q4_pos) (repair_0_handler_cleaning_broken) (trans_aut_q4_t6) 
+%%
+policy 17 4 1 7 12 14 0 5 1 5 7 12 14 1 4 1 5 12 13 2 4 1 9 12 13 3 4 1 9 12 15 4 3 1 9 14 5 4 1 5 9 14 1 3 1 5 13 2 3 1 9 13 3 3 1 9 15 6 4 0 1 9 14 7 4 0 2 9 14 7 6 0 2 3 6 9 14 1 5 0 2 3 6 13 8 5 0 2 3 10 13 3 4 0 2 10 15 9 4 1 10 11 14 10 
+Dot file: /tmp/tmpy2qy91sf/policy.dot

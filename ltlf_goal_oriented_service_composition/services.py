@@ -32,6 +32,7 @@ class Service:
         self._initial_state = copy(initial_state)
         self._transition_function = transition_function
         self.__post_init__()
+        self._is_deterministic = self._compute_is_deterministic(transition_function)
         # self._complete()
 
     @property
@@ -53,6 +54,10 @@ class Service:
     @property
     def transition_function(self) -> TransitionMapping:
         return self._transition_function
+
+    @property
+    def is_deterministic(self) -> bool:
+        return self._is_deterministic
 
     def _complete(self):
         """Complete the transition function in such a way that it is a total function."""
@@ -129,3 +134,10 @@ class Service:
                     assert (
                         next_state in self._states
                     ), f"state {next_state} is not in the set of states"
+
+    def _compute_is_deterministic(self, transition_function: TransitionFunction):
+        for state, successors_of_state in transition_function.items():
+            for action, next_states in successors_of_state.items():
+                if len(next_states) > 1:
+                    return False
+        return True

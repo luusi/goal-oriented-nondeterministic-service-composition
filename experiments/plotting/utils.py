@@ -1,3 +1,4 @@
+import argparse
 import dataclasses
 import json
 import pprint
@@ -18,6 +19,14 @@ from experiments.core import ActionMode, Heuristic
 from experiments.domains.electric_motor import ALL_SYMBOLS as ALL_SYMBOLS_ELECTRIC_MOTOR
 
 NA = "N/A"
+MAX_TIMEOUT = 1000.0
+
+
+def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--input-dir", type=str, required=True)
+    parser.add_argument("--output-dir", type=str, default="output-plots")
+    return parser.parse_args()
 
 
 @dataclasses.dataclass
@@ -82,19 +91,28 @@ class PlanningStats:
             elif line.startswith("Time needed: "):
                 if m := re.search("Time needed: +([0-9.]+) seconds\.", line):
                     search_time = float(m.group(1))
+            elif line.startswith("INFO     Planner time: "):
+                if m := re.search("INFO     Planner time: +([0-9.]+)s", line):
+                    search_time = float(m.group(1))
+            elif m := re.search("Expanded +([0-9]+) state\(s\)", line):
+                node_expansion = int(m.group(1))
             elif line.startswith("Number of node expansions: "):
                 if m := re.search("Number of node expansions: +([0-9]+)", line):
                     node_expansion = int(m.group(1))
             elif line.startswith("Policy entries:"):
                 if m := re.search("Policy entries: +([0-9]+)", line):
                     policy_size = int(m.group(1))
+            elif m := re.search("Plan length: +([0-9]+) step\(s\)", line):
+                policy_size = int(m.group(1))
 
         return PlanningStats(translation_time, search_time, node_expansion, policy_size)
 
 
 class ExpType(Enum):
+    ELECTRIC_MOTOR_DET = "electric_motor_det"
     ELECTRIC_MOTOR_NONDET = "electric_motor_nondet"
-    CHIP_PRODUCTION_DET = "chip_production_det"
+    ELECTRIC_MOTOR_NONDET_UNSOLVABLE = "electrict_motor_nondet_unsolvable"
+    CHIP_PRODUCTION_DET = "chip_production"
     CHIP_PRODUCTION_NONDET = "chip_production_nondet"
     CHIP_PRODUCTION_NONDET_UNSOLVABLE = "chip_production_nondet_unsolvable"
 
@@ -125,6 +143,8 @@ class ExpType(Enum):
         match self:
             case self.ELECTRIC_MOTOR_NONDET:
                 return [f"e{i}" for i in range(0, len(ALL_SYMBOLS_ELECTRIC_MOTOR) + 1)]
+            case self.ELECTRIC_MOTOR_NONDET_UNSOLVABLE:
+                return ["eu"]
             case self.CHIP_PRODUCTION_DET:
                 return [f"c{i}" for i in range(1, len(ALL_SYMBOLS_CHIP_PRODUCTION) + 1)]
             case self.CHIP_PRODUCTION_NONDET:
@@ -193,8 +213,8 @@ class AllResultDirs:
                 try:
                     result_dir = ResultDir(dirpath)
                     self.result_dirs_by_id[dirpath.name] = result_dir
-                except:
-                    print(f"Could not parse {dirpath}")
+                except Exception as e:
+                    print(f"Could not parse {dirpath}: {type(e)}: {e}")
                     continue
 
     def stats_by_name(self) -> Mapping[str, tuple[EncodingStats, PlanningStats]]:
@@ -427,3 +447,67 @@ class TableGenerator:
                                 key=lambda x: x[1] if isinstance(x[1], (float, int)) else float('inf'))
             if minel != float('inf'):
                 stats_row[minidx] = f"\\textbf{{{minel}}}"
+
+
+def action_mode_to_color(mode: ActionMode):
+    match mode:
+        case ActionMode.MODE_1:
+            return 'red'
+        case ActionMode.MODE_2:
+            return 'blue'
+        case ActionMode.MODE_3:
+            return 'green'
+        case ActionMode.MODE_4:
+            return 'orange'
+
+LTLFOND2FONDCOLOR = "purple"
+
+
+def action_mode_to_marker(mode: ActionMode):
+    match mode:
+        case ActionMode.MODE_1:
+            return 'o'
+        case ActionMode.MODE_2:
+            return 'X'
+        case ActionMode.MODE_3:
+            return '*'
+        case ActionMode.MODE_4:
+            return 'P'
+
+LTLFOND2FONDMARKER = "v"
+
+
+def _parse_summary_line(line_str, func_builder):
+    _name, value = line_str.split("=")
+    return func_builder(value)
+
+
+def read_encoding_summary(encoding_summary_path: Path):
+    stdout = encoding_summary_path.read_text()
+    lines = stdout.splitlines()
+    total_time = _parse_summary_line(lines[0], float)
+    return_code = _parse_summary_line(lines[1], int)
+    timed_out = _parse_summary_line(lines[2], bool)
+    return total_time, return_code, timed_out
+
+
+def get_ltlfond2fond_dataframe(exp_prefix: str, dirprefix: str, input_dir: Path) -> pd.DataFrame:
+    df = pd.DataFrame(columns=["label", "length", "heuristic", "TT", "PT", "NE", "PS"])
+    for length in range(1, 13):
+        for heuristic in heuristic_list():
+            dirname = f"{dirprefix}_len_{length}_{heuristic.value}"
+            result_dirpath = input_dir / dirname
+            row_prefix = [exp_prefix, length, heuristic.value]
+            encoding_summary_path = result_dirpath / "encoding_summary.txt"
+            planning_stdout_path = result_dirpath / "planning_stdout.txt"
+            if result_dirpath.exists():
+                total_enc_time, return_code, timed_out = read_encoding_summary(encoding_summary_path)
+                total_enc_time = total_enc_time if return_code == 0 else None
+                planning_stats = PlanningStats.parse(planning_stdout_path.read_text())
+                statsrow = [total_enc_time, planning_stats.total, planning_stats.node_expansion, planning_stats.policy_size]
+                statsrow = [el if el is not None else float("nan") for el in statsrow]
+                df.loc[len(df)] = row_prefix + statsrow
+            else:
+                df.loc[len(df)] = row_prefix + [float("nan")] * 4
+    return df
+

@@ -1,3 +1,0 @@
-self.total=24.73393320100149
-self.returncode=0
-self.timed_out=False

@@ -1,0 +1,79 @@
+Parsing...
+Parsing: [0.000s CPU, 0.006s wall-clock]
+Normalizing task... [0.000s CPU, 0.001s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.001s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.010s CPU, 0.003s wall-clock]
+Preparing model... [0.000s CPU, 0.002s wall-clock]
+Generated 344 rules.
+Computing model... [0.000s CPU, 0.001s wall-clock]
+257 relevant atoms
+0 auxiliary atoms
+257 final queue length
+410 total queue pushes
+Completing instantiation... [0.000s CPU, 0.001s wall-clock]
+Instantiating: [0.010s CPU, 0.008s wall-clock]
+Computing fact groups...
+Finding invariants...
+28 initial candidates
+Finding invariants: [0.660s CPU, 0.659s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+40 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.000s CPU, 0.000s wall-clock]
+Computing fact groups: [0.660s CPU, 0.660s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.000s CPU, 0.000s wall-clock]
+Translating task: [0.000s CPU, 0.003s wall-clock]
+89 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+9 propositions removed
+Detecting unreachable propositions: [0.000s CPU, 0.001s wall-clock]
+Translator variables: 37
+Translator derived variables: 0
+Translator facts: 75
+Translator goal facts: 3
+Translator mutex groups: 1
+Translator total mutex groups size: 3
+Translator operators: 146
+Translator axioms: 0
+Translator task size: 1155
+Translator peak memory: 35292 KB
+Writing output... [0.010s CPU, 0.001s wall-clock]
+Done! [0.680s CPU, 0.680s wall-clock]
+Heuristic: FF-heuristic.
+Algorithm: AO*-search
+The protagonist has got a winning strategy.
+INITIAL IS PROVEN!
+
+Result: Strong plan found.
+
+Time needed for preprocess (Parsing, PDBs, ...):    0.007 seconds.
+Time needed for search:                             1.197 seconds.
+Time needed:                                        1.204 seconds.
+Total Garbage Collections: 8
+Total Garbage Collection Time: 0 seconds.
+
+Out of 17810 nodes, 10690 are proven
+Number of node expansions: 12899
+Policy entries: 51
+Number of sensing applications in policy: 0
+
+39 (assemble_motor) (build_inverter) (build_rotor) (build_stator) (current_state_0 s0_rotor_builder_0) (current_state_0 s0_rotor_builder_broken) (current_state_1 s1_stator_builder_0) (current_state_1 s1_stator_builder_broken) (dummy_goal) (electric_test) (newautstate q10) (newautstate q11) (newautstate q12) (newautstate q2) (newautstate q3) (newautstate q4) (newautstate q5) (newautstate q6) (newautstate q7) (newautstate q8) (newautstate q9) (oldautstate q1) (oldautstate q10) (oldautstate q11) (oldautstate q12) (oldautstate q2) (oldautstate q3) (oldautstate q4) (oldautstate q5) (oldautstate q6) (oldautstate q7) (oldautstate q8) (oldautstate q9) (repair) (startsymb) (static_test) (sync_mode) (trans_mode) (world_mode) 
+%%
+24 (trans_aut_q1_t2) (start_sync) (sync_q3_pos) (continue) (startaction) (trans_aut_q3_t4) (build_stator_0_rotor_builder_0) (trans_aut_q3_t10) (sync_q5_pos) (build_inverter_2_inverter_builder_0) (repair_0_rotor_builder_broken) (trans_aut_q5_t54) (trans_aut_q5_t51) (sync_q6_pos) (build_rotor_1_stator_builder_0) (trans_aut_q6_t71) (sync_q10_pos) (repair_1_stator_builder_broken) (assemble_motor_3_motor_assembler_0) (trans_aut_q10_t115) (trans_aut_q10_t118) (sync_q11_pos) (electric_test_4_mechanical_engineer_1_0) (trans_aut_q11_t123) 
+%%
+policy 51 5 4 6 21 34 37 0 6 4 6 14 21 34 37 1 5 4 6 14 34 36 2 5 4 6 26 34 36 3 5 4 6 26 34 38 4 4 4 6 26 37 5 5 4 6 14 26 37 1 4 4 6 14 36 2 4 4 6 26 36 3 4 4 6 26 38 6 5 3 4 6 26 37 7 5 3 5 6 26 37 7 6 3 4 6 16 26 37 1 6 3 5 6 16 26 37 1 5 3 4 6 16 36 8 5 3 5 6 16 36 8 5 3 4 6 28 36 3 5 3 5 6 28 36 3 5 3 4 6 28 38 9 5 3 5 6 28 38 10 5 1 4 6 28 37 11 5 4 6 28 33 37 12 6 1 4 6 17 28 37 1 6 4 6 16 28 33 37 1 5 1 4 6 17 36 13 5 4 6 16 33 36 8 5 1 4 6 29 36 3 5 4 6 28 33 36 3 5 1 4 6 29 38 14 5 4 6 28 33 38 9 5 2 4 7 29 37 15 5 2 4 6 29 37 15 6 2 4 7 10 29 37 1 6 2 4 6 10 29 37 1 5 2 4 7 10 36 16 5 2 4 6 10 36 16 5 2 4 7 22 36 3 5 2 4 6 22 36 3 5 2 4 7 22 38 17 5 2 4 6 22 38 18 5 4 6 22 33 37 19 5 0 4 6 22 37 20 6 4 6 10 22 33 37 1 6 0 4 6 11 22 37 1 5 4 6 10 33 36 16 5 0 4 6 11 36 21 5 4 6 22 33 36 3 5 0 4 6 23 36 3 5 4 6 22 33 38 18 5 0 4 6 23 38 22 5 4 6 9 23 37 23 
+Dot file: /tmp/tmp3e4i0cq0/policy.dot

@@ -1,200 +1,799 @@
+INFO     planner time limit: None
+INFO     planner memory limit: None
+
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: None
+INFO     translator memory limit: None
+INFO     translator command line string: /home/ubuntu/.local/share/virtualenvs/ltlf-goal-oriented-service-composition-Ma6B0MlL/bin/python3 /home/ubuntu/ltlf-goal-oriented-service-composition/planners/downward/builds/release/bin/translate/translate.py /tmp/tmpr650tsfa/domain_compiled.pddl /tmp/tmpr650tsfa/problem_compiled.pddl --sas-file output.sas
 Parsing...
-Parsing: [0.040s CPU, 0.046s wall-clock]
+Parsing: [0.070s CPU, 0.070s wall-clock]
 Normalizing task... [0.000s CPU, 0.003s wall-clock]
 Instantiating...
 Generating Datalog program... [0.000s CPU, 0.002s wall-clock]
 Normalizing Datalog program...
 Normalizing Datalog program: [0.010s CPU, 0.007s wall-clock]
-Preparing model... [0.010s CPU, 0.014s wall-clock]
-Generated 687 rules.
+Preparing model... [0.010s CPU, 0.013s wall-clock]
+Generated 689 rules.
 Computing model... [0.010s CPU, 0.008s wall-clock]
-488 relevant atoms
+489 relevant atoms
 0 auxiliary atoms
-488 final queue length
-608 total queue pushes
+489 final queue length
+610 total queue pushes
 Completing instantiation... [0.010s CPU, 0.011s wall-clock]
-Instantiating: [0.040s CPU, 0.043s wall-clock]
+Instantiating: [0.040s CPU, 0.042s wall-clock]
 Computing fact groups...
 Finding invariants...
-434 initial candidates
-Finding invariants: [49.810s CPU, 49.802s wall-clock]
-Checking invariant weight... [0.000s CPU, 0.001s wall-clock]
+435 initial candidates
+Finding invariants: [24.070s CPU, 24.075s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
 Instantiating groups... [0.000s CPU, 0.000s wall-clock]
 Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
 Choosing groups...
-296 uncovered facts
+297 uncovered facts
 Choosing groups: [0.000s CPU, 0.000s wall-clock]
 Building translation key... [0.000s CPU, 0.000s wall-clock]
-Computing fact groups: [49.810s CPU, 49.805s wall-clock]
+Computing fact groups: [24.080s CPU, 24.077s wall-clock]
 Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
 Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
 Building mutex information...
-not in strips_to_sas, left out: Atom q_1()
-not in strips_to_sas, left out: Atom q_10()
-not in strips_to_sas, left out: Atom q_100()
-not in strips_to_sas, left out: Atom q_101()
-not in strips_to_sas, left out: Atom q_102()
-not in strips_to_sas, left out: Atom q_103()
-not in strips_to_sas, left out: Atom q_104()
-not in strips_to_sas, left out: Atom q_105()
-not in strips_to_sas, left out: Atom q_106()
-not in strips_to_sas, left out: Atom q_107()
-not in strips_to_sas, left out: Atom q_108()
-not in strips_to_sas, left out: Atom q_109()
-not in strips_to_sas, left out: Atom q_11()
-not in strips_to_sas, left out: Atom q_110()
-not in strips_to_sas, left out: Atom q_111()
-not in strips_to_sas, left out: Atom q_112()
-not in strips_to_sas, left out: Atom q_113()
-not in strips_to_sas, left out: Atom q_114()
-not in strips_to_sas, left out: Atom q_115()
-not in strips_to_sas, left out: Atom q_116()
-not in strips_to_sas, left out: Atom q_117()
-not in strips_to_sas, left out: Atom q_118()
-not in strips_to_sas, left out: Atom q_119()
-not in strips_to_sas, left out: Atom q_120()
-not in strips_to_sas, left out: Atom q_121()
-not in strips_to_sas, left out: Atom q_122()
-not in strips_to_sas, left out: Atom q_123()
-not in strips_to_sas, left out: Atom q_124()
-not in strips_to_sas, left out: Atom q_125()
-not in strips_to_sas, left out: Atom q_126()
-not in strips_to_sas, left out: Atom q_127()
-not in strips_to_sas, left out: Atom q_128()
-not in strips_to_sas, left out: Atom q_129()
-not in strips_to_sas, left out: Atom q_130()
-not in strips_to_sas, left out: Atom q_131()
-not in strips_to_sas, left out: Atom q_132()
-not in strips_to_sas, left out: Atom q_134()
-not in strips_to_sas, left out: Atom q_2()
-not in strips_to_sas, left out: Atom q_22()
-not in strips_to_sas, left out: Atom q_23()
-not in strips_to_sas, left out: Atom q_24()
-not in strips_to_sas, left out: Atom q_25()
-not in strips_to_sas, left out: Atom q_26()
-not in strips_to_sas, left out: Atom q_27()
-not in strips_to_sas, left out: Atom q_28()
-not in strips_to_sas, left out: Atom q_29()
-not in strips_to_sas, left out: Atom q_3()
-not in strips_to_sas, left out: Atom q_30()
-not in strips_to_sas, left out: Atom q_31()
-not in strips_to_sas, left out: Atom q_32()
-not in strips_to_sas, left out: Atom q_33()
-not in strips_to_sas, left out: Atom q_34()
-not in strips_to_sas, left out: Atom q_35()
-not in strips_to_sas, left out: Atom q_36()
-not in strips_to_sas, left out: Atom q_37()
-not in strips_to_sas, left out: Atom q_38()
-not in strips_to_sas, left out: Atom q_39()
-not in strips_to_sas, left out: Atom q_4()
-not in strips_to_sas, left out: Atom q_40()
-not in strips_to_sas, left out: Atom q_41()
-not in strips_to_sas, left out: Atom q_42()
-not in strips_to_sas, left out: Atom q_44()
-not in strips_to_sas, left out: Atom q_45()
-not in strips_to_sas, left out: Atom q_46()
-not in strips_to_sas, left out: Atom q_47()
-not in strips_to_sas, left out: Atom q_48()
-not in strips_to_sas, left out: Atom q_49()
-not in strips_to_sas, left out: Atom q_5()
-not in strips_to_sas, left out: Atom q_50()
-not in strips_to_sas, left out: Atom q_51()
-not in strips_to_sas, left out: Atom q_52()
-not in strips_to_sas, left out: Atom q_53()
-not in strips_to_sas, left out: Atom q_54()
-not in strips_to_sas, left out: Atom q_55()
-not in strips_to_sas, left out: Atom q_56()
-not in strips_to_sas, left out: Atom q_57()
-not in strips_to_sas, left out: Atom q_58()
-not in strips_to_sas, left out: Atom q_59()
-not in strips_to_sas, left out: Atom q_6()
-not in strips_to_sas, left out: Atom q_60()
-not in strips_to_sas, left out: Atom q_61()
-not in strips_to_sas, left out: Atom q_62()
-not in strips_to_sas, left out: Atom q_63()
-not in strips_to_sas, left out: Atom q_64()
-not in strips_to_sas, left out: Atom q_65()
-not in strips_to_sas, left out: Atom q_66()
-not in strips_to_sas, left out: Atom q_67()
-not in strips_to_sas, left out: Atom q_68()
-not in strips_to_sas, left out: Atom q_69()
-not in strips_to_sas, left out: Atom q_7()
-not in strips_to_sas, left out: Atom q_70()
-not in strips_to_sas, left out: Atom q_71()
-not in strips_to_sas, left out: Atom q_72()
-not in strips_to_sas, left out: Atom q_73()
-not in strips_to_sas, left out: Atom q_74()
-not in strips_to_sas, left out: Atom q_75()
-not in strips_to_sas, left out: Atom q_76()
-not in strips_to_sas, left out: Atom q_77()
-not in strips_to_sas, left out: Atom q_78()
-not in strips_to_sas, left out: Atom q_79()
-not in strips_to_sas, left out: Atom q_8()
-not in strips_to_sas, left out: Atom q_80()
-not in strips_to_sas, left out: Atom q_81()
-not in strips_to_sas, left out: Atom q_82()
-not in strips_to_sas, left out: Atom q_83()
-not in strips_to_sas, left out: Atom q_84()
-not in strips_to_sas, left out: Atom q_85()
-not in strips_to_sas, left out: Atom q_86()
-not in strips_to_sas, left out: Atom q_87()
-not in strips_to_sas, left out: Atom q_88()
-not in strips_to_sas, left out: Atom q_89()
-not in strips_to_sas, left out: Atom q_9()
-not in strips_to_sas, left out: Atom q_90()
-not in strips_to_sas, left out: Atom q_91()
-not in strips_to_sas, left out: Atom q_92()
-not in strips_to_sas, left out: Atom q_93()
-not in strips_to_sas, left out: Atom q_94()
-not in strips_to_sas, left out: Atom q_95()
-not in strips_to_sas, left out: Atom q_96()
-not in strips_to_sas, left out: Atom q_97()
-not in strips_to_sas, left out: Atom q_98()
 Building mutex information: [0.000s CPU, 0.000s wall-clock]
 Translating task...
 Processing axioms...
 Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Translator axioms removed by simplifying: 0
 Processing axioms: [0.000s CPU, 0.001s wall-clock]
-Translating task: [0.020s CPU, 0.018s wall-clock]
-243 effect conditions simplified
+Translating task: [0.010s CPU, 0.017s wall-clock]
+244 effect conditions simplified
 0 implied preconditions added
 Detecting unreachable propositions...
-1 operators removed
-24 propositions removed
-Detecting unreachable propositions: [0.000s CPU, 0.003s wall-clock]
-Translator variables: 287
+0 operators removed
+0 axioms removed
+23 propositions removed
+Detecting unreachable propositions: [0.010s CPU, 0.005s wall-clock]
+Reordering and filtering variables...
+288 of 288 variables necessary.
+0 of 2 mutex groups necessary.
+157 of 157 operators necessary.
+0 of 0 axiom rules necessary.
+Reordering and filtering variables: [0.000s CPU, 0.007s wall-clock]
+Translator variables: 288
 Translator derived variables: 0
-Translator facts: 576
+Translator facts: 578
 Translator goal facts: 133
-Translator mutex groups: 125
-Translator total mutex groups size: 252
-Translator operators: 156
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 157
 Translator axioms: 0
-Translator task size: 10554
-Translator peak memory: 125084 KB
+Translator task size: 10124
+Translator peak memory: 130180 KB
 Writing output... [0.010s CPU, 0.006s wall-clock]
-Done! [49.920s CPU, 49.925s wall-clock]
-Heuristic: FF-heuristic.
-Algorithm: AO*-search
-The protagonist has got a winning strategy.
-INITIAL IS PROVEN!
+Done! [24.220s CPU, 24.226s wall-clock]
+translate exit code: 0
 
-Result: Strong plan found.
+INFO     Running search (release).
+INFO     search stdin: output.sas
+INFO     search time limit: None
+INFO     search memory limit: None
+INFO     search command line string: /home/ubuntu/ltlf-goal-oriented-service-composition/planners/downward/builds/release/bin/downward --evaluator 'hff=ff()' --search 'astar(hff,verbosity=verbose)' --internal-plan-file sas_plan < output.sas
+[t=0.000086s, 9984 KB] reading input...
+[t=0.002649s, 10116 KB] done reading input!
+[t=0.003667s, 10512 KB] Simplifying 645 unary operators... done! [546 unary operators]
+[t=0.003843s, 10512 KB] time to simplify: 0.000198s
+[t=0.003953s, 10656 KB] Initializing additive heuristic...
+[t=0.003966s, 10656 KB] Initializing FF heuristic...
+[t=0.003998s, 10656 KB] Building successor generator...done!
+[t=0.004093s, 10656 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.004099s, 10656 KB] time for successor generation creation: 0.000074s
+[t=0.004108s, 10656 KB] Variables: 288
+[t=0.004114s, 10656 KB] FactPairs: 578
+[t=0.004121s, 10656 KB] Bytes per state: 40
+[t=0.004134s, 10656 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+[t=0.004174s, 10656 KB] WARNING: overflow on h^add! Costs clamped to 100000000
+[t=0.004233s, 10656 KB] New best heuristic value for ff: 145
+[t=0.004242s, 10656 KB] g=0, 1 evaluated, 0 expanded
+[t=0.004253s, 10656 KB] f = 145, 1 evaluated, 0 expanded
+[t=0.004265s, 10656 KB] Initial heuristic value for ff: 145
+[t=0.004273s, 10656 KB] pruning method: none
+[t=0.004339s, 10656 KB] f = 146, 2 evaluated, 1 expanded
+[t=0.004395s, 10656 KB] New best heuristic value for ff: 144
+[t=0.004403s, 10656 KB] g=2, 3 evaluated, 2 expanded
+[t=0.004455s, 10656 KB] New best heuristic value for ff: 143
+[t=0.004462s, 10656 KB] g=3, 4 evaluated, 3 expanded
+[t=0.004556s, 10656 KB] New best heuristic value for ff: 142
+[t=0.004562s, 10656 KB] g=4, 6 evaluated, 4 expanded
+[t=0.004612s, 10656 KB] New best heuristic value for ff: 141
+[t=0.004619s, 10656 KB] g=5, 7 evaluated, 5 expanded
+[t=0.004672s, 10656 KB] f = 147, 8 evaluated, 7 expanded
+[t=0.004726s, 10656 KB] f = 148, 9 evaluated, 8 expanded
+[t=0.004775s, 10656 KB] New best heuristic value for ff: 140
+[t=0.004782s, 10656 KB] g=8, 10 evaluated, 9 expanded
+[t=0.004917s, 10656 KB] New best heuristic value for ff: 139
+[t=0.004923s, 10656 KB] g=9, 13 evaluated, 10 expanded
+[t=0.005012s, 10656 KB] f = 150, 16 evaluated, 12 expanded
+[t=0.005475s, 10656 KB] f = 151, 27 evaluated, 15 expanded
+[t=0.005897s, 10656 KB] f = 152, 37 evaluated, 25 expanded
+[t=0.006072s, 10656 KB] New best heuristic value for ff: 138
+[t=0.006079s, 10656 KB] g=14, 41 evaluated, 27 expanded
+[t=0.006656s, 10656 KB] New best heuristic value for ff: 137
+[t=0.006664s, 10656 KB] g=15, 57 evaluated, 36 expanded
+[t=0.006715s, 10656 KB] New best heuristic value for ff: 136
+[t=0.006722s, 10656 KB] g=16, 58 evaluated, 37 expanded
+[t=0.006814s, 10656 KB] New best heuristic value for ff: 135
+[t=0.006821s, 10656 KB] g=17, 60 evaluated, 38 expanded
+[t=0.006954s, 10656 KB] New best heuristic value for ff: 134
+[t=0.006961s, 10656 KB] g=18, 63 evaluated, 39 expanded
+[t=0.007140s, 10656 KB] New best heuristic value for ff: 133
+[t=0.007147s, 10656 KB] g=19, 67 evaluated, 40 expanded
+[t=0.007364s, 10656 KB] New best heuristic value for ff: 132
+[t=0.007371s, 10656 KB] g=20, 72 evaluated, 41 expanded
+[t=0.007626s, 10656 KB] New best heuristic value for ff: 131
+[t=0.007633s, 10656 KB] g=21, 78 evaluated, 42 expanded
+[t=0.007929s, 10656 KB] New best heuristic value for ff: 130
+[t=0.007937s, 10656 KB] g=22, 85 evaluated, 43 expanded
+[t=0.008269s, 10656 KB] New best heuristic value for ff: 129
+[t=0.008278s, 10656 KB] g=23, 93 evaluated, 44 expanded
+[t=0.008651s, 10656 KB] New best heuristic value for ff: 128
+[t=0.008659s, 10656 KB] g=24, 102 evaluated, 45 expanded
+[t=0.009076s, 10656 KB] New best heuristic value for ff: 127
+[t=0.009087s, 10656 KB] g=25, 112 evaluated, 46 expanded
+[t=0.009618s, 10656 KB] New best heuristic value for ff: 126
+[t=0.009626s, 10656 KB] g=26, 124 evaluated, 47 expanded
+[t=0.019409s, 10656 KB] f = 153, 373 evaluated, 109 expanded
+[t=0.046776s, 10656 KB] f = 154, 1069 evaluated, 325 expanded
+[t=0.102971s, 10796 KB] f = 155, 2542 evaluated, 980 expanded
+[t=0.183168s, 10956 KB] f = 156, 4727 evaluated, 2195 expanded
+[t=0.266696s, 11092 KB] f = 157, 7079 evaluated, 3851 expanded
+[t=0.329615s, 11224 KB] f = 158, 8903 evaluated, 5531 expanded
+[t=0.362923s, 11360 KB] f = 159, 9899 evaluated, 6851 expanded
+[t=0.375149s, 11360 KB] f = 160, 10263 evaluated, 7679 expanded
+[t=0.378056s, 11360 KB] f = 161, 10343 evaluated, 8091 expanded
+[t=0.378487s, 11360 KB] f = 162, 10351 evaluated, 8243 expanded
+[t=0.378542s, 11360 KB] f = 163, 10351 evaluated, 8279 expanded
+[t=0.378991s, 11360 KB] f = 164, 10362 evaluated, 8284 expanded
+[t=0.379364s, 11360 KB] f = 165, 10371 evaluated, 8293 expanded
+[t=0.379533s, 11360 KB] New best heuristic value for ff: 125
+[t=0.379541s, 11360 KB] g=40, 10375 evaluated, 8295 expanded
+[t=0.380811s, 11360 KB] New best heuristic value for ff: 124
+[t=0.380819s, 11360 KB] g=41, 10412 evaluated, 8316 expanded
+[t=0.380868s, 11360 KB] New best heuristic value for ff: 123
+[t=0.380875s, 11360 KB] g=42, 10413 evaluated, 8317 expanded
+[t=0.380962s, 11360 KB] New best heuristic value for ff: 122
+[t=0.380969s, 11360 KB] g=43, 10415 evaluated, 8318 expanded
+[t=0.381098s, 11360 KB] New best heuristic value for ff: 121
+[t=0.381105s, 11360 KB] g=44, 10418 evaluated, 8319 expanded
+[t=0.381273s, 11360 KB] New best heuristic value for ff: 120
+[t=0.381280s, 11360 KB] g=45, 10422 evaluated, 8320 expanded
+[t=0.381492s, 11360 KB] New best heuristic value for ff: 119
+[t=0.381499s, 11360 KB] g=46, 10427 evaluated, 8321 expanded
+[t=0.381750s, 11360 KB] New best heuristic value for ff: 118
+[t=0.381757s, 11360 KB] g=47, 10433 evaluated, 8322 expanded
+[t=0.382043s, 11360 KB] New best heuristic value for ff: 117
+[t=0.382050s, 11360 KB] g=48, 10440 evaluated, 8323 expanded
+[t=0.382375s, 11360 KB] New best heuristic value for ff: 116
+[t=0.382382s, 11360 KB] g=49, 10448 evaluated, 8324 expanded
+[t=0.382743s, 11360 KB] New best heuristic value for ff: 115
+[t=0.382750s, 11360 KB] g=50, 10457 evaluated, 8325 expanded
+[t=0.383146s, 11360 KB] New best heuristic value for ff: 114
+[t=0.383153s, 11360 KB] g=51, 10467 evaluated, 8326 expanded
+[t=0.383630s, 11360 KB] New best heuristic value for ff: 113
+[t=0.383638s, 11360 KB] g=52, 10479 evaluated, 8327 expanded
+[t=0.392193s, 11360 KB] f = 166, 10700 evaluated, 8374 expanded
+[t=0.418401s, 11360 KB] f = 167, 11396 evaluated, 8590 expanded
+[t=0.472414s, 11488 KB] f = 168, 12868 evaluated, 9242 expanded
+[t=0.550752s, 11884 KB] f = 169, 15053 evaluated, 10457 expanded
+[t=0.631603s, 11888 KB] f = 170, 17405 evaluated, 12113 expanded
+[t=0.692296s, 12024 KB] f = 171, 19229 evaluated, 13793 expanded
+[t=0.724686s, 12024 KB] f = 172, 20225 evaluated, 15113 expanded
+[t=0.736576s, 12024 KB] f = 173, 20589 evaluated, 15941 expanded
+[t=0.739431s, 12024 KB] f = 174, 20669 evaluated, 16353 expanded
+[t=0.739864s, 12024 KB] f = 175, 20677 evaluated, 16505 expanded
+[t=0.739918s, 12024 KB] f = 176, 20677 evaluated, 16541 expanded
+[t=0.740351s, 12024 KB] f = 177, 20688 evaluated, 16546 expanded
+[t=0.740673s, 12024 KB] f = 178, 20696 evaluated, 16554 expanded
+[t=0.740837s, 12024 KB] New best heuristic value for ff: 112
+[t=0.740844s, 12024 KB] g=66, 20700 evaluated, 16556 expanded
+[t=0.742285s, 12024 KB] New best heuristic value for ff: 111
+[t=0.742292s, 12024 KB] g=67, 20744 evaluated, 16581 expanded
+[t=0.742340s, 12024 KB] New best heuristic value for ff: 110
+[t=0.742347s, 12024 KB] g=68, 20745 evaluated, 16582 expanded
+[t=0.742432s, 12024 KB] New best heuristic value for ff: 109
+[t=0.742439s, 12024 KB] g=69, 20747 evaluated, 16583 expanded
+[t=0.742562s, 12024 KB] New best heuristic value for ff: 108
+[t=0.742570s, 12024 KB] g=70, 20750 evaluated, 16584 expanded
+[t=0.742734s, 12024 KB] New best heuristic value for ff: 107
+[t=0.742741s, 12024 KB] g=71, 20754 evaluated, 16585 expanded
+[t=0.742942s, 12024 KB] New best heuristic value for ff: 106
+[t=0.742949s, 12024 KB] g=72, 20759 evaluated, 16586 expanded
+[t=0.743190s, 12024 KB] New best heuristic value for ff: 105
+[t=0.743197s, 12024 KB] g=73, 20765 evaluated, 16587 expanded
+[t=0.743471s, 12024 KB] New best heuristic value for ff: 104
+[t=0.743478s, 12024 KB] g=74, 20772 evaluated, 16588 expanded
+[t=0.743791s, 12024 KB] New best heuristic value for ff: 103
+[t=0.743798s, 12024 KB] g=75, 20780 evaluated, 16589 expanded
+[t=0.744145s, 12024 KB] New best heuristic value for ff: 102
+[t=0.744152s, 12024 KB] g=76, 20789 evaluated, 16590 expanded
+[t=0.744536s, 12024 KB] New best heuristic value for ff: 101
+[t=0.744543s, 12024 KB] g=77, 20799 evaluated, 16591 expanded
+[t=0.745001s, 12024 KB] New best heuristic value for ff: 100
+[t=0.745009s, 12024 KB] g=78, 20811 evaluated, 16592 expanded
+[t=0.752761s, 12024 KB] f = 179, 21019 evaluated, 16632 expanded
+[t=0.778158s, 12160 KB] f = 180, 21722 evaluated, 16852 expanded
+[t=0.829863s, 12160 KB] f = 181, 23193 evaluated, 17501 expanded
+[t=0.904316s, 12296 KB] f = 182, 25379 evaluated, 18719 expanded
+[t=0.981958s, 12432 KB] f = 183, 27731 evaluated, 20375 expanded
+[t=1.041979s, 13084 KB] f = 184, 29555 evaluated, 22055 expanded
+[t=1.073319s, 13084 KB] f = 185, 30551 evaluated, 23375 expanded
+[t=1.084809s, 13084 KB] f = 186, 30915 evaluated, 24203 expanded
+[t=1.087604s, 13084 KB] f = 187, 30995 evaluated, 24615 expanded
+[t=1.088025s, 13084 KB] f = 188, 31003 evaluated, 24767 expanded
+[t=1.088078s, 13084 KB] f = 189, 31003 evaluated, 24803 expanded
+[t=1.088491s, 13084 KB] f = 190, 31014 evaluated, 24808 expanded
+[t=1.088765s, 13084 KB] f = 191, 31021 evaluated, 24815 expanded
+[t=1.088922s, 13084 KB] New best heuristic value for ff: 99
+[t=1.088929s, 13084 KB] g=92, 31025 evaluated, 24817 expanded
+[t=1.089927s, 13084 KB] New best heuristic value for ff: 98
+[t=1.089934s, 13084 KB] g=93, 31055 evaluated, 24834 expanded
+[t=1.089980s, 13084 KB] New best heuristic value for ff: 97
+[t=1.089987s, 13084 KB] g=94, 31056 evaluated, 24835 expanded
+[t=1.090068s, 13084 KB] New best heuristic value for ff: 96
+[t=1.090075s, 13084 KB] g=95, 31058 evaluated, 24836 expanded
+[t=1.090196s, 13084 KB] New best heuristic value for ff: 95
+[t=1.090202s, 13084 KB] g=96, 31061 evaluated, 24837 expanded
+[t=1.090357s, 13084 KB] New best heuristic value for ff: 94
+[t=1.090364s, 13084 KB] g=97, 31065 evaluated, 24838 expanded
+[t=1.090556s, 13084 KB] New best heuristic value for ff: 93
+[t=1.090563s, 13084 KB] g=98, 31070 evaluated, 24839 expanded
+[t=1.090791s, 13084 KB] New best heuristic value for ff: 92
+[t=1.090798s, 13084 KB] g=99, 31076 evaluated, 24840 expanded
+[t=1.091063s, 13084 KB] New best heuristic value for ff: 91
+[t=1.091070s, 13084 KB] g=100, 31083 evaluated, 24841 expanded
+[t=1.091368s, 13084 KB] New best heuristic value for ff: 90
+[t=1.091375s, 13084 KB] g=101, 31091 evaluated, 24842 expanded
+[t=1.091707s, 13084 KB] New best heuristic value for ff: 89
+[t=1.091714s, 13084 KB] g=102, 31100 evaluated, 24843 expanded
+[t=1.092077s, 13084 KB] New best heuristic value for ff: 88
+[t=1.092084s, 13084 KB] g=103, 31110 evaluated, 24844 expanded
+[t=1.092523s, 13084 KB] New best heuristic value for ff: 87
+[t=1.092530s, 13084 KB] g=104, 31122 evaluated, 24845 expanded
+[t=1.100199s, 13084 KB] f = 192, 31338 evaluated, 24890 expanded
+[t=1.124577s, 13084 KB] f = 193, 32048 evaluated, 25114 expanded
+[t=1.173766s, 13096 KB] f = 194, 33518 evaluated, 25760 expanded
+[t=1.244864s, 13232 KB] f = 195, 35705 evaluated, 26981 expanded
+[t=1.318953s, 13368 KB] f = 196, 38057 evaluated, 28637 expanded
+[t=1.374588s, 13504 KB] f = 197, 39881 evaluated, 30317 expanded
+[t=1.404522s, 13504 KB] f = 198, 40877 evaluated, 31637 expanded
+[t=1.415617s, 13504 KB] f = 199, 41241 evaluated, 32465 expanded
+[t=1.418334s, 13504 KB] f = 200, 41321 evaluated, 32877 expanded
+[t=1.418759s, 13504 KB] f = 201, 41329 evaluated, 33029 expanded
+[t=1.418814s, 13504 KB] f = 202, 41329 evaluated, 33065 expanded
+[t=1.419205s, 13504 KB] f = 203, 41340 evaluated, 33070 expanded
+[t=1.419427s, 13504 KB] f = 204, 41346 evaluated, 33076 expanded
+[t=1.419575s, 13504 KB] New best heuristic value for ff: 86
+[t=1.419582s, 13504 KB] g=118, 41350 evaluated, 33078 expanded
+[t=1.420077s, 13504 KB] New best heuristic value for ff: 85
+[t=1.420084s, 13504 KB] g=119, 41366 evaluated, 33087 expanded
+[t=1.420128s, 13504 KB] New best heuristic value for ff: 84
+[t=1.420135s, 13504 KB] g=120, 41367 evaluated, 33088 expanded
+[t=1.420213s, 13504 KB] New best heuristic value for ff: 83
+[t=1.420219s, 13504 KB] g=121, 41369 evaluated, 33089 expanded
+[t=1.420333s, 13504 KB] New best heuristic value for ff: 82
+[t=1.420340s, 13504 KB] g=122, 41372 evaluated, 33090 expanded
+[t=1.420488s, 13504 KB] New best heuristic value for ff: 81
+[t=1.420495s, 13504 KB] g=123, 41376 evaluated, 33091 expanded
+[t=1.420677s, 13504 KB] New best heuristic value for ff: 80
+[t=1.420684s, 13504 KB] g=124, 41381 evaluated, 33092 expanded
+[t=1.420929s, 13504 KB] New best heuristic value for ff: 79
+[t=1.420936s, 13504 KB] g=125, 41387 evaluated, 33093 expanded
+[t=1.421185s, 13504 KB] New best heuristic value for ff: 78
+[t=1.421193s, 13504 KB] g=126, 41394 evaluated, 33094 expanded
+[t=1.421477s, 13504 KB] New best heuristic value for ff: 77
+[t=1.421484s, 13504 KB] g=127, 41402 evaluated, 33095 expanded
+[t=1.421798s, 13504 KB] New best heuristic value for ff: 76
+[t=1.421805s, 13504 KB] g=128, 41411 evaluated, 33096 expanded
+[t=1.422148s, 13504 KB] New best heuristic value for ff: 75
+[t=1.422156s, 13504 KB] g=129, 41421 evaluated, 33097 expanded
+[t=1.422567s, 13504 KB] New best heuristic value for ff: 74
+[t=1.422574s, 13504 KB] g=130, 41433 evaluated, 33098 expanded
+[t=1.430061s, 13504 KB] f = 205, 41657 evaluated, 33148 expanded
+[t=1.453316s, 13640 KB] f = 206, 42374 evaluated, 33376 expanded
+[t=1.499780s, 13640 KB] f = 207, 43843 evaluated, 34019 expanded
+[t=1.566903s, 13776 KB] f = 208, 46031 evaluated, 35243 expanded
+[t=1.636885s, 13908 KB] f = 209, 48383 evaluated, 36899 expanded
+[t=1.689877s, 14044 KB] f = 210, 50207 evaluated, 38579 expanded
+[t=1.718384s, 14044 KB] f = 211, 51203 evaluated, 39899 expanded
+[t=1.728968s, 14180 KB] f = 212, 51567 evaluated, 40727 expanded
+[t=1.731545s, 14180 KB] f = 213, 51647 evaluated, 41139 expanded
+[t=1.731960s, 14180 KB] f = 214, 51655 evaluated, 41291 expanded
+[t=1.732016s, 14180 KB] f = 215, 51655 evaluated, 41327 expanded
+[t=1.732385s, 14180 KB] f = 216, 51666 evaluated, 41332 expanded
+[t=1.732562s, 14180 KB] f = 217, 51671 evaluated, 41337 expanded
+[t=1.732703s, 14180 KB] New best heuristic value for ff: 73
+[t=1.732710s, 14180 KB] g=144, 51675 evaluated, 41339 expanded
+[t=1.733181s, 14180 KB] New best heuristic value for ff: 72
+[t=1.733189s, 14180 KB] g=145, 51691 evaluated, 41348 expanded
+[t=1.733231s, 14180 KB] New best heuristic value for ff: 71
+[t=1.733237s, 14180 KB] g=146, 51692 evaluated, 41349 expanded
+[t=1.733311s, 14180 KB] New best heuristic value for ff: 70
+[t=1.733317s, 14180 KB] g=147, 51694 evaluated, 41350 expanded
+[t=1.733426s, 14180 KB] New best heuristic value for ff: 69
+[t=1.733433s, 14180 KB] g=148, 51697 evaluated, 41351 expanded
+[t=1.733572s, 14180 KB] New best heuristic value for ff: 68
+[t=1.733579s, 14180 KB] g=149, 51701 evaluated, 41352 expanded
+[t=1.733750s, 14180 KB] New best heuristic value for ff: 67
+[t=1.733757s, 14180 KB] g=150, 51706 evaluated, 41353 expanded
+[t=1.733962s, 14180 KB] New best heuristic value for ff: 66
+[t=1.733969s, 14180 KB] g=151, 51712 evaluated, 41354 expanded
+[t=1.734202s, 14180 KB] New best heuristic value for ff: 65
+[t=1.734211s, 14180 KB] g=152, 51719 evaluated, 41355 expanded
+[t=1.734476s, 14180 KB] New best heuristic value for ff: 64
+[t=1.734483s, 14180 KB] g=153, 51727 evaluated, 41356 expanded
+[t=1.734779s, 14180 KB] New best heuristic value for ff: 63
+[t=1.734787s, 14180 KB] g=154, 51736 evaluated, 41357 expanded
+[t=1.735108s, 14180 KB] New best heuristic value for ff: 62
+[t=1.735115s, 14180 KB] g=155, 51746 evaluated, 41358 expanded
+[t=1.735496s, 14180 KB] New best heuristic value for ff: 61
+[t=1.735504s, 14180 KB] g=156, 51758 evaluated, 41359 expanded
+[t=1.742288s, 14180 KB] f = 218, 51976 evaluated, 41406 expanded
+[t=1.764114s, 14180 KB] f = 219, 52700 evaluated, 41638 expanded
+[t=1.807405s, 14316 KB] f = 220, 54168 evaluated, 42278 expanded
+[t=1.872676s, 15344 KB] f = 221, 56357 evaluated, 43505 expanded
+[t=1.938425s, 15344 KB] f = 222, 58709 evaluated, 45161 expanded
+[t=1.988280s, 15344 KB] f = 223, 60533 evaluated, 46841 expanded
+[t=2.015176s, 15344 KB] f = 224, 61529 evaluated, 48161 expanded
+[t=2.025211s, 15344 KB] f = 225, 61893 evaluated, 48989 expanded
+[t=2.027661s, 15344 KB] f = 226, 61973 evaluated, 49401 expanded
+[t=2.028063s, 15344 KB] f = 227, 61981 evaluated, 49553 expanded
+[t=2.028118s, 15344 KB] f = 228, 61981 evaluated, 49589 expanded
+[t=2.028462s, 15344 KB] f = 229, 61992 evaluated, 49594 expanded
+[t=2.028597s, 15344 KB] f = 230, 61996 evaluated, 49598 expanded
+[t=2.028728s, 15344 KB] New best heuristic value for ff: 60
+[t=2.028735s, 15344 KB] g=170, 62000 evaluated, 49600 expanded
+[t=2.029175s, 15344 KB] New best heuristic value for ff: 59
+[t=2.029183s, 15344 KB] g=171, 62016 evaluated, 49609 expanded
+[t=2.029222s, 15344 KB] New best heuristic value for ff: 58
+[t=2.029230s, 15344 KB] g=172, 62017 evaluated, 49610 expanded
+[t=2.029299s, 15344 KB] New best heuristic value for ff: 57
+[t=2.029305s, 15344 KB] g=173, 62019 evaluated, 49611 expanded
+[t=2.029409s, 15344 KB] New best heuristic value for ff: 56
+[t=2.029416s, 15344 KB] g=174, 62022 evaluated, 49612 expanded
+[t=2.029546s, 15344 KB] New best heuristic value for ff: 55
+[t=2.029553s, 15344 KB] g=175, 62026 evaluated, 49613 expanded
+[t=2.029713s, 15344 KB] New best heuristic value for ff: 54
+[t=2.029720s, 15344 KB] g=176, 62031 evaluated, 49614 expanded
+[t=2.029905s, 15344 KB] New best heuristic value for ff: 53
+[t=2.029911s, 15344 KB] g=177, 62037 evaluated, 49615 expanded
+[t=2.030126s, 15344 KB] New best heuristic value for ff: 52
+[t=2.030133s, 15344 KB] g=178, 62044 evaluated, 49616 expanded
+[t=2.030374s, 15344 KB] New best heuristic value for ff: 51
+[t=2.030381s, 15344 KB] g=179, 62052 evaluated, 49617 expanded
+[t=2.030650s, 15344 KB] New best heuristic value for ff: 50
+[t=2.030658s, 15344 KB] g=180, 62061 evaluated, 49618 expanded
+[t=2.030953s, 15344 KB] New best heuristic value for ff: 49
+[t=2.030960s, 15344 KB] g=181, 62071 evaluated, 49619 expanded
+[t=2.031316s, 15344 KB] New best heuristic value for ff: 48
+[t=2.031323s, 15344 KB] g=182, 62083 evaluated, 49620 expanded
+[t=2.037469s, 15344 KB] f = 231, 62295 evaluated, 49664 expanded
+[t=2.057737s, 15372 KB] f = 232, 63026 evaluated, 49900 expanded
+[t=2.097516s, 15372 KB] f = 233, 64493 evaluated, 50537 expanded
+[t=2.155593s, 15508 KB] f = 234, 66683 evaluated, 51767 expanded
+[t=2.216416s, 15644 KB] f = 235, 69035 evaluated, 53423 expanded
+[t=2.262720s, 15780 KB] f = 236, 70859 evaluated, 55103 expanded
+[t=2.287919s, 15780 KB] f = 237, 71855 evaluated, 56423 expanded
+[t=2.297384s, 15916 KB] f = 238, 72219 evaluated, 57251 expanded
+[t=2.299800s, 15916 KB] f = 239, 72299 evaluated, 57663 expanded
+[t=2.300201s, 15916 KB] f = 240, 72307 evaluated, 57815 expanded
+[t=2.300260s, 15916 KB] f = 241, 72307 evaluated, 57851 expanded
+[t=2.300574s, 15916 KB] f = 242, 72318 evaluated, 57856 expanded
+[t=2.300670s, 15916 KB] f = 243, 72321 evaluated, 57859 expanded
+[t=2.300793s, 15916 KB] New best heuristic value for ff: 47
+[t=2.300800s, 15916 KB] g=196, 72325 evaluated, 57861 expanded
+[t=2.300864s, 15916 KB] New best heuristic value for ff: 46
+[t=2.300870s, 15916 KB] g=197, 72327 evaluated, 57862 expanded
+[t=2.300906s, 15916 KB] New best heuristic value for ff: 45
+[t=2.300913s, 15916 KB] g=198, 72328 evaluated, 57863 expanded
+[t=2.300976s, 15916 KB] New best heuristic value for ff: 44
+[t=2.300982s, 15916 KB] g=199, 72330 evaluated, 57864 expanded
+[t=2.301073s, 15916 KB] New best heuristic value for ff: 43
+[t=2.301080s, 15916 KB] g=200, 72333 evaluated, 57865 expanded
+[t=2.301199s, 15916 KB] New best heuristic value for ff: 42
+[t=2.301207s, 15916 KB] g=201, 72337 evaluated, 57866 expanded
+[t=2.301353s, 15916 KB] New best heuristic value for ff: 41
+[t=2.301360s, 15916 KB] g=202, 72342 evaluated, 57867 expanded
+[t=2.301530s, 15916 KB] New best heuristic value for ff: 40
+[t=2.301537s, 15916 KB] g=203, 72348 evaluated, 57868 expanded
+[t=2.301731s, 15916 KB] New best heuristic value for ff: 39
+[t=2.301738s, 15916 KB] g=204, 72355 evaluated, 57869 expanded
+[t=2.301955s, 15916 KB] New best heuristic value for ff: 38
+[t=2.301963s, 15916 KB] g=205, 72363 evaluated, 57870 expanded
+[t=2.302219s, 15916 KB] New best heuristic value for ff: 37
+[t=2.302227s, 15916 KB] g=206, 72372 evaluated, 57871 expanded
+[t=2.302494s, 15916 KB] New best heuristic value for ff: 36
+[t=2.302501s, 15916 KB] g=207, 72382 evaluated, 57872 expanded
+[t=2.302820s, 15916 KB] New best heuristic value for ff: 35
+[t=2.302830s, 15916 KB] g=208, 72394 evaluated, 57873 expanded
+[t=2.308570s, 15916 KB] f = 244, 72614 evaluated, 57922 expanded
+[t=2.327043s, 15916 KB] f = 245, 73352 evaluated, 58162 expanded
+[t=2.363215s, 16052 KB] f = 246, 74818 evaluated, 58792 expanded
+[t=2.415817s, 16188 KB] f = 247, 77009 evaluated, 59993 expanded
+[t=2.471164s, 16324 KB] f = 248, 79361 evaluated, 61541 expanded
+[t=2.513233s, 16324 KB] f = 249, 81185 evaluated, 63029 expanded
+[t=2.536125s, 16460 KB] f = 250, 82181 evaluated, 64181 expanded
+[t=2.544973s, 16460 KB] f = 251, 82545 evaluated, 65009 expanded
+[t=2.547499s, 16460 KB] f = 252, 82625 evaluated, 65589 expanded
+[t=2.548198s, 16460 KB] f = 253, 82633 evaluated, 65933 expanded
+[t=2.548413s, 16460 KB] f = 254, 82633 evaluated, 66077 expanded
+[t=2.548469s, 16460 KB] f = 255, 82633 evaluated, 66113 expanded
+[t=2.548750s, 16460 KB] f = 256, 82644 evaluated, 66118 expanded
+[t=2.548813s, 16460 KB] f = 257, 82646 evaluated, 66121 expanded
+[t=2.549132s, 16460 KB] New best heuristic value for ff: 34
+[t=2.549139s, 16460 KB] g=223, 82659 evaluated, 66128 expanded
+[t=2.549173s, 16460 KB] New best heuristic value for ff: 33
+[t=2.549180s, 16460 KB] g=224, 82660 evaluated, 66129 expanded
+[t=2.549238s, 16460 KB] New best heuristic value for ff: 32
+[t=2.549245s, 16460 KB] g=225, 82662 evaluated, 66130 expanded
+[t=2.549328s, 16460 KB] New best heuristic value for ff: 31
+[t=2.549337s, 16460 KB] g=226, 82665 evaluated, 66131 expanded
+[t=2.549445s, 16460 KB] New best heuristic value for ff: 30
+[t=2.549451s, 16460 KB] g=227, 82669 evaluated, 66132 expanded
+[t=2.549580s, 16460 KB] New best heuristic value for ff: 29
+[t=2.549587s, 16460 KB] g=228, 82674 evaluated, 66133 expanded
+[t=2.549741s, 16460 KB] New best heuristic value for ff: 28
+[t=2.549748s, 16460 KB] g=229, 82680 evaluated, 66134 expanded
+[t=2.549923s, 16460 KB] New best heuristic value for ff: 27
+[t=2.549929s, 16460 KB] g=230, 82687 evaluated, 66135 expanded
+[t=2.550124s, 16460 KB] New best heuristic value for ff: 26
+[t=2.550131s, 16460 KB] g=231, 82695 evaluated, 66136 expanded
+[t=2.550345s, 16460 KB] New best heuristic value for ff: 25
+[t=2.550352s, 16460 KB] g=232, 82704 evaluated, 66137 expanded
+[t=2.550585s, 16460 KB] New best heuristic value for ff: 24
+[t=2.550592s, 16460 KB] g=233, 82714 evaluated, 66138 expanded
+[t=2.550874s, 16460 KB] New best heuristic value for ff: 23
+[t=2.550882s, 16460 KB] g=234, 82726 evaluated, 66139 expanded
+[t=2.551173s, 16460 KB] New best heuristic value for ff: 22
+[t=2.551180s, 16460 KB] g=235, 82739 evaluated, 66140 expanded
+[t=2.557214s, 16460 KB] f = 258, 83005 evaluated, 66188 expanded
+[t=2.578293s, 16596 KB] f = 259, 83966 evaluated, 66488 expanded
+[t=2.618502s, 16596 KB] f = 260, 85816 evaluated, 67286 expanded
+[t=2.672714s, 16868 KB] f = 261, 88343 evaluated, 68771 expanded
+[t=2.723118s, 17004 KB] f = 262, 90695 evaluated, 70619 expanded
+[t=2.755066s, 17004 KB] f = 263, 92183 evaluated, 72299 expanded
+[t=2.768664s, 17004 KB] f = 264, 92795 evaluated, 73451 expanded
+[t=2.772482s, 17004 KB] f = 265, 92943 evaluated, 74063 expanded
+[t=2.773194s, 17004 KB] f = 266, 92959 evaluated, 74307 expanded
+[t=2.773306s, 17004 KB] f = 267, 92959 evaluated, 74371 expanded
+[t=2.773384s, 17004 KB] New best heuristic value for ff: 21
+[t=2.773392s, 17004 KB] g=245, 92962 evaluated, 74373 expanded
+[t=2.773587s, 17004 KB] New best heuristic value for ff: 20
+[t=2.773595s, 17004 KB] g=246, 92971 evaluated, 74374 expanded
+[t=2.773645s, 17004 KB] New best heuristic value for ff: 19
+[t=2.773651s, 17004 KB] g=247, 92973 evaluated, 74375 expanded
+[t=2.773729s, 17004 KB] New best heuristic value for ff: 18
+[t=2.773737s, 17004 KB] g=248, 92976 evaluated, 74376 expanded
+[t=2.773802s, 17004 KB] New best heuristic value for ff: 17
+[t=2.773811s, 17004 KB] g=249, 92978 evaluated, 74377 expanded
+[t=2.773894s, 17004 KB] New best heuristic value for ff: 16
+[t=2.773901s, 17004 KB] g=250, 92981 evaluated, 74378 expanded
+[t=2.773991s, 17004 KB] New best heuristic value for ff: 15
+[t=2.773998s, 17004 KB] g=251, 92985 evaluated, 74379 expanded
+[t=2.774108s, 17004 KB] New best heuristic value for ff: 14
+[t=2.774116s, 17004 KB] g=252, 92990 evaluated, 74380 expanded
+[t=2.774246s, 17004 KB] New best heuristic value for ff: 13
+[t=2.774253s, 17004 KB] g=253, 92996 evaluated, 74381 expanded
+[t=2.774398s, 17004 KB] New best heuristic value for ff: 12
+[t=2.774405s, 17004 KB] g=254, 93003 evaluated, 74382 expanded
+[t=2.774566s, 17004 KB] New best heuristic value for ff: 11
+[t=2.774573s, 17004 KB] g=255, 93011 evaluated, 74383 expanded
+[t=2.774749s, 17004 KB] New best heuristic value for ff: 10
+[t=2.774756s, 17004 KB] g=256, 93020 evaluated, 74384 expanded
+[t=2.774945s, 17140 KB] New best heuristic value for ff: 9
+[t=2.774953s, 17140 KB] g=257, 93030 evaluated, 74385 expanded
+[t=2.775154s, 17140 KB] New best heuristic value for ff: 8
+[t=2.775161s, 17140 KB] g=258, 93041 evaluated, 74386 expanded
+[t=2.775339s, 17140 KB] New best heuristic value for ff: 7
+[t=2.775346s, 17140 KB] g=259, 93051 evaluated, 74387 expanded
+[t=2.775504s, 17140 KB] New best heuristic value for ff: 6
+[t=2.775512s, 17140 KB] g=260, 93060 evaluated, 74388 expanded
+[t=2.775653s, 17140 KB] New best heuristic value for ff: 5
+[t=2.775660s, 17140 KB] g=261, 93068 evaluated, 74389 expanded
+[t=2.775782s, 17140 KB] New best heuristic value for ff: 4
+[t=2.775789s, 17140 KB] g=262, 93075 evaluated, 74390 expanded
+[t=2.775893s, 17140 KB] New best heuristic value for ff: 3
+[t=2.775900s, 17140 KB] g=263, 93081 evaluated, 74391 expanded
+[t=2.775986s, 17140 KB] New best heuristic value for ff: 2
+[t=2.775993s, 17140 KB] g=264, 93086 evaluated, 74392 expanded
+[t=2.776063s, 17140 KB] New best heuristic value for ff: 1
+[t=2.776070s, 17140 KB] g=265, 93090 evaluated, 74393 expanded
+[t=2.776119s, 17140 KB] New best heuristic value for ff: 0
+[t=2.776126s, 17140 KB] g=266, 93093 evaluated, 74394 expanded
+[t=2.776134s, 17140 KB] Solution found!
+[t=2.776147s, 17140 KB] Actual search time: 2.771871s
+o_copy  (1)
+o_sync_q_43s  (1)
+o_sync_q_11s  (1)
+o_sync_q_22s  (1)
+o_world  (1)
+startaction  (1)
+o_copy  (1)
+o_sync_q_133s  (1)
+o_sync_q_14s_2  (1)
+o_world  (1)
+cleaning_0_handler_cleaning_0  (1)
+o_copy  (1)
+o_sync_q_133s  (1)
+o_sync_q_14s_1  (1)
+o_sync_q_35s  (1)
+o_sync_q_103s  (1)
+o_sync_q_120s  (1)
+o_sync_q_93s  (1)
+o_sync_q_76s  (1)
+o_sync_q_86s  (1)
+o_sync_q_112s  (1)
+o_sync_q_59s  (1)
+o_sync_q_129s  (1)
+o_sync_q_49s  (1)
+o_sync_q_3s  (1)
+o_sync_q_23s  (1)
+o_sync_q_24s  (1)
+o_sync_q_26s  (1)
+o_sync_q_27s  (1)
+o_sync_q_28s  (1)
+o_sync_q_29s  (1)
+o_sync_q_30s  (1)
+o_sync_q_31s  (1)
+o_sync_q_32s  (1)
+o_sync_q_18s_2  (1)
+o_world  (1)
+film_deposition_1_handler_film_deposition_0  (1)
+o_copy  (1)
+o_sync_q_133s  (1)
+o_sync_q_18s_1  (1)
+o_sync_q_39s  (1)
+o_sync_q_70s  (1)
+o_sync_q_121s  (1)
+o_sync_q_94s  (1)
+o_sync_q_77s  (1)
+o_sync_q_87s  (1)
+o_sync_q_114s  (1)
+o_sync_q_61s  (1)
+o_sync_q_131s  (1)
+o_sync_q_51s  (1)
+o_sync_q_7s  (1)
+o_sync_q_23s  (1)
+o_sync_q_24s  (1)
+o_sync_q_25s  (1)
+o_sync_q_26s  (1)
+o_sync_q_27s  (1)
+o_sync_q_28s  (1)
+o_sync_q_30s  (1)
+o_sync_q_31s  (1)
+o_sync_q_32s  (1)
+o_sync_q_20s_2  (1)
+o_world  (1)
+resist_coating_2_handler_resist_coating_0  (1)
+o_copy  (1)
+o_sync_q_133s  (1)
+o_sync_q_20s_1  (1)
+o_sync_q_41s  (1)
+o_sync_q_62s  (1)
+o_sync_q_98s  (1)
+o_sync_q_92s  (1)
+o_sync_q_75s  (1)
+o_sync_q_85s  (1)
+o_sync_q_111s  (1)
+o_sync_q_58s  (1)
+o_sync_q_128s  (1)
+o_sync_q_48s  (1)
+o_sync_q_9s  (1)
+o_sync_q_23s  (1)
+o_sync_q_24s  (1)
+o_sync_q_25s  (1)
+o_sync_q_26s  (1)
+o_sync_q_27s  (1)
+o_sync_q_28s  (1)
+o_sync_q_29s  (1)
+o_sync_q_30s  (1)
+o_sync_q_32s  (1)
+o_sync_q_17s_2  (1)
+o_world  (1)
+exposure_3_handler_exposure_0  (1)
+o_copy  (1)
+o_sync_q_133s  (1)
+o_sync_q_17s_1  (1)
+o_sync_q_38s  (1)
+o_sync_q_63s  (1)
+o_sync_q_99s  (1)
+o_sync_q_116s  (1)
+o_sync_q_74s  (1)
+o_sync_q_83s  (1)
+o_sync_q_109s  (1)
+o_sync_q_56s  (1)
+o_sync_q_126s  (1)
+o_sync_q_46s  (1)
+o_sync_q_6s  (1)
+o_sync_q_23s  (1)
+o_sync_q_24s  (1)
+o_sync_q_25s  (1)
+o_sync_q_26s  (1)
+o_sync_q_27s  (1)
+o_sync_q_29s  (1)
+o_sync_q_30s  (1)
+o_sync_q_31s  (1)
+o_sync_q_32s  (1)
+o_sync_q_15s_2  (1)
+o_world  (1)
+development_4_handler_development_0  (1)
+o_copy  (1)
+o_sync_q_133s  (1)
+o_sync_q_15s_1  (1)
+o_sync_q_36s  (1)
+o_sync_q_69s  (1)
+o_sync_q_106s  (1)
+o_sync_q_124s  (1)
+o_sync_q_97s  (1)
+o_sync_q_84s  (1)
+o_sync_q_110s  (1)
+o_sync_q_57s  (1)
+o_sync_q_127s  (1)
+o_sync_q_47s  (1)
+o_sync_q_4s  (1)
+o_sync_q_23s  (1)
+o_sync_q_24s  (1)
+o_sync_q_25s  (1)
+o_sync_q_27s  (1)
+o_sync_q_28s  (1)
+o_sync_q_29s  (1)
+o_sync_q_30s  (1)
+o_sync_q_31s  (1)
+o_sync_q_32s  (1)
+o_sync_q_16s_2  (1)
+o_world  (1)
+etching_5_handler_etching_0  (1)
+o_copy  (1)
+o_sync_q_133s  (1)
+o_sync_q_16s_1  (1)
+o_sync_q_37s  (1)
+o_sync_q_68s  (1)
+o_sync_q_105s  (1)
+o_sync_q_123s  (1)
+o_sync_q_96s  (1)
+o_sync_q_79s  (1)
+o_sync_q_113s  (1)
+o_sync_q_60s  (1)
+o_sync_q_130s  (1)
+o_sync_q_50s  (1)
+o_sync_q_5s  (1)
+o_sync_q_23s  (1)
+o_sync_q_24s  (1)
+o_sync_q_25s  (1)
+o_sync_q_26s  (1)
+o_sync_q_28s  (1)
+o_sync_q_29s  (1)
+o_sync_q_30s  (1)
+o_sync_q_31s  (1)
+o_sync_q_32s  (1)
+o_sync_q_19s_2  (1)
+o_world  (1)
+impurities_implantation_6_handler_impurities_implantation_0  (1)
+o_copy  (1)
+o_sync_q_133s  (1)
+o_sync_q_19s_1  (1)
+o_sync_q_40s  (1)
+o_sync_q_64s  (1)
+o_sync_q_100s  (1)
+o_sync_q_117s  (1)
+o_sync_q_89s  (1)
+o_sync_q_71s  (1)
+o_sync_q_80s  (1)
+o_sync_q_55s  (1)
+o_sync_q_125s  (1)
+o_sync_q_44s  (1)
+o_sync_q_8s  (1)
+o_sync_q_23s  (1)
+o_sync_q_24s  (1)
+o_sync_q_25s  (1)
+o_sync_q_26s  (1)
+o_sync_q_27s  (1)
+o_sync_q_28s  (1)
+o_sync_q_29s  (1)
+o_sync_q_31s  (1)
+o_sync_q_32s  (1)
+o_sync_q_12s_2  (1)
+o_world  (1)
+activation_7_handler_activation_0  (1)
+o_copy  (1)
+o_sync_q_133s  (1)
+o_sync_q_12s_1  (1)
+o_sync_q_33s  (1)
+o_sync_q_67s  (1)
+o_sync_q_104s  (1)
+o_sync_q_122s  (1)
+o_sync_q_95s  (1)
+o_sync_q_78s  (1)
+o_sync_q_88s  (1)
+o_sync_q_115s  (1)
+o_sync_q_132s  (1)
+o_sync_q_52s  (1)
+o_sync_q_1s  (1)
+o_sync_q_24s  (1)
+o_sync_q_25s  (1)
+o_sync_q_26s  (1)
+o_sync_q_27s  (1)
+o_sync_q_28s  (1)
+o_sync_q_29s  (1)
+o_sync_q_30s  (1)
+o_sync_q_31s  (1)
+o_sync_q_32s  (1)
+o_sync_q_21s_2  (1)
+o_world  (1)
+resist_stripping_8_handler_resist_stripping_0  (1)
+o_copy  (1)
+o_sync_q_133s  (1)
+o_sync_q_21s_1  (1)
+o_sync_q_42s  (1)
+o_sync_q_66s  (1)
+o_sync_q_102s  (1)
+o_sync_q_119s  (1)
+o_sync_q_91s  (1)
+o_sync_q_73s  (1)
+o_sync_q_82s  (1)
+o_sync_q_108s  (1)
+o_sync_q_54s  (1)
+o_sync_q_45s  (1)
+o_sync_q_10s  (1)
+o_sync_q_24s  (1)
+o_sync_q_23s  (1)
+o_sync_q_25s  (1)
+o_sync_q_26s  (1)
+o_sync_q_27s  (1)
+o_sync_q_28s  (1)
+o_sync_q_29s  (1)
+o_sync_q_30s  (1)
+o_sync_q_31s  (1)
+o_sync_q_13s_2  (1)
+o_world  (1)
+assembly_9_handler_assembly_0  (1)
+o_copy  (1)
+o_sync_q_13s_1  (1)
+o_sync_q_34s  (1)
+o_sync_q_65s  (1)
+o_sync_q_101s  (1)
+o_sync_q_118s  (1)
+o_sync_q_90s  (1)
+o_sync_q_72s  (1)
+o_sync_q_81s  (1)
+o_sync_q_107s  (1)
+o_sync_q_53s  (1)
+o_sync_q_2s  (1)
+o_sync_q_23s  (1)
+o_sync_q_25s  (1)
+o_sync_q_26s  (1)
+o_sync_q_27s  (1)
+o_sync_q_28s  (1)
+o_sync_q_29s  (1)
+o_sync_q_30s  (1)
+o_sync_q_31s  (1)
+o_sync_q_32s  (1)
+[t=2.776155s, 17140 KB] Plan length: 266 step(s).
+[t=2.776155s, 17140 KB] Plan cost: 266
+[t=2.776155s, 17140 KB] Expanded 74395 state(s).
+[t=2.776155s, 17140 KB] Reopened 0 state(s).
+[t=2.776155s, 17140 KB] Evaluated 93093 state(s).
+[t=2.776155s, 17140 KB] Evaluations: 93093
+[t=2.776155s, 17140 KB] Generated 462733 state(s).
+[t=2.776155s, 17140 KB] Dead ends: 18580 state(s).
+[t=2.776155s, 17140 KB] Expanded until last jump: 74371 state(s).
+[t=2.776155s, 17140 KB] Reopened until last jump: 0 state(s).
+[t=2.776155s, 17140 KB] Evaluated until last jump: 92959 state(s).
+[t=2.776155s, 17140 KB] Generated until last jump: 462599 state(s).
+[t=2.776155s, 17140 KB] Number of registered states: 93093
+[t=2.776155s, 17140 KB] Int hash set load factor: 93093/131072 = 0.710243
+[t=2.776155s, 17140 KB] Int hash set resizes: 17
+[t=2.776155s, 17140 KB] Search time: 2.772020s
+[t=2.776155s, 17140 KB] Total time: 2.776155s
+Solution found.
+Peak memory: 17140 KB
+Remove intermediate file output.sas
+search exit code: 0
 
-Time needed for preprocess (Parsing, PDBs, ...):    0.015 seconds.
-Time needed for search:                             442.137 seconds.
-Time needed:                                        442.152 seconds.
-Total Garbage Collections: 70
-Total Garbage Collection Time: 0 seconds.
-
-Out of 92940 nodes, 55548 are proven
-Number of node expansions: 74182
-Policy entries: 261
-Number of sensing applications in policy: 0
-
-290 (activation) (assembly) (cleaning) (development) (etching) (exposure) (f_copy) (f_sync) (f_world) (film_deposition) (impurities_implantation) (q_100d) (q_100s) (q_101d) (q_101s) (q_102d) (q_102s) (q_103d) (q_103s) (q_104d) (q_104s) (q_105d) (q_105s) (q_106d) (q_106s) (q_107d) (q_107s) (q_108d) (q_108s) (q_109d) (q_109s) (q_10d) (q_10s) (q_110d) (q_110s) (q_111d) (q_111s) (q_112d) (q_112s) (q_113d) (q_113s) (q_114d) (q_114s) (q_115d) (q_115s) (q_116d) (q_116s) (q_117d) (q_117s) (q_118d) (q_118s) (q_119d) (q_119s) (q_11d) (q_11s) (q_12) (q_120d) (q_120s) (q_121d) (q_121s) (q_122d) (q_122s) (q_123d) (q_123s) (q_124d) (q_124s) (q_125d) (q_125s) (q_126d) (q_126s) (q_127d) (q_127s) (q_128d) (q_128s) (q_129d) (q_129s) (q_12d) (q_12s) (q_13) (q_130d) (q_130s) (q_131d) (q_131s) (q_132d) (q_132s) (q_133) (q_133s) (q_13d) (q_13s) (q_14) (q_14d) (q_14s) (q_15) (q_15d) (q_15s) (q_16) (q_16d) (q_16s) (q_17) (q_17d) (q_17s) (q_18) (q_18d) (q_18s) (q_19) (q_19d) (q_19s) (q_1d) (q_1s) (q_20) (q_20d) (q_20s) (q_21) (q_21d) (q_21s) (q_22d) (q_22s) (q_23d) (q_23s) (q_24d) (q_24s) (q_25d) (q_25s) (q_26d) (q_26s) (q_27d) (q_27s) (q_28d) (q_28s) (q_29d) (q_29s) (q_2d) (q_2s) (q_30d) (q_30s) (q_31d) (q_31s) (q_32d) (q_32s) (q_33d) (q_33s) (q_34d) (q_34s) (q_35d) (q_35s) (q_36d) (q_36s) (q_37d) (q_37s) (q_38d) (q_38s) (q_39d) (q_39s) (q_3d) (q_3s) (q_40d) (q_40s) (q_41d) (q_41s) (q_42d) (q_42s) (q_43) (q_43s) (q_43d) (q_44d) (q_44s) (q_45d) (q_45s) (q_46d) (q_46s) (q_47d) (q_47s) (q_48d) (q_48s) (q_49d) (q_49s) (q_4d) (q_4s) (q_50d) (q_50s) (q_51d) (q_51s) (q_52d) (q_52s) (q_53d) (q_53s) (q_54d) (q_54s) (q_55d) (q_55s) (q_56d) (q_56s) (q_57d) (q_57s) (q_58d) (q_58s) (q_59d) (q_59s) (q_5d) (q_5s) (q_60d) (q_60s) (q_61d) (q_61s) (q_62d) (q_62s) (q_63d) (q_63s) (q_64d) (q_64s) (q_65d) (q_65s) (q_66d) (q_66s) (q_67d) (q_67s) (q_68d) (q_68s) (q_69d) (q_69s) (q_6d) (q_6s) (q_70d) (q_70s) (q_71d) (q_71s) (q_72d) (q_72s) (q_73d) (q_73s) (q_74d) (q_74s) (q_75d) (q_75s) (q_76d) (q_76s) (q_77d) (q_77s) (q_78d) (q_78s) (q_79d) (q_79s) (q_7d) (q_7s) (q_80d) (q_80s) (q_81d) (q_81s) (q_82d) (q_82s) (q_83d) (q_83s) (q_84d) (q_84s) (q_85d) (q_85s) (q_86d) (q_86s) (q_87d) (q_87s) (q_88d) (q_88s) (q_89d) (q_89s) (q_8d) (q_8s) (q_90d) (q_90s) (q_91d) (q_91s) (q_92d) (q_92s) (q_93d) (q_93s) (q_94d) (q_94s) (q_95d) (q_95s) (q_96d) (q_96s) (q_97d) (q_97s) (q_98d) (q_98s) (q_99d) (q_99s) (q_9d) (q_9s) (resist_coating) (resist_stripping) 
-%%
-154 (o_copy) (o_sync_q_43s) (o_sync_q_22s) (o_sync_q_11s) (o_world) (cleaning_0_handler_cleaning_0) (o_sync_q_133s) (o_sync_q_14s_1) (o_sync_q_35s) (o_sync_q_103s) (o_sync_q_120s) (o_sync_q_93s) (o_sync_q_29s) (o_sync_q_76s) (o_sync_q_26s) (o_sync_q_86s) (o_sync_q_27s) (o_sync_q_112s) (o_sync_q_30s) (o_sync_q_59s) (o_sync_q_23s) (o_sync_q_129s) (o_sync_q_49s) (o_sync_q_18s_2) (o_sync_q_32s) (o_sync_q_24s) (o_sync_q_31s) (o_sync_q_28s) (o_sync_q_3s) (film_deposition_1_handler_film_deposition_0) (o_sync_q_18s_1) (o_sync_q_39s) (o_sync_q_70s) (o_sync_q_121s) (o_sync_q_94s) (o_sync_q_25s) (o_sync_q_77s) (o_sync_q_87s) (o_sync_q_114s) (o_sync_q_61s) (o_sync_q_131s) (o_sync_q_51s) (o_sync_q_20s_2) (o_sync_q_7s) (resist_coating_2_handler_resist_coating_0) (o_sync_q_20s_1) (o_sync_q_41s) (o_sync_q_62s) (o_sync_q_98s) (o_sync_q_92s) (o_sync_q_75s) (o_sync_q_85s) (o_sync_q_111s) (o_sync_q_58s) (o_sync_q_128s) (o_sync_q_48s) (o_sync_q_17s_2) (o_sync_q_9s) (exposure_3_handler_exposure_0) (o_sync_q_17s_1) (o_sync_q_38s) (o_sync_q_63s) (o_sync_q_99s) (o_sync_q_116s) (o_sync_q_74s) (o_sync_q_83s) (o_sync_q_109s) (o_sync_q_56s) (o_sync_q_126s) (o_sync_q_46s) (o_sync_q_15s_2) (o_sync_q_6s) (development_4_handler_development_0) (o_sync_q_15s_1) (o_sync_q_36s) (o_sync_q_69s) (o_sync_q_106s) (o_sync_q_124s) (o_sync_q_97s) (o_sync_q_84s) (o_sync_q_110s) (o_sync_q_57s) (o_sync_q_127s) (o_sync_q_47s) (o_sync_q_16s_2) (o_sync_q_4s) (etching_5_handler_etching_0) (o_sync_q_16s_1) (o_sync_q_37s) (o_sync_q_68s) (o_sync_q_105s) (o_sync_q_123s) (o_sync_q_96s) (o_sync_q_79s) (o_sync_q_113s) (o_sync_q_60s) (o_sync_q_130s) (o_sync_q_50s) (o_sync_q_19s_2) (o_sync_q_5s) (impurities_implantation_6_handler_impurities_implantation_0) (o_sync_q_19s_1) (o_sync_q_40s) (o_sync_q_64s) (o_sync_q_100s) (o_sync_q_117s) (o_sync_q_89s) (o_sync_q_71s) (o_sync_q_80s) (o_sync_q_55s) (o_sync_q_125s) (o_sync_q_44s) (o_sync_q_12s_2) (o_sync_q_8s) (activation_7_handler_activation_0) (o_sync_q_12s_1) (o_sync_q_33s) (o_sync_q_67s) (o_sync_q_104s) (o_sync_q_122s) (o_sync_q_95s) (o_sync_q_78s) (o_sync_q_88s) (o_sync_q_115s) (o_sync_q_132s) (o_sync_q_52s) (o_sync_q_21s_2) (o_sync_q_1s) (resist_stripping_8_handler_resist_stripping_0) (o_sync_q_21s_1) (o_sync_q_42s) (o_sync_q_10s) (o_sync_q_66s) (o_sync_q_102s) (o_sync_q_119s) (o_sync_q_91s) (o_sync_q_73s) (o_sync_q_82s) (o_sync_q_108s) (o_sync_q_54s) (o_sync_q_45s) (o_sync_q_13s_2) (assembly_9_handler_assembly_0) (o_sync_q_13s_1) (o_sync_q_34s) (o_sync_q_65s) (o_sync_q_101s) (o_sync_q_118s) (o_sync_q_90s) (o_sync_q_72s) (o_sync_q_81s) (o_sync_q_107s) (o_sync_q_53s) (o_sync_q_2s) 
-%%
-policy 261 2 6 161 0 2 7 162 1 4 7 54 116 163 2 6 7 54 85 89 115 163 3 6 7 53 85 89 115 163 4 6 8 53 85 89 115 163 5 7 2 6 53 85 89 115 163 0 7 2 7 53 86 91 115 163 6 6 2 7 53 91 115 163 7 7 2 7 53 90 115 144 163 8 9 2 7 18 53 90 115 143 154 163 9 11 2 7 17 53 57 90 115 130 143 154 163 10 13 2 7 17 53 56 90 115 130 136 143 154 163 273 11 15 2 7 17 53 56 90 115 128 130 136 143 154 163 235 272 12 14 2 7 17 53 56 90 115 128 136 143 154 163 235 272 13 16 2 7 17 53 56 90 115 124 128 136 143 154 163 234 257 272 14 15 2 7 17 53 56 90 115 128 136 143 154 163 234 257 272 15 17 2 7 17 38 53 56 90 115 126 128 136 143 154 163 234 256 272 16 16 2 7 17 38 53 56 90 115 128 136 143 154 163 234 256 272 17 18 2 7 17 37 53 56 90 115 128 134 136 143 154 163 197 234 256 272 18 17 2 7 17 37 53 56 90 115 128 136 143 154 163 197 234 256 272 19 19 2 7 17 37 53 56 75 90 115 118 128 136 143 154 163 196 234 256 272 20 18 2 7 17 37 53 56 75 90 115 128 136 143 154 163 196 234 256 272 21 20 2 7 17 37 53 56 74 90 115 128 136 138 143 154 163 175 196 234 256 272 22 22 2 7 17 37 53 56 74 90 103 115 120 128 136 138 143 154 163 174 196 234 256 272 23 23 2 7 17 37 53 56 74 85 90 101 115 120 128 136 138 143 154 163 174 196 234 256 272 24 22 2 7 17 37 53 56 74 85 90 101 115 120 128 136 143 154 163 174 196 234 256 272 25 21 2 7 17 37 53 56 74 85 90 101 115 128 136 143 154 163 174 196 234 256 272 26 20 2 7 17 37 53 56 74 85 90 101 115 128 143 154 163 174 196 234 256 272 27 19 2 7 17 37 53 56 74 85 90 101 115 143 154 163 174 196 234 256 272 28 19 2 7 17 37 53 56 74 85 90 101 115 143 153 163 174 196 234 256 272 4 19 2 8 17 37 53 56 74 85 90 101 115 143 153 163 174 196 234 256 272 29 19 6 9 17 37 53 56 74 85 90 101 115 143 153 163 174 196 234 256 272 0 19 7 9 17 37 53 56 74 86 90 103 115 143 153 163 174 196 234 256 272 6 18 7 9 17 37 53 56 74 90 103 115 143 153 163 174 196 234 256 272 30 19 7 9 17 37 53 56 74 90 102 115 143 152 153 163 174 196 234 256 272 31 21 7 9 17 37 53 56 74 90 102 115 143 151 153 163 174 196 223 234 243 256 272 32 23 7 9 17 37 53 56 59 74 90 102 115 122 143 151 153 163 174 196 222 234 243 256 272 33 25 7 9 17 37 53 56 58 74 90 102 115 122 136 143 151 153 163 174 196 222 234 243 256 272 275 34 27 7 9 17 37 53 56 58 74 90 102 115 122 128 136 143 151 153 163 174 196 222 234 237 243 256 272 274 35 26 7 9 17 37 53 56 58 74 90 102 115 128 136 143 151 153 163 174 196 222 234 237 243 256 272 274 36 28 7 9 17 37 53 56 58 74 90 102 115 124 128 136 143 151 153 163 174 196 222 234 236 243 256 259 272 274 14 27 7 9 17 37 53 56 58 74 90 102 115 128 136 143 151 153 163 174 196 222 234 236 243 256 259 272 274 37 29 7 9 17 37 42 53 56 58 74 90 102 115 126 128 136 143 151 153 163 174 196 222 234 236 243 256 258 272 274 16 28 7 9 17 37 42 53 56 58 74 90 102 115 128 136 143 151 153 163 174 196 222 234 236 243 256 258 272 274 38 30 7 9 17 37 41 53 56 58 74 90 102 115 128 134 136 143 151 153 163 174 196 203 222 234 236 243 256 258 272 274 18 29 7 9 17 37 41 53 56 58 74 90 102 115 128 136 143 151 153 163 174 196 203 222 234 236 243 256 258 272 274 39 31 7 9 17 37 41 53 56 58 74 82 90 102 115 118 128 136 143 151 153 163 174 196 202 222 234 236 243 256 258 272 274 20 30 7 9 17 37 41 53 56 58 74 82 90 102 115 128 136 143 151 153 163 174 196 202 222 234 236 243 256 258 272 274 40 32 7 9 17 37 41 53 56 58 74 81 90 102 115 128 136 138 143 151 153 163 174 181 196 202 222 234 236 243 256 258 272 274 41 34 7 9 17 37 41 53 56 58 74 81 90 102 111 115 120 128 136 138 143 151 153 163 174 180 196 202 222 234 236 243 256 258 272 274 42 35 7 9 17 37 41 53 56 58 74 81 85 90 102 109 115 120 128 136 138 143 151 153 163 174 180 196 202 222 234 236 243 256 258 272 274 25 34 7 9 17 37 41 53 56 58 74 81 85 90 102 109 115 128 136 138 143 151 153 163 174 180 196 202 222 234 236 243 256 258 272 274 24 33 7 9 17 37 41 53 56 58 74 81 85 90 102 109 115 128 136 143 151 153 163 174 180 196 202 222 234 236 243 256 258 272 274 26 32 7 9 17 37 41 53 56 58 74 81 85 90 102 109 115 128 143 151 153 163 174 180 196 202 222 234 236 243 256 258 272 274 27 31 7 9 17 37 41 53 56 58 74 81 85 90 102 109 115 143 151 153 163 174 180 196 202 222 234 236 243 256 258 272 274 43 31 7 9 17 37 41 53 56 58 74 81 85 90 102 109 115 143 151 153 163 174 180 196 202 222 234 236 242 256 258 272 274 4 31 8 9 17 37 41 53 56 58 74 81 85 90 102 109 115 143 151 153 163 174 180 196 202 222 234 236 242 256 258 272 274 44 31 6 17 37 41 53 56 58 74 81 85 90 102 109 115 143 151 153 163 174 180 196 202 222 234 236 242 256 258 272 274 288 0 31 7 17 37 41 53 56 58 74 81 86 90 102 111 115 143 151 153 163 174 180 196 202 222 234 236 242 256 258 272 274 288 6 30 7 17 37 41 53 56 58 74 81 90 102 111 115 143 151 153 163 174 180 196 202 222 234 236 242 256 258 272 274 288 45 31 7 17 37 41 53 56 58 74 81 90 102 110 115 143 151 153 158 163 174 180 196 202 222 234 236 242 256 258 272 274 288 46 33 7 17 37 41 53 56 58 74 81 90 102 110 115 143 151 153 157 163 174 180 196 202 205 222 234 236 242 256 258 272 274 287 288 47 35 7 17 37 41 53 56 58 74 81 90 102 110 115 122 143 151 153 157 163 174 180 196 202 204 222 234 236 242 256 258 272 274 283 287 288 48 37 7 17 37 41 53 56 58 74 81 90 102 110 115 122 130 143 151 153 157 163 174 180 196 202 204 222 234 236 242 256 258 271 272 274 282 287 288 49 39 7 17 37 41 53 56 58 74 81 90 102 110 115 122 128 130 143 151 153 157 163 174 180 196 202 204 222 233 234 236 242 256 258 270 272 274 282 287 288 50 41 7 17 37 41 53 56 58 74 81 90 102 110 115 122 124 128 130 143 151 153 157 163 174 180 196 202 204 222 232 234 236 242 255 256 258 270 272 274 282 287 288 51 43 7 17 36 37 41 53 56 58 74 81 90 102 110 115 122 124 126 128 130 143 151 153 157 163 174 180 196 202 204 222 232 234 236 242 254 256 258 270 272 274 282 287 288 52 45 7 17 35 37 41 53 56 58 74 81 90 102 110 115 122 124 126 128 130 134 143 151 153 157 163 174 180 195 196 202 204 222 232 234 236 242 254 256 258 270 272 274 282 287 288 35 44 7 17 35 37 41 53 56 58 74 81 90 102 110 115 124 126 128 130 134 143 151 153 157 163 174 180 195 196 202 204 222 232 234 236 242 254 256 258 270 272 274 282 287 288 53 46 7 17 35 37 41 53 56 58 73 74 81 90 102 110 115 118 124 126 128 130 134 143 151 153 157 163 174 180 194 196 202 204 222 232 234 236 242 254 256 258 270 272 274 282 287 288 54 48 7 17 35 37 41 53 56 58 72 74 81 90 102 110 115 118 124 126 128 130 134 138 143 151 153 157 163 173 174 180 194 196 202 204 222 232 234 236 242 254 256 258 270 272 274 282 287 288 16 47 7 17 35 37 41 53 56 58 72 74 81 90 102 110 115 118 124 128 130 134 138 143 151 153 157 163 173 174 180 194 196 202 204 222 232 234 236 242 254 256 258 270 272 274 282 287 288 27 46 7 17 35 37 41 53 56 58 72 74 81 90 102 110 115 118 124 130 134 138 143 151 153 157 163 173 174 180 194 196 202 204 222 232 234 236 242 254 256 258 270 272 274 282 287 288 12 45 7 17 35 37 41 53 56 58 72 74 81 90 102 110 115 118 124 134 138 143 151 153 157 163 173 174 180 194 196 202 204 222 232 234 236 242 254 256 258 270 272 274 282 287 288 24 44 7 17 35 37 41 53 56 58 72 74 81 90 102 110 115 118 124 134 143 151 153 157 163 173 174 180 194 196 202 204 222 232 234 236 242 254 256 258 270 272 274 282 287 288 55 46 7 17 35 37 41 53 56 58 72 74 81 90 100 102 110 115 118 120 124 134 143 151 153 157 163 172 174 180 194 196 202 204 222 232 234 236 242 254 256 258 270 272 274 282 287 288 25 45 7 17 35 37 41 53 56 58 72 74 81 90 100 102 110 115 118 124 134 143 151 153 157 163 172 174 180 194 196 202 204 222 232 234 236 242 254 256 258 270 272 274 282 287 288 56 46 7 17 35 37 41 53 56 58 72 74 81 85 90 98 102 110 115 118 124 134 143 151 153 157 163 172 174 180 194 196 202 204 222 232 234 236 242 254 256 258 270 272 274 282 287 288 18 45 7 17 35 37 41 53 56 58 72 74 81 85 90 98 102 110 115 118 124 143 151 153 157 163 172 174 180 194 196 202 204 222 232 234 236 242 254 256 258 270 272 274 282 287 288 20 44 7 17 35 37 41 53 56 58 72 74 81 85 90 98 102 110 115 124 143 151 153 157 163 172 174 180 194 196 202 204 222 232 234 236 242 254 256 258 270 272 274 282 287 288 14 43 7 17 35 37 41 53 56 58 72 74 81 85 90 98 102 110 115 143 151 153 157 163 172 174 180 194 196 202 204 222 232 234 236 242 254 256 258 270 272 274 282 287 288 57 43 7 17 35 37 41 53 56 58 72 74 81 85 90 98 102 110 115 143 151 153 157 163 172 174 180 194 196 202 204 222 232 234 236 242 254 256 258 270 272 274 282 286 288 4 43 8 17 35 37 41 53 56 58 72 74 81 85 90 98 102 110 115 143 151 153 157 163 172 174 180 194 196 202 204 222 232 234 236 242 254 256 258 270 272 274 282 286 288 58 43 5 6 17 35 37 41 53 56 58 72 74 81 85 90 98 102 110 115 143 151 153 157 163 172 174 180 194 196 202 204 222 232 234 236 242 254 256 258 270 272 274 282 286 0 43 5 7 17 35 37 41 53 56 58 72 74 81 86 90 100 102 110 115 143 151 153 157 163 172 174 180 194 196 202 204 222 232 234 236 242 254 256 258 270 272 274 282 286 6 42 5 7 17 35 37 41 53 56 58 72 74 81 90 100 102 110 115 143 151 153 157 163 172 174 180 194 196 202 204 222 232 234 236 242 254 256 258 270 272 274 282 286 59 43 5 7 17 35 37 41 53 56 58 72 74 81 90 99 102 110 115 143 150 151 153 157 163 172 174 180 194 196 202 204 222 232 234 236 242 254 256 258 270 272 274 282 286 60 45 5 7 17 35 37 41 53 56 58 72 74 81 90 99 102 110 115 143 149 151 153 157 163 172 174 180 194 196 202 204 207 221 222 232 234 236 242 254 256 258 270 272 274 282 286 61 47 5 7 17 35 37 41 53 56 58 72 74 81 90 99 102 110 115 122 143 149 151 153 157 163 172 174 180 194 196 202 204 206 221 222 232 234 236 242 254 256 258 270 272 274 282 285 286 62 49 5 7 17 35 37 41 46 53 56 58 72 74 81 90 99 102 110 115 122 130 143 149 151 153 157 163 172 174 180 194 196 202 204 206 221 222 232 234 236 242 254 256 258 270 272 274 282 284 286 63 51 5 7 17 35 37 41 45 53 56 58 72 74 81 90 99 102 110 115 122 130 136 143 149 151 153 157 163 172 174 180 194 196 202 204 206 221 222 231 232 234 236 242 254 256 258 270 272 274 282 284 286 64 53 5 7 17 35 37 41 45 53 56 58 72 74 81 90 99 102 110 115 122 124 130 136 143 149 151 153 157 163 172 174 180 194 196 202 204 206 221 222 230 232 234 236 242 251 254 256 258 270 272 274 282 284 286 35 52 5 7 17 35 37 41 45 53 56 58 72 74 81 90 99 102 110 115 124 130 136 143 149 151 153 157 163 172 174 180 194 196 202 204 206 221 222 230 232 234 236 242 251 254 256 258 270 272 274 282 284 286 65 54 5 7 17 30 35 37 41 45 53 56 58 72 74 81 90 99 102 110 115 124 126 130 136 143 149 151 153 157 163 172 174 180 194 196 202 204 206 221 222 230 232 234 236 242 250 254 256 258 270 272 274 282 284 286 66 56 5 7 17 29 35 37 41 45 53 56 58 72 74 81 90 99 102 110 115 124 126 130 134 136 143 149 151 153 157 163 172 174 180 191 194 196 202 204 206 221 222 230 232 234 236 242 250 254 256 258 270 272 274 282 284 286 14 55 5 7 17 29 35 37 41 45 53 56 58 72 74 81 90 99 102 110 115 126 130 134 136 143 149 151 153 157 163 172 174 180 191 194 196 202 204 206 221 222 230 232 234 236 242 250 254 256 258 270 272 274 282 284 286 16 54 5 7 17 29 35 37 41 45 53 56 58 72 74 81 90 99 102 110 115 130 134 136 143 149 151 153 157 163 172 174 180 191 194 196 202 204 206 221 222 230 232 234 236 242 250 254 256 258 270 272 274 282 284 286 67 56 5 7 17 29 35 37 41 45 53 56 58 69 72 74 81 90 99 102 110 115 118 130 134 136 143 149 151 153 157 163 172 174 180 190 194 196 202 204 206 221 222 230 232 234 236 242 250 254 256 258 270 272 274 282 284 286 68 58 5 7 17 29 35 37 41 45 53 56 58 68 72 74 81 90 99 102 110 115 118 130 134 136 138 143 149 151 153 157 163 169 172 174 180 190 194 196 202 204 206 221 222 230 232 234 236 242 250 254 256 258 270 272 274 282 284 286 69 60 5 7 17 29 35 37 41 45 53 56 58 68 72 74 81 90 94 99 102 110 115 118 120 130 134 136 138 143 149 151 153 157 163 168 172 174 180 190 194 196 202 204 206 221 222 230 232 234 236 242 250 254 256 258 270 272 274 282 284 286 70 61 5 7 17 29 35 37 41 45 53 56 58 68 72 74 81 85 90 92 99 102 110 115 118 120 130 134 136 138 143 149 151 153 157 163 168 172 174 180 190 194 196 202 204 206 221 222 230 232 234 236 242 250 254 256 258 270 272 274 282 284 286 25 60 5 7 17 29 35 37 41 45 53 56 58 68 72 74 81 85 90 92 99 102 110 115 118 130 134 136 138 143 149 151 153 157 163 168 172 174 180 190 194 196 202 204 206 221 222 230 232 234 236 242 250 254 256 258 270 272 274 282 284 286 20 59 5 7 17 29 35 37 41 45 53 56 58 68 72 74 81 85 90 92 99 102 110 115 130 134 136 138 143 149 151 153 157 163 168 172 174 180 190 194 196 202 204 206 221 222 230 232 234 236 242 250 254 256 258 270 272 274 282 284 286 18 58 5 7 17 29 35 37 41 45 53 56 58 68 72 74 81 85 90 92 99 102 110 115 130 136 138 143 149 151 153 157 163 168 172 174 180 190 194 196 202 204 206 221 222 230 232 234 236 242 250 254 256 258 270 272 274 282 284 286 26 57 5 7 17 29 35 37 41 45 53 56 58 68 72 74 81 85 90 92 99 102 110 115 130 138 143 149 151 153 157 163 168 172 174 180 190 194 196 202 204 206 221 222 230 232 234 236 242 250 254 256 258 270 272 274 282 284 286 24 56 5 7 17 29 35 37 41 45 53 56 58 68 72 74 81 85 90 92 99 102 110 115 130 143 149 151 153 157 163 168 172 174 180 190 194 196 202 204 206 221 222 230 232 234 236 242 250 254 256 258 270 272 274 282 284 286 12 55 5 7 17 29 35 37 41 45 53 56 58 68 72 74 81 85 90 92 99 102 110 115 143 149 151 153 157 163 168 172 174 180 190 194 196 202 204 206 221 222 230 232 234 236 242 250 254 256 258 270 272 274 282 284 286 71 55 5 7 17 29 35 37 41 45 53 56 58 68 72 74 81 85 90 92 99 102 110 115 143 149 151 153 157 163 168 172 174 180 190 194 196 202 204 206 220 222 230 232 234 236 242 250 254 256 258 270 272 274 282 284 286 4 55 5 8 17 29 35 37 41 45 53 56 58 68 72 74 81 85 90 92 99 102 110 115 143 149 151 153 157 163 168 172 174 180 190 194 196 202 204 206 220 222 230 232 234 236 242 250 254 256 258 270 272 274 282 284 286 72 55 3 6 17 29 35 37 41 45 53 56 58 68 72 74 81 85 90 92 99 102 110 115 143 149 151 153 157 163 168 172 174 180 190 194 196 202 204 206 220 222 230 232 234 236 242 250 254 256 258 270 272 274 282 284 286 0 55 3 7 17 29 35 37 41 45 53 56 58 68 72 74 81 86 90 94 99 102 110 115 143 149 151 153 157 163 168 172 174 180 190 194 196 202 204 206 220 222 230 232 234 236 242 250 254 256 258 270 272 274 282 284 286 6 54 3 7 17 29 35 37 41 45 53 56 58 68 72 74 81 90 94 99 102 110 115 143 149 151 153 157 163 168 172 174 180 190 194 196 202 204 206 220 222 230 232 234 236 242 250 254 256 258 270 272 274 282 284 286 73 55 3 7 17 29 35 37 41 45 53 56 58 68 72 74 81 90 93 99 102 110 115 143 146 149 151 153 157 163 168 172 174 180 190 194 196 202 204 206 220 222 230 232 234 236 242 250 254 256 258 270 272 274 282 284 286 74 57 3 7 17 29 35 37 41 45 53 56 58 68 72 74 81 90 93 99 102 110 115 143 145 149 151 153 157 163 168 172 174 177 180 190 194 196 202 204 206 219 220 222 230 232 234 236 242 250 254 256 258 270 272 274 282 284 286 75 59 3 7 17 24 29 35 37 41 45 53 56 58 68 72 74 81 90 93 99 102 110 115 122 143 145 149 151 153 157 163 168 172 174 177 180 190 194 196 202 204 206 218 220 222 230 232 234 236 242 250 254 256 258 270 272 274 282 284 286 76 61 3 7 17 23 29 35 37 41 45 53 56 58 65 68 72 74 81 90 93 99 102 110 115 122 130 143 145 149 151 153 157 163 168 172 174 177 180 190 194 196 202 204 206 218 220 222 230 232 234 236 242 250 254 256 258 270 272 274 282 284 286 77 63 3 7 17 23 29 35 37 41 45 53 56 58 64 68 72 74 81 90 93 99 102 110 115 122 130 136 143 145 149 151 153 157 163 168 172 174 177 180 190 194 196 202 204 206 218 220 222 230 232 234 236 242 250 254 256 258 270 272 274 281 282 284 286 78 65 3 7 17 23 29 35 37 41 45 53 56 58 64 68 72 74 81 90 93 99 102 110 115 122 128 130 136 143 145 149 151 153 157 163 168 172 174 177 180 190 194 196 202 204 206 218 220 222 230 232 234 236 242 250 253 254 256 258 270 272 274 280 282 284 286 35 64 3 7 17 23 29 35 37 41 45 53 56 58 64 68 72 74 81 90 93 99 102 110 115 128 130 136 143 145 149 151 153 157 163 168 172 174 177 180 190 194 196 202 204 206 218 220 222 230 232 234 236 242 250 253 254 256 258 270 272 274 280 282 284 286 79 66 3 7 17 23 29 34 35 37 41 45 53 56 58 64 68 72 74 81 90 93 99 102 110 115 126 128 130 136 143 145 149 151 153 157 163 168 172 174 177 180 190 194 196 202 204 206 218 220 222 230 232 234 236 242 250 252 254 256 258 270 272 274 280 282 284 286 80 68 3 7 17 23 29 33 35 37 41 45 53 56 58 64 68 72 74 81 90 93 99 102 110 115 126 128 130 134 136 143 145 149 151 153 157 163 168 172 174 177 180 190 193 194 196 202 204 206 218 220 222 230 232 234 236 242 250 252 254 256 258 270 272 274 280 282 284 286 16 67 3 7 17 23 29 33 35 37 41 45 53 56 58 64 68 72 74 81 90 93 99 102 110 115 128 130 134 136 143 145 149 151 153 157 163 168 172 174 177 180 190 193 194 196 202 204 206 218 220 222 230 232 234 236 242 250 252 254 256 258 270 272 274 280 282 284 286 27 66 3 7 17 23 29 33 35 37 41 45 53 56 58 64 68 72 74 81 90 93 99 102 110 115 130 134 136 143 145 149 151 153 157 163 168 172 174 177 180 190 193 194 196 202 204 206 218 220 222 230 232 234 236 242 250 252 254 256 258 270 272 274 280 282 284 286 81 68 3 7 17 23 29 33 35 37 41 45 53 56 58 64 68 71 72 74 81 90 93 99 102 110 115 118 130 134 136 143 145 149 151 153 157 163 168 172 174 177 180 190 192 194 196 202 204 206 218 220 222 230 232 234 236 242 250 252 254 256 258 270 272 274 280 282 284 286 82 70 3 7 17 23 29 33 35 37 41 45 53 56 58 64 68 70 72 74 81 90 93 99 102 110 115 118 130 134 136 138 143 145 149 151 153 157 163 168 171 172 174 177 180 190 192 194 196 202 204 206 218 220 222 230 232 234 236 242 250 252 254 256 258 270 272 274 280 282 284 286 83 72 3 7 17 23 29 33 35 37 41 45 53 56 58 64 68 70 72 74 81 90 93 97 99 102 110 115 118 120 130 134 136 138 143 145 149 151 153 157 163 168 170 172 174 177 180 190 192 194 196 202 204 206 218 220 222 230 232 234 236 242 250 252 254 256 258 270 272 274 280 282 284 286 84 73 3 7 17 23 29 33 35 37 41 45 53 56 58 64 68 70 72 74 81 85 90 93 95 99 102 110 115 118 120 130 134 136 138 143 145 149 151 153 157 163 168 170 172 174 177 180 190 192 194 196 202 204 206 218 220 222 230 232 234 236 242 250 252 254 256 258 270 272 274 280 282 284 286 25 72 3 7 17 23 29 33 35 37 41 45 53 56 58 64 68 70 72 74 81 85 90 93 95 99 102 110 115 118 130 134 136 138 143 145 149 151 153 157 163 168 170 172 174 177 180 190 192 194 196 202 204 206 218 220 222 230 232 234 236 242 250 252 254 256 258 270 272 274 280 282 284 286 20 71 3 7 17 23 29 33 35 37 41 45 53 56 58 64 68 70 72 74 81 85 90 93 95 99 102 110 115 130 134 136 138 143 145 149 151 153 157 163 168 170 172 174 177 180 190 192 194 196 202 204 206 218 220 222 230 232 234 236 242 250 252 254 256 258 270 272 274 280 282 284 286 18 70 3 7 17 23 29 33 35 37 41 45 53 56 58 64 68 70 72 74 81 85 90 93 95 99 102 110 115 130 136 138 143 145 149 151 153 157 163 168 170 172 174 177 180 190 192 194 196 202 204 206 218 220 222 230 232 234 236 242 250 252 254 256 258 270 272 274 280 282 284 286 26 69 3 7 17 23 29 33 35 37 41 45 53 56 58 64 68 70 72 74 81 85 90 93 95 99 102 110 115 130 138 143 145 149 151 153 157 163 168 170 172 174 177 180 190 192 194 196 202 204 206 218 220 222 230 232 234 236 242 250 252 254 256 258 270 272 274 280 282 284 286 24 68 3 7 17 23 29 33 35 37 41 45 53 56 58 64 68 70 72 74 81 85 90 93 95 99 102 110 115 130 143 145 149 151 153 157 163 168 170 172 174 177 180 190 192 194 196 202 204 206 218 220 222 230 232 234 236 242 250 252 254 256 258 270 272 274 280 282 284 286 12 67 3 7 17 23 29 33 35 37 41 45 53 56 58 64 68 70 72 74 81 85 90 93 95 99 102 110 115 143 145 149 151 153 157 163 168 170 172 174 177 180 190 192 194 196 202 204 206 218 220 222 230 232 234 236 242 250 252 254 256 258 270 272 274 280 282 284 286 85 67 3 7 17 23 29 33 35 37 41 45 53 56 58 64 68 70 72 74 81 85 90 93 95 99 102 110 115 143 145 149 151 153 157 163 168 170 172 174 176 180 190 192 194 196 202 204 206 218 220 222 230 232 234 236 242 250 252 254 256 258 270 272 274 280 282 284 286 4 67 3 8 17 23 29 33 35 37 41 45 53 56 58 64 68 70 72 74 81 85 90 93 95 99 102 110 115 143 145 149 151 153 157 163 168 170 172 174 176 180 190 192 194 196 202 204 206 218 220 222 230 232 234 236 242 250 252 254 256 258 270 272 274 280 282 284 286 86 67 4 6 17 23 29 33 35 37 41 45 53 56 58 64 68 70 72 74 81 85 90 93 95 99 102 110 115 143 145 149 151 153 157 163 168 170 172 174 176 180 190 192 194 196 202 204 206 218 220 222 230 232 234 236 242 250 252 254 256 258 270 272 274 280 282 284 286 0 67 4 7 17 23 29 33 35 37 41 45 53 56 58 64 68 70 72 74 81 86 90 93 97 99 102 110 115 143 145 149 151 153 157 163 168 170 172 174 176 180 190 192 194 196 202 204 206 218 220 222 230 232 234 236 242 250 252 254 256 258 270 272 274 280 282 284 286 87 68 4 7 17 23 29 33 35 37 41 45 53 56 58 64 68 70 72 74 81 86 90 93 96 99 102 110 115 143 145 148 149 151 153 157 163 168 170 172 174 176 180 190 192 194 196 202 204 206 218 220 222 230 232 234 236 242 250 252 254 256 258 270 272 274 280 282 284 286 88 70 4 7 17 23 29 33 35 37 41 45 53 56 58 64 68 70 72 74 81 86 90 93 96 99 102 110 115 143 145 147 149 151 153 157 163 168 170 172 174 176 180 190 192 194 196 199 202 204 206 217 218 220 222 230 232 234 236 242 250 252 254 256 258 270 272 274 280 282 284 286 89 72 4 7 17 22 23 29 33 35 37 41 45 53 56 58 64 68 70 72 74 81 86 90 93 96 99 102 110 115 122 143 145 147 149 151 153 157 163 168 170 172 174 176 180 190 192 194 196 199 202 204 206 216 218 220 222 230 232 234 236 242 250 252 254 256 258 270 272 274 280 282 284 286 90 74 4 7 17 21 23 29 33 35 37 41 45 53 56 58 63 64 68 70 72 74 81 86 90 93 96 99 102 110 115 122 130 143 145 147 149 151 153 157 163 168 170 172 174 176 180 190 192 194 196 199 202 204 206 216 218 220 222 230 232 234 236 242 250 252 254 256 258 270 272 274 280 282 284 286 91 76 4 7 17 21 23 29 33 35 37 41 45 53 56 58 62 64 68 70 72 74 81 86 90 93 96 99 102 110 115 122 130 136 143 145 147 149 151 153 157 163 168 170 172 174 176 180 190 192 194 196 199 202 204 206 216 218 220 222 230 232 234 236 242 250 252 254 256 258 270 272 274 279 280 282 284 286 92 78 4 7 17 21 23 29 33 35 37 41 45 53 56 58 62 64 68 70 72 74 81 86 90 93 96 99 102 110 115 122 128 130 136 143 145 147 149 151 153 157 163 168 170 172 174 176 180 190 192 194 196 199 202 204 206 216 218 220 222 230 232 234 236 241 242 250 252 254 256 258 270 272 274 278 280 282 284 286 35 77 4 7 17 21 23 29 33 35 37 41 45 53 56 58 62 64 68 70 72 74 81 86 90 93 96 99 102 110 115 128 130 136 143 145 147 149 151 153 157 163 168 170 172 174 176 180 190 192 194 196 199 202 204 206 216 218 220 222 230 232 234 236 241 242 250 252 254 256 258 270 272 274 278 280 282 284 286 93 79 4 7 17 21 23 29 33 35 37 40 41 45 53 56 58 62 64 68 70 72 74 81 86 90 93 96 99 102 110 115 124 128 130 136 143 145 147 149 151 153 157 163 168 170 172 174 176 180 190 192 194 196 199 202 204 206 216 218 220 222 230 232 234 236 240 242 250 252 254 256 258 270 272 274 278 280 282 284 286 94 81 4 7 17 21 23 29 33 35 37 39 41 45 53 56 58 62 64 68 70 72 74 81 86 90 93 96 99 102 110 115 124 128 130 134 136 143 145 147 149 151 153 157 163 168 170 172 174 176 180 190 192 194 196 199 201 202 204 206 216 218 220 222 230 232 234 236 240 242 250 252 254 256 258 270 272 274 278 280 282 284 286 14 80 4 7 17 21 23 29 33 35 37 39 41 45 53 56 58 62 64 68 70 72 74 81 86 90 93 96 99 102 110 115 128 130 134 136 143 145 147 149 151 153 157 163 168 170 172 174 176 180 190 192 194 196 199 201 202 204 206 216 218 220 222 230 232 234 236 240 242 250 252 254 256 258 270 272 274 278 280 282 284 286 27 79 4 7 17 21 23 29 33 35 37 39 41 45 53 56 58 62 64 68 70 72 74 81 86 90 93 96 99 102 110 115 130 134 136 143 145 147 149 151 153 157 163 168 170 172 174 176 180 190 192 194 196 199 201 202 204 206 216 218 220 222 230 232 234 236 240 242 250 252 254 256 258 270 272 274 278 280 282 284 286 95 81 4 7 17 21 23 29 33 35 37 39 41 45 53 56 58 62 64 68 70 72 74 80 81 86 90 93 96 99 102 110 115 118 130 134 136 143 145 147 149 151 153 157 163 168 170 172 174 176 180 190 192 194 196 199 200 202 204 206 216 218 220 222 230 232 234 236 240 242 250 252 254 256 258 270 272 274 278 280 282 284 286 96 83 4 7 17 21 23 29 33 35 37 39 41 45 53 56 58 62 64 68 70 72 74 79 81 86 90 93 96 99 102 110 115 118 130 134 136 138 143 145 147 149 151 153 157 163 168 170 172 174 176 179 180 190 192 194 196 199 200 202 204 206 216 218 220 222 230 232 234 236 240 242 250 252 254 256 258 270 272 274 278 280 282 284 286 97 85 4 7 17 21 23 29 33 35 37 39 41 45 53 56 58 62 64 68 70 72 74 79 81 86 90 93 96 99 102 106 110 115 118 120 130 134 136 138 143 145 147 149 151 153 157 163 168 170 172 174 176 178 180 190 192 194 196 199 200 202 204 206 216 218 220 222 230 232 234 236 240 242 250 252 254 256 258 270 272 274 278 280 282 284 286 98 86 4 7 17 21 23 29 33 35 37 39 41 45 53 56 58 62 64 68 70 72 74 79 81 85 86 90 93 96 99 102 104 110 115 118 120 130 134 136 138 143 145 147 149 151 153 157 163 168 170 172 174 176 178 180 190 192 194 196 199 200 202 204 206 216 218 220 222 230 232 234 236 240 242 250 252 254 256 258 270 272 274 278 280 282 284 286 25 85 4 7 17 21 23 29 33 35 37 39 41 45 53 56 58 62 64 68 70 72 74 79 81 85 86 90 93 96 99 102 104 110 115 118 130 134 136 138 143 145 147 149 151 153 157 163 168 170 172 174 176 178 180 190 192 194 196 199 200 202 204 206 216 218 220 222 230 232 234 236 240 242 250 252 254 256 258 270 272 274 278 280 282 284 286 20 84 4 7 17 21 23 29 33 35 37 39 41 45 53 56 58 62 64 68 70 72 74 79 81 85 86 90 93 96 99 102 104 110 115 130 134 136 138 143 145 147 149 151 153 157 163 168 170 172 174 176 178 180 190 192 194 196 199 200 202 204 206 216 218 220 222 230 232 234 236 240 242 250 252 254 256 258 270 272 274 278 280 282 284 286 18 83 4 7 17 21 23 29 33 35 37 39 41 45 53 56 58 62 64 68 70 72 74 79 81 85 86 90 93 96 99 102 104 110 115 130 136 138 143 145 147 149 151 153 157 163 168 170 172 174 176 178 180 190 192 194 196 199 200 202 204 206 216 218 220 222 230 232 234 236 240 242 250 252 254 256 258 270 272 274 278 280 282 284 286 26 82 4 7 17 21 23 29 33 35 37 39 41 45 53 56 58 62 64 68 70 72 74 79 81 85 86 90 93 96 99 102 104 110 115 130 138 143 145 147 149 151 153 157 163 168 170 172 174 176 178 180 190 192 194 196 199 200 202 204 206 216 218 220 222 230 232 234 236 240 242 250 252 254 256 258 270 272 274 278 280 282 284 286 24 81 4 7 17 21 23 29 33 35 37 39 41 45 53 56 58 62 64 68 70 72 74 79 81 85 86 90 93 96 99 102 104 110 115 130 143 145 147 149 151 153 157 163 168 170 172 174 176 178 180 190 192 194 196 199 200 202 204 206 216 218 220 222 230 232 234 236 240 242 250 252 254 256 258 270 272 274 278 280 282 284 286 12 80 4 7 17 21 23 29 33 35 37 39 41 45 53 56 58 62 64 68 70 72 74 79 81 85 86 90 93 96 99 102 104 110 115 143 145 147 149 151 153 157 163 168 170 172 174 176 178 180 190 192 194 196 199 200 202 204 206 216 218 220 222 230 232 234 236 240 242 250 252 254 256 258 270 272 274 278 280 282 284 286 6 79 4 7 17 21 23 29 33 35 37 39 41 45 53 56 58 62 64 68 70 72 74 79 81 85 90 93 96 99 102 104 110 115 143 145 147 149 151 153 157 163 168 170 172 174 176 178 180 190 192 194 196 199 200 202 204 206 216 218 220 222 230 232 234 236 240 242 250 252 254 256 258 270 272 274 278 280 282 284 286 99 79 4 7 17 21 23 29 33 35 37 39 41 45 53 56 58 62 64 68 70 72 74 79 81 85 90 93 96 99 102 104 110 115 143 145 147 149 151 153 157 163 168 170 172 174 176 178 180 190 192 194 196 198 200 202 204 206 216 218 220 222 230 232 234 236 240 242 250 252 254 256 258 270 272 274 278 280 282 284 286 4 79 4 8 17 21 23 29 33 35 37 39 41 45 53 56 58 62 64 68 70 72 74 79 81 85 90 93 96 99 102 104 110 115 143 145 147 149 151 153 157 163 168 170 172 174 176 178 180 190 192 194 196 198 200 202 204 206 216 218 220 222 230 232 234 236 240 242 250 252 254 256 258 270 272 274 278 280 282 284 286 100 79 6 10 17 21 23 29 33 35 37 39 41 45 53 56 58 62 64 68 70 72 74 79 81 85 90 93 96 99 102 104 110 115 143 145 147 149 151 153 157 163 168 170 172 174 176 178 180 190 192 194 196 198 200 202 204 206 216 218 220 222 230 232 234 236 240 242 250 252 254 256 258 270 272 274 278 280 282 284 286 0 79 7 10 17 21 23 29 33 35 37 39 41 45 53 56 58 62 64 68 70 72 74 79 81 86 90 93 96 99 102 106 110 115 143 145 147 149 151 153 157 163 168 170 172 174 176 178 180 190 192 194 196 198 200 202 204 206 216 218 220 222 230 232 234 236 240 242 250 252 254 256 258 270 272 274 278 280 282 284 286 101 80 7 10 17 21 23 29 33 35 37 39 41 45 53 56 58 62 64 68 70 72 74 79 81 86 90 93 96 99 102 105 110 115 143 145 147 149 151 153 156 157 163 168 170 172 174 176 178 180 190 192 194 196 198 200 202 204 206 216 218 220 222 230 232 234 236 240 242 250 252 254 256 258 270 272 274 278 280 282 284 286 102 82 7 10 17 21 23 29 33 35 37 39 41 45 53 56 58 62 64 68 70 72 74 79 81 86 90 93 96 99 102 105 110 115 143 145 147 149 151 153 155 157 163 168 170 172 174 176 178 180 190 192 194 196 198 200 202 204 206 209 216 218 220 222 230 232 234 236 240 242 250 252 254 256 258 265 270 272 274 278 280 282 284 286 103 84 7 10 12 17 21 23 29 33 35 37 39 41 45 53 56 58 62 64 68 70 72 74 79 81 86 90 93 96 99 102 105 110 115 122 143 145 147 149 151 153 155 157 163 168 170 172 174 176 178 180 190 192 194 196 198 200 202 204 206 208 216 218 220 222 230 232 234 236 240 242 250 252 254 256 258 265 270 272 274 278 280 282 284 286 104 86 7 10 11 17 21 23 29 33 35 37 39 41 45 48 53 56 58 62 64 68 70 72 74 79 81 86 90 93 96 99 102 105 110 115 122 130 143 145 147 149 151 153 155 157 163 168 170 172 174 176 178 180 190 192 194 196 198 200 202 204 206 208 216 218 220 222 230 232 234 236 240 242 250 252 254 256 258 265 270 272 274 278 280 282 284 286 105 88 7 10 11 17 21 23 29 33 35 37 39 41 45 47 53 56 58 62 64 68 70 72 74 79 81 86 90 93 96 99 102 105 110 115 122 130 136 143 145 147 149 151 153 155 157 163 168 170 172 174 176 178 180 190 192 194 196 198 200 202 204 206 208 216 218 220 222 230 232 234 236 240 242 250 252 254 256 258 263 265 270 272 274 278 280 282 284 286 106 90 7 10 11 17 21 23 29 33 35 37 39 41 45 47 53 56 58 62 64 68 70 72 74 79 81 86 90 93 96 99 102 105 110 115 122 128 130 136 143 145 147 149 151 153 155 157 163 168 170 172 174 176 178 180 190 192 194 196 198 200 202 204 206 208 216 218 220 222 225 230 232 234 236 240 242 250 252 254 256 258 262 265 270 272 274 278 280 282 284 286 107 92 7 10 11 17 21 23 29 33 35 37 39 41 45 47 53 56 58 62 64 68 70 72 74 79 81 86 90 93 96 99 102 105 110 115 122 124 128 130 136 143 145 147 149 151 153 155 157 163 168 170 172 174 176 178 180 190 192 194 196 198 200 202 204 206 208 216 218 220 222 224 230 232 234 236 240 242 245 250 252 254 256 258 262 265 270 272 274 278 280 282 284 286 108 94 7 10 11 17 21 23 29 33 35 37 39 41 45 47 53 56 58 62 64 68 70 72 74 79 81 86 90 93 96 99 102 105 110 115 122 124 126 128 130 136 143 145 147 149 151 153 155 157 163 168 170 172 174 176 178 180 189 190 192 194 196 198 200 202 204 206 208 216 218 220 222 224 230 232 234 236 240 242 244 250 252 254 256 258 262 265 270 272 274 278 280 282 284 286 109 96 7 10 11 17 21 23 29 33 35 37 39 41 45 47 53 56 58 62 64 67 68 70 72 74 79 81 86 90 93 96 99 102 105 110 115 118 122 124 126 128 130 136 143 145 147 149 151 153 155 157 163 168 170 172 174 176 178 180 188 190 192 194 196 198 200 202 204 206 208 216 218 220 222 224 230 232 234 236 240 242 244 250 252 254 256 258 262 265 270 272 274 278 280 282 284 286 110 98 7 10 11 17 21 23 29 33 35 37 39 41 45 47 53 56 58 62 64 66 68 70 72 74 79 81 86 90 93 96 99 102 105 110 115 118 122 124 126 128 130 136 138 143 145 147 149 151 153 155 157 163 165 168 170 172 174 176 178 180 188 190 192 194 196 198 200 202 204 206 208 216 218 220 222 224 230 232 234 236 240 242 244 250 252 254 256 258 262 265 270 272 274 278 280 282 284 286 35 97 7 10 11 17 21 23 29 33 35 37 39 41 45 47 53 56 58 62 64 66 68 70 72 74 79 81 86 90 93 96 99 102 105 110 115 118 124 126 128 130 136 138 143 145 147 149 151 153 155 157 163 165 168 170 172 174 176 178 180 188 190 192 194 196 198 200 202 204 206 208 216 218 220 222 224 230 232 234 236 240 242 244 250 252 254 256 258 262 265 270 272 274 278 280 282 284 286 111 99 7 10 11 17 21 23 29 33 35 37 39 41 45 47 53 56 58 62 64 66 68 70 72 74 77 79 81 86 90 93 96 99 102 105 110 115 118 120 124 126 128 130 136 138 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 188 190 192 194 196 198 200 202 204 206 208 216 218 220 222 224 230 232 234 236 240 242 244 250 252 254 256 258 262 265 270 272 274 278 280 282 284 286 112 100 7 10 11 17 21 23 29 33 35 37 39 41 45 47 53 55 56 58 62 64 66 68 70 72 74 79 81 85 86 90 93 96 99 102 105 110 115 118 120 124 126 128 130 136 138 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 188 190 192 194 196 198 200 202 204 206 208 216 218 220 222 224 230 232 234 236 240 242 244 250 252 254 256 258 262 265 270 272 274 278 280 282 284 286 14 99 7 10 11 17 21 23 29 33 35 37 39 41 45 47 53 55 56 58 62 64 66 68 70 72 74 79 81 85 86 90 93 96 99 102 105 110 115 118 120 126 128 130 136 138 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 188 190 192 194 196 198 200 202 204 206 208 216 218 220 222 224 230 232 234 236 240 242 244 250 252 254 256 258 262 265 270 272 274 278 280 282 284 286 16 98 7 10 11 17 21 23 29 33 35 37 39 41 45 47 53 55 56 58 62 64 66 68 70 72 74 79 81 85 86 90 93 96 99 102 105 110 115 118 120 128 130 136 138 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 188 190 192 194 196 198 200 202 204 206 208 216 218 220 222 224 230 232 234 236 240 242 244 250 252 254 256 258 262 265 270 272 274 278 280 282 284 286 27 97 7 10 11 17 21 23 29 33 35 37 39 41 45 47 53 55 56 58 62 64 66 68 70 72 74 79 81 85 86 90 93 96 99 102 105 110 115 118 120 130 136 138 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 188 190 192 194 196 198 200 202 204 206 208 216 218 220 222 224 230 232 234 236 240 242 244 250 252 254 256 258 262 265 270 272 274 278 280 282 284 286 12 96 7 10 11 17 21 23 29 33 35 37 39 41 45 47 53 55 56 58 62 64 66 68 70 72 74 79 81 85 86 90 93 96 99 102 105 110 115 118 120 136 138 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 188 190 192 194 196 198 200 202 204 206 208 216 218 220 222 224 230 232 234 236 240 242 244 250 252 254 256 258 262 265 270 272 274 278 280 282 284 286 26 95 7 10 11 17 21 23 29 33 35 37 39 41 45 47 53 55 56 58 62 64 66 68 70 72 74 79 81 85 86 90 93 96 99 102 105 110 115 118 120 138 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 188 190 192 194 196 198 200 202 204 206 208 216 218 220 222 224 230 232 234 236 240 242 244 250 252 254 256 258 262 265 270 272 274 278 280 282 284 286 24 94 7 10 11 17 21 23 29 33 35 37 39 41 45 47 53 55 56 58 62 64 66 68 70 72 74 79 81 85 86 90 93 96 99 102 105 110 115 118 120 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 188 190 192 194 196 198 200 202 204 206 208 216 218 220 222 224 230 232 234 236 240 242 244 250 252 254 256 258 262 265 270 272 274 278 280 282 284 286 25 93 7 10 11 17 21 23 29 33 35 37 39 41 45 47 53 55 56 58 62 64 66 68 70 72 74 79 81 85 86 90 93 96 99 102 105 110 115 118 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 188 190 192 194 196 198 200 202 204 206 208 216 218 220 222 224 230 232 234 236 240 242 244 250 252 254 256 258 262 265 270 272 274 278 280 282 284 286 20 92 7 10 11 17 21 23 29 33 35 37 39 41 45 47 53 55 56 58 62 64 66 68 70 72 74 79 81 85 86 90 93 96 99 102 105 110 115 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 188 190 192 194 196 198 200 202 204 206 208 216 218 220 222 224 230 232 234 236 240 242 244 250 252 254 256 258 262 265 270 272 274 278 280 282 284 286 6 91 7 10 11 17 21 23 29 33 35 37 39 41 45 47 53 55 56 58 62 64 66 68 70 72 74 79 81 85 90 93 96 99 102 105 110 115 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 188 190 192 194 196 198 200 202 204 206 208 216 218 220 222 224 230 232 234 236 240 242 244 250 252 254 256 258 262 265 270 272 274 278 280 282 284 286 113 91 7 10 11 17 21 23 29 33 35 37 39 41 45 47 53 55 56 58 62 64 66 68 70 72 74 79 81 85 90 93 96 99 102 105 110 115 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 188 190 192 194 196 198 200 202 204 206 208 216 218 220 222 224 230 232 234 236 240 242 244 250 252 254 256 258 262 264 270 272 274 278 280 282 284 286 4 91 8 10 11 17 21 23 29 33 35 37 39 41 45 47 53 55 56 58 62 64 66 68 70 72 74 79 81 85 90 93 96 99 102 105 110 115 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 188 190 192 194 196 198 200 202 204 206 208 216 218 220 222 224 230 232 234 236 240 242 244 250 252 254 256 258 262 264 270 272 274 278 280 282 284 286 114 91 0 6 11 17 21 23 29 33 35 37 39 41 45 47 53 55 56 58 62 64 66 68 70 72 74 79 81 85 90 93 96 99 102 105 110 115 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 188 190 192 194 196 198 200 202 204 206 208 216 218 220 222 224 230 232 234 236 240 242 244 250 252 254 256 258 262 264 270 272 274 278 280 282 284 286 0 91 0 7 11 17 21 23 29 33 35 37 39 41 45 47 53 56 58 62 64 66 68 70 72 74 77 79 81 86 90 93 96 99 102 105 110 115 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 188 190 192 194 196 198 200 202 204 206 208 216 218 220 222 224 230 232 234 236 240 242 244 250 252 254 256 258 262 264 270 272 274 278 280 282 284 286 6 90 0 7 11 17 21 23 29 33 35 37 39 41 45 47 53 56 58 62 64 66 68 70 72 74 77 79 81 90 93 96 99 102 105 110 115 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 188 190 192 194 196 198 200 202 204 206 208 216 218 220 222 224 230 232 234 236 240 242 244 250 252 254 256 258 262 264 270 272 274 278 280 282 284 286 115 91 0 7 11 17 21 23 29 33 35 37 39 41 45 47 53 56 58 62 64 66 68 70 72 74 76 79 81 90 93 96 99 102 105 110 115 140 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 188 190 192 194 196 198 200 202 204 206 208 216 218 220 222 224 230 232 234 236 240 242 244 250 252 254 256 258 262 264 270 272 274 278 280 282 284 286 116 93 0 7 11 17 21 23 29 33 35 37 39 41 45 47 53 56 58 62 64 66 68 70 72 74 76 79 81 90 93 96 99 102 105 108 110 115 139 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 188 190 192 194 196 198 200 202 204 206 208 215 216 218 220 222 224 230 232 234 236 240 242 244 250 252 254 256 258 262 264 270 272 274 278 280 282 284 286 117 95 0 7 11 17 20 21 23 29 33 35 37 39 41 45 47 53 56 58 62 64 66 68 70 72 74 76 79 81 90 93 96 99 102 105 108 110 115 122 139 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 188 190 192 194 196 198 200 202 204 206 208 214 216 218 220 222 224 230 232 234 236 240 242 244 250 252 254 256 258 262 264 270 272 274 278 280 282 284 286 118 97 0 7 11 17 19 21 23 29 33 35 37 39 41 45 47 53 56 58 61 62 64 66 68 70 72 74 76 79 81 90 93 96 99 102 105 108 110 115 122 130 139 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 188 190 192 194 196 198 200 202 204 206 208 214 216 218 220 222 224 230 232 234 236 240 242 244 250 252 254 256 258 262 264 270 272 274 278 280 282 284 286 119 99 0 7 11 17 19 21 23 29 33 35 37 39 41 45 47 53 56 58 60 62 64 66 68 70 72 74 76 79 81 90 93 96 99 102 105 108 110 115 122 130 136 139 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 188 190 192 194 196 198 200 202 204 206 208 214 216 218 220 222 224 230 232 234 236 240 242 244 250 252 254 256 258 262 264 270 272 274 277 278 280 282 284 286 120 101 0 7 11 17 19 21 23 29 33 35 37 39 41 45 47 53 56 58 60 62 64 66 68 70 72 74 76 79 81 90 93 96 99 102 105 108 110 115 122 128 130 136 139 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 188 190 192 194 196 198 200 202 204 206 208 214 216 218 220 222 224 230 232 234 236 239 240 242 244 250 252 254 256 258 262 264 270 272 274 276 278 280 282 284 286 35 100 0 7 11 17 19 21 23 29 33 35 37 39 41 45 47 53 56 58 60 62 64 66 68 70 72 74 76 79 81 90 93 96 99 102 105 108 110 115 128 130 136 139 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 188 190 192 194 196 198 200 202 204 206 208 214 216 218 220 222 224 230 232 234 236 239 240 242 244 250 252 254 256 258 262 264 270 272 274 276 278 280 282 284 286 121 102 0 7 11 17 19 21 23 29 33 35 37 39 41 45 47 53 56 58 60 62 64 66 68 70 72 74 76 79 81 90 93 96 99 102 105 108 110 115 124 128 130 136 139 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 188 190 192 194 196 198 200 202 204 206 208 214 216 218 220 222 224 230 232 234 236 238 240 242 244 250 252 254 256 258 261 262 264 270 272 274 276 278 280 282 284 286 14 101 0 7 11 17 19 21 23 29 33 35 37 39 41 45 47 53 56 58 60 62 64 66 68 70 72 74 76 79 81 90 93 96 99 102 105 108 110 115 128 130 136 139 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 188 190 192 194 196 198 200 202 204 206 208 214 216 218 220 222 224 230 232 234 236 238 240 242 244 250 252 254 256 258 261 262 264 270 272 274 276 278 280 282 284 286 122 103 0 7 11 17 19 21 23 29 33 35 37 39 41 44 45 47 53 56 58 60 62 64 66 68 70 72 74 76 79 81 90 93 96 99 102 105 108 110 115 126 128 130 136 139 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 188 190 192 194 196 198 200 202 204 206 208 214 216 218 220 222 224 230 232 234 236 238 240 242 244 250 252 254 256 258 260 262 264 270 272 274 276 278 280 282 284 286 123 105 0 7 11 17 19 21 23 29 33 35 37 39 41 43 45 47 53 56 58 60 62 64 66 68 70 72 74 76 79 81 84 90 93 96 99 102 105 108 110 115 126 128 130 134 136 139 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 188 190 192 194 196 198 200 202 204 206 208 214 216 218 220 222 224 230 232 234 236 238 240 242 244 250 252 254 256 258 260 262 264 270 272 274 276 278 280 282 284 286 124 107 0 7 11 17 19 21 23 29 33 35 37 39 41 43 45 47 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 90 93 96 99 102 105 108 110 115 126 128 130 134 136 138 139 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 183 188 190 192 194 196 198 200 202 204 206 208 214 216 218 220 222 224 230 232 234 236 238 240 242 244 250 252 254 256 258 260 262 264 270 272 274 276 278 280 282 284 286 16 106 0 7 11 17 19 21 23 29 33 35 37 39 41 43 45 47 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 90 93 96 99 102 105 108 110 115 128 130 134 136 138 139 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 183 188 190 192 194 196 198 200 202 204 206 208 214 216 218 220 222 224 230 232 234 236 238 240 242 244 250 252 254 256 258 260 262 264 270 272 274 276 278 280 282 284 286 125 108 0 7 11 17 19 21 23 29 33 35 37 39 41 43 45 47 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 90 93 96 99 102 105 108 110 114 115 120 128 130 134 136 138 139 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 182 188 190 192 194 196 198 200 202 204 206 208 214 216 218 220 222 224 230 232 234 236 238 240 242 244 250 252 254 256 258 260 262 264 270 272 274 276 278 280 282 284 286 126 109 0 7 11 17 19 21 23 29 33 35 37 39 41 43 45 47 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 85 90 93 96 99 102 105 108 110 112 115 120 128 130 134 136 138 139 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 182 188 190 192 194 196 198 200 202 204 206 208 214 216 218 220 222 224 230 232 234 236 238 240 242 244 250 252 254 256 258 260 262 264 270 272 274 276 278 280 282 284 286 25 108 0 7 11 17 19 21 23 29 33 35 37 39 41 43 45 47 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 85 90 93 96 99 102 105 108 110 112 115 128 130 134 136 138 139 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 182 188 190 192 194 196 198 200 202 204 206 208 214 216 218 220 222 224 230 232 234 236 238 240 242 244 250 252 254 256 258 260 262 264 270 272 274 276 278 280 282 284 286 27 107 0 7 11 17 19 21 23 29 33 35 37 39 41 43 45 47 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 85 90 93 96 99 102 105 108 110 112 115 130 134 136 138 139 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 182 188 190 192 194 196 198 200 202 204 206 208 214 216 218 220 222 224 230 232 234 236 238 240 242 244 250 252 254 256 258 260 262 264 270 272 274 276 278 280 282 284 286 18 106 0 7 11 17 19 21 23 29 33 35 37 39 41 43 45 47 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 85 90 93 96 99 102 105 108 110 112 115 130 136 138 139 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 182 188 190 192 194 196 198 200 202 204 206 208 214 216 218 220 222 224 230 232 234 236 238 240 242 244 250 252 254 256 258 260 262 264 270 272 274 276 278 280 282 284 286 26 105 0 7 11 17 19 21 23 29 33 35 37 39 41 43 45 47 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 85 90 93 96 99 102 105 108 110 112 115 130 138 139 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 182 188 190 192 194 196 198 200 202 204 206 208 214 216 218 220 222 224 230 232 234 236 238 240 242 244 250 252 254 256 258 260 262 264 270 272 274 276 278 280 282 284 286 24 104 0 7 11 17 19 21 23 29 33 35 37 39 41 43 45 47 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 85 90 93 96 99 102 105 108 110 112 115 130 139 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 182 188 190 192 194 196 198 200 202 204 206 208 214 216 218 220 222 224 230 232 234 236 238 240 242 244 250 252 254 256 258 260 262 264 270 272 274 276 278 280 282 284 286 127 104 0 7 11 17 19 21 23 29 33 35 37 39 41 43 45 47 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 85 90 93 96 99 102 105 107 110 112 115 130 139 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 182 188 190 192 194 196 198 200 202 204 206 208 214 216 218 220 222 224 230 232 234 236 238 240 242 244 250 252 254 256 258 260 262 264 270 272 274 276 278 280 282 284 286 12 103 0 7 11 17 19 21 23 29 33 35 37 39 41 43 45 47 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 85 90 93 96 99 102 105 107 110 112 115 139 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 182 188 190 192 194 196 198 200 202 204 206 208 214 216 218 220 222 224 230 232 234 236 238 240 242 244 250 252 254 256 258 260 262 264 270 272 274 276 278 280 282 284 286 4 103 0 8 11 17 19 21 23 29 33 35 37 39 41 43 45 47 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 85 90 93 96 99 102 105 107 110 112 115 139 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 182 188 190 192 194 196 198 200 202 204 206 208 214 216 218 220 222 224 230 232 234 236 238 240 242 244 250 252 254 256 258 260 262 264 270 272 274 276 278 280 282 284 286 128 103 6 11 17 19 21 23 29 33 35 37 39 41 43 45 47 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 85 90 93 96 99 102 105 107 110 112 115 139 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 182 188 190 192 194 196 198 200 202 204 206 208 214 216 218 220 222 224 230 232 234 236 238 240 242 244 250 252 254 256 258 260 262 264 270 272 274 276 278 280 282 284 286 289 0 103 7 11 17 19 21 23 29 33 35 37 39 41 43 45 47 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 86 90 93 96 99 102 105 107 110 114 115 139 143 145 147 149 151 153 155 157 163 164 168 170 172 174 176 178 180 182 188 190 192 194 196 198 200 202 204 206 208 214 216 218 220 222 224 230 232 234 236 238 240 242 244 250 252 254 256 258 260 262 264 270 272 274 276 278 280 282 284 286 289 129 104 7 11 17 19 21 23 29 33 35 37 39 41 43 45 47 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 86 90 93 96 99 102 105 107 110 113 115 139 143 145 147 149 151 153 155 157 160 163 164 168 170 172 174 176 178 180 182 188 190 192 194 196 198 200 202 204 206 208 214 216 218 220 222 224 230 232 234 236 238 240 242 244 250 252 254 256 258 260 262 264 270 272 274 276 278 280 282 284 286 289 130 106 7 11 17 19 21 23 29 32 33 35 37 39 41 43 45 47 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 86 90 93 96 99 102 105 107 110 113 115 139 143 145 147 149 151 153 155 157 159 163 164 168 170 172 174 176 178 180 182 188 190 192 194 196 198 200 202 204 206 208 213 214 216 218 220 222 224 230 232 234 236 238 240 242 244 250 252 254 256 258 260 262 264 270 272 274 276 278 280 282 284 286 289 6 105 7 11 17 19 21 23 29 32 33 35 37 39 41 43 45 47 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 90 93 96 99 102 105 107 110 113 115 139 143 145 147 149 151 153 155 157 159 163 164 168 170 172 174 176 178 180 182 188 190 192 194 196 198 200 202 204 206 208 213 214 216 218 220 222 224 230 232 234 236 238 240 242 244 250 252 254 256 258 260 262 264 270 272 274 276 278 280 282 284 286 289 131 105 7 11 17 19 21 23 29 31 33 35 37 39 41 43 45 47 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 90 93 96 99 102 105 107 110 113 115 139 143 145 147 149 151 153 155 157 159 163 164 168 170 172 174 176 178 180 182 188 190 192 194 196 198 200 202 204 206 208 213 214 216 218 220 222 224 230 232 234 236 238 240 242 244 250 252 254 256 258 260 262 264 270 272 274 276 278 280 282 284 286 289 132 107 7 11 16 17 19 21 23 29 31 33 35 37 39 41 43 45 47 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 90 93 96 99 102 105 107 110 113 115 122 139 143 145 147 149 151 153 155 157 159 163 164 168 170 172 174 176 178 180 182 188 190 192 194 196 198 200 202 204 206 208 212 214 216 218 220 222 224 230 232 234 236 238 240 242 244 250 252 254 256 258 260 262 264 270 272 274 276 278 280 282 284 286 289 35 106 7 11 16 17 19 21 23 29 31 33 35 37 39 41 43 45 47 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 90 93 96 99 102 105 107 110 113 115 139 143 145 147 149 151 153 155 157 159 163 164 168 170 172 174 176 178 180 182 188 190 192 194 196 198 200 202 204 206 208 212 214 216 218 220 222 224 230 232 234 236 238 240 242 244 250 252 254 256 258 260 262 264 270 272 274 276 278 280 282 284 286 289 133 108 7 11 15 17 19 21 23 29 31 33 35 37 39 41 43 45 47 52 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 90 93 96 99 102 105 107 110 113 115 130 139 143 145 147 149 151 153 155 157 159 163 164 168 170 172 174 176 178 180 182 188 190 192 194 196 198 200 202 204 206 208 212 214 216 218 220 222 224 230 232 234 236 238 240 242 244 250 252 254 256 258 260 262 264 270 272 274 276 278 280 282 284 286 289 134 110 7 11 15 17 19 21 23 29 31 33 35 37 39 41 43 45 47 51 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 90 93 96 99 102 105 107 110 113 115 130 136 139 143 145 147 149 151 153 155 157 159 163 164 168 170 172 174 176 178 180 182 188 190 192 194 196 198 200 202 204 206 208 212 214 216 218 220 222 224 230 232 234 236 238 240 242 244 250 252 254 256 258 260 262 264 269 270 272 274 276 278 280 282 284 286 289 135 112 7 11 15 17 19 21 23 29 31 33 35 37 39 41 43 45 47 51 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 90 93 96 99 102 105 107 110 113 115 128 130 136 139 143 145 147 149 151 153 155 157 159 163 164 168 170 172 174 176 178 180 182 188 190 192 194 196 198 200 202 204 206 208 212 214 216 218 220 222 224 229 230 232 234 236 238 240 242 244 250 252 254 256 258 260 262 264 268 270 272 274 276 278 280 282 284 286 289 27 111 7 11 15 17 19 21 23 29 31 33 35 37 39 41 43 45 47 51 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 90 93 96 99 102 105 107 110 113 115 130 136 139 143 145 147 149 151 153 155 157 159 163 164 168 170 172 174 176 178 180 182 188 190 192 194 196 198 200 202 204 206 208 212 214 216 218 220 222 224 229 230 232 234 236 238 240 242 244 250 252 254 256 258 260 262 264 268 270 272 274 276 278 280 282 284 286 289 136 113 7 11 15 17 19 21 23 29 31 33 35 37 39 41 43 45 47 51 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 90 93 96 99 102 105 107 110 113 115 124 130 136 139 143 145 147 149 151 153 155 157 159 163 164 168 170 172 174 176 178 180 182 188 190 192 194 196 198 200 202 204 206 208 212 214 216 218 220 222 224 228 230 232 234 236 238 240 242 244 249 250 252 254 256 258 260 262 264 268 270 272 274 276 278 280 282 284 286 289 14 112 7 11 15 17 19 21 23 29 31 33 35 37 39 41 43 45 47 51 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 90 93 96 99 102 105 107 110 113 115 130 136 139 143 145 147 149 151 153 155 157 159 163 164 168 170 172 174 176 178 180 182 188 190 192 194 196 198 200 202 204 206 208 212 214 216 218 220 222 224 228 230 232 234 236 238 240 242 244 249 250 252 254 256 258 260 262 264 268 270 272 274 276 278 280 282 284 286 289 137 114 7 11 15 17 19 21 23 28 29 31 33 35 37 39 41 43 45 47 51 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 90 93 96 99 102 105 107 110 113 115 126 130 136 139 143 145 147 149 151 153 155 157 159 163 164 168 170 172 174 176 178 180 182 188 190 192 194 196 198 200 202 204 206 208 212 214 216 218 220 222 224 228 230 232 234 236 238 240 242 244 248 250 252 254 256 258 260 262 264 268 270 272 274 276 278 280 282 284 286 289 138 116 7 11 15 17 19 21 23 27 29 31 33 35 37 39 41 43 45 47 51 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 90 93 96 99 102 105 107 110 113 115 126 130 134 136 139 143 145 147 149 151 153 155 157 159 163 164 168 170 172 174 176 178 180 182 187 188 190 192 194 196 198 200 202 204 206 208 212 214 216 218 220 222 224 228 230 232 234 236 238 240 242 244 248 250 252 254 256 258 260 262 264 268 270 272 274 276 278 280 282 284 286 289 139 118 7 11 15 17 19 21 23 27 29 31 33 35 37 39 41 43 45 47 51 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 90 93 96 99 102 105 107 110 113 115 118 126 130 134 136 139 143 145 147 149 151 153 155 157 159 163 164 167 168 170 172 174 176 178 180 182 186 188 190 192 194 196 198 200 202 204 206 208 212 214 216 218 220 222 224 228 230 232 234 236 238 240 242 244 248 250 252 254 256 258 260 262 264 268 270 272 274 276 278 280 282 284 286 289 20 117 7 11 15 17 19 21 23 27 29 31 33 35 37 39 41 43 45 47 51 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 90 93 96 99 102 105 107 110 113 115 126 130 134 136 139 143 145 147 149 151 153 155 157 159 163 164 167 168 170 172 174 176 178 180 182 186 188 190 192 194 196 198 200 202 204 206 208 212 214 216 218 220 222 224 228 230 232 234 236 238 240 242 244 248 250 252 254 256 258 260 262 264 268 270 272 274 276 278 280 282 284 286 289 140 119 7 11 15 17 19 21 23 27 29 31 33 35 37 39 41 43 45 47 51 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 88 90 93 96 99 102 105 107 110 113 115 120 126 130 134 136 139 143 145 147 149 151 153 155 157 159 163 164 166 168 170 172 174 176 178 180 182 186 188 190 192 194 196 198 200 202 204 206 208 212 214 216 218 220 222 224 228 230 232 234 236 238 240 242 244 248 250 252 254 256 258 260 262 264 268 270 272 274 276 278 280 282 284 286 289 141 120 7 11 15 17 19 21 23 27 29 31 33 35 37 39 41 43 45 47 51 53 56 58 60 62 64 66 68 70 72 74 76 78 79 81 83 85 90 93 96 99 102 105 107 110 113 115 120 126 130 134 136 139 143 145 147 149 151 153 155 157 159 163 164 166 168 170 172 174 176 178 180 182 186 188 190 192 194 196 198 200 202 204 206 208 212 214 216 218 220 222 224 228 230 232 234 236 238 240 242 244 248 250 252 254 256 258 260 262 264 268 270 272 274 276 278 280 282 284 286 289 16 119 7 11 15 17 19 21 23 27 29 31 33 35 37 39 41 43 45 47 51 53 56 58 60 62 64 66 68 70 72 74 76 78 79 81 83 85 90 93 96 99 102 105 107 110 113 115 120 130 134 136 139 143 145 147 149 151 153 155 157 159 163 164 166 168 170 172 174 176 178 180 182 186 188 190 192 194 196 198 200 202 204 206 208 212 214 216 218 220 222 224 228 230 232 234 236 238 240 242 244 248 250 252 254 256 258 260 262 264 268 270 272 274 276 278 280 282 284 286 289 18 118 7 11 15 17 19 21 23 27 29 31 33 35 37 39 41 43 45 47 51 53 56 58 60 62 64 66 68 70 72 74 76 78 79 81 83 85 90 93 96 99 102 105 107 110 113 115 120 130 136 139 143 145 147 149 151 153 155 157 159 163 164 166 168 170 172 174 176 178 180 182 186 188 190 192 194 196 198 200 202 204 206 208 212 214 216 218 220 222 224 228 230 232 234 236 238 240 242 244 248 250 252 254 256 258 260 262 264 268 270 272 274 276 278 280 282 284 286 289 26 117 7 11 15 17 19 21 23 27 29 31 33 35 37 39 41 43 45 47 51 53 56 58 60 62 64 66 68 70 72 74 76 78 79 81 83 85 90 93 96 99 102 105 107 110 113 115 120 130 139 143 145 147 149 151 153 155 157 159 163 164 166 168 170 172 174 176 178 180 182 186 188 190 192 194 196 198 200 202 204 206 208 212 214 216 218 220 222 224 228 230 232 234 236 238 240 242 244 248 250 252 254 256 258 260 262 264 268 270 272 274 276 278 280 282 284 286 289 25 117 7 11 15 17 19 21 23 27 29 31 33 35 37 39 41 43 45 47 51 53 56 58 60 62 64 66 68 70 72 74 76 78 79 81 83 85 90 93 96 99 102 105 107 110 113 115 119 130 139 143 145 147 149 151 153 155 157 159 163 164 166 168 170 172 174 176 178 180 182 186 188 190 192 194 196 198 200 202 204 206 208 212 214 216 218 220 222 224 228 230 232 234 236 238 240 242 244 248 250 252 254 256 258 260 262 264 268 270 272 274 276 278 280 282 284 286 289 12 116 7 11 15 17 19 21 23 27 29 31 33 35 37 39 41 43 45 47 51 53 56 58 60 62 64 66 68 70 72 74 76 78 79 81 83 85 90 93 96 99 102 105 107 110 113 115 119 139 143 145 147 149 151 153 155 157 159 163 164 166 168 170 172 174 176 178 180 182 186 188 190 192 194 196 198 200 202 204 206 208 212 214 216 218 220 222 224 228 230 232 234 236 238 240 242 244 248 250 252 254 256 258 260 262 264 268 270 272 274 276 278 280 282 284 286 289 4 116 8 11 15 17 19 21 23 27 29 31 33 35 37 39 41 43 45 47 51 53 56 58 60 62 64 66 68 70 72 74 76 78 79 81 83 85 90 93 96 99 102 105 107 110 113 115 119 139 143 145 147 149 151 153 155 157 159 163 164 166 168 170 172 174 176 178 180 182 186 188 190 192 194 196 198 200 202 204 206 208 212 214 216 218 220 222 224 228 230 232 234 236 238 240 242 244 248 250 252 254 256 258 260 262 264 268 270 272 274 276 278 280 282 284 286 289 142 116 1 6 11 15 17 19 21 23 27 29 31 33 35 37 39 41 43 45 47 51 53 56 58 60 62 64 66 68 70 72 74 76 78 79 81 83 85 90 93 96 99 102 105 107 110 113 115 119 139 143 145 147 149 151 153 155 157 159 163 164 166 168 170 172 174 176 178 180 182 186 188 190 192 194 196 198 200 202 204 206 208 212 214 216 218 220 222 224 228 230 232 234 236 238 240 242 244 248 250 252 254 256 258 260 262 264 268 270 272 274 276 278 280 282 284 286 0 116 1 7 11 15 17 19 21 23 27 29 31 33 35 37 39 41 43 45 47 51 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 86 88 90 93 96 99 102 105 107 110 113 115 119 139 143 145 147 149 151 153 155 157 159 163 164 166 168 170 172 174 176 178 180 182 186 188 190 192 194 196 198 200 202 204 206 208 212 214 216 218 220 222 224 228 230 232 234 236 238 240 242 244 248 250 252 254 256 258 260 262 264 268 270 272 274 276 278 280 282 284 286 143 117 1 7 11 15 17 19 21 23 27 29 31 33 35 37 39 41 43 45 47 51 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 86 87 90 93 96 99 102 105 107 110 113 115 119 139 142 143 145 147 149 151 153 155 157 159 163 164 166 168 170 172 174 176 178 180 182 186 188 190 192 194 196 198 200 202 204 206 208 212 214 216 218 220 222 224 228 230 232 234 236 238 240 242 244 248 250 252 254 256 258 260 262 264 268 270 272 274 276 278 280 282 284 286 144 119 1 7 11 15 17 19 21 23 27 29 31 33 35 37 39 41 43 45 47 51 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 86 87 90 93 96 99 102 105 107 110 113 115 119 132 139 141 143 145 147 149 151 153 155 157 159 163 164 166 168 170 172 174 176 178 180 182 186 188 190 192 194 196 198 200 202 204 206 208 211 212 214 216 218 220 222 224 228 230 232 234 236 238 240 242 244 248 250 252 254 256 258 260 262 264 268 270 272 274 276 278 280 282 284 286 145 121 1 7 11 14 15 17 19 21 23 27 29 31 33 35 37 39 41 43 45 47 51 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 86 87 90 93 96 99 102 105 107 110 113 115 119 122 132 139 141 143 145 147 149 151 153 155 157 159 163 164 166 168 170 172 174 176 178 180 182 186 188 190 192 194 196 198 200 202 204 206 208 210 212 214 216 218 220 222 224 228 230 232 234 236 238 240 242 244 248 250 252 254 256 258 260 262 264 268 270 272 274 276 278 280 282 284 286 146 123 1 7 11 13 15 17 19 21 23 27 29 31 33 35 37 39 41 43 45 47 50 51 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 86 87 90 93 96 99 102 105 107 110 113 115 119 122 130 132 139 141 143 145 147 149 151 153 155 157 159 163 164 166 168 170 172 174 176 178 180 182 186 188 190 192 194 196 198 200 202 204 206 208 210 212 214 216 218 220 222 224 228 230 232 234 236 238 240 242 244 248 250 252 254 256 258 260 262 264 268 270 272 274 276 278 280 282 284 286 147 125 1 7 11 13 15 17 19 21 23 27 29 31 33 35 37 39 41 43 45 47 49 51 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 86 87 90 93 96 99 102 105 107 110 113 115 119 122 130 132 136 139 141 143 145 147 149 151 153 155 157 159 163 164 166 168 170 172 174 176 178 180 182 186 188 190 192 194 196 198 200 202 204 206 208 210 212 214 216 218 220 222 224 228 230 232 234 236 238 240 242 244 248 250 252 254 256 258 260 262 264 267 268 270 272 274 276 278 280 282 284 286 148 127 1 7 11 13 15 17 19 21 23 27 29 31 33 35 37 39 41 43 45 47 49 51 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 86 87 90 93 96 99 102 105 107 110 113 115 119 122 128 130 132 136 139 141 143 145 147 149 151 153 155 157 159 163 164 166 168 170 172 174 176 178 180 182 186 188 190 192 194 196 198 200 202 204 206 208 210 212 214 216 218 220 222 224 227 228 230 232 234 236 238 240 242 244 248 250 252 254 256 258 260 262 264 266 268 270 272 274 276 278 280 282 284 286 149 129 1 7 11 13 15 17 19 21 23 27 29 31 33 35 37 39 41 43 45 47 49 51 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 86 87 90 93 96 99 102 105 107 110 113 115 119 122 124 128 130 132 136 139 141 143 145 147 149 151 153 155 157 159 163 164 166 168 170 172 174 176 178 180 182 186 188 190 192 194 196 198 200 202 204 206 208 210 212 214 216 218 220 222 224 226 228 230 232 234 236 238 240 242 244 247 248 250 252 254 256 258 260 262 264 266 268 270 272 274 276 278 280 282 284 286 150 131 1 7 11 13 15 17 19 21 23 26 27 29 31 33 35 37 39 41 43 45 47 49 51 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 86 87 90 93 96 99 102 105 107 110 113 115 119 122 124 126 128 130 132 136 139 141 143 145 147 149 151 153 155 157 159 163 164 166 168 170 172 174 176 178 180 182 186 188 190 192 194 196 198 200 202 204 206 208 210 212 214 216 218 220 222 224 226 228 230 232 234 236 238 240 242 244 246 248 250 252 254 256 258 260 262 264 266 268 270 272 274 276 278 280 282 284 286 151 133 1 7 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 51 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 86 87 90 93 96 99 102 105 107 110 113 115 119 122 124 126 128 130 132 134 136 139 141 143 145 147 149 151 153 155 157 159 163 164 166 168 170 172 174 176 178 180 182 185 186 188 190 192 194 196 198 200 202 204 206 208 210 212 214 216 218 220 222 224 226 228 230 232 234 236 238 240 242 244 246 248 250 252 254 256 258 260 262 264 266 268 270 272 274 276 278 280 282 284 286 152 135 1 7 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 51 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 86 87 90 93 96 99 102 105 107 110 113 115 118 119 122 124 126 128 130 132 134 136 138 139 141 143 145 147 149 151 153 155 157 159 163 164 166 168 170 172 174 176 178 180 182 184 186 188 190 192 194 196 198 200 202 204 206 208 210 212 214 216 218 220 222 224 226 228 230 232 234 236 238 240 242 244 246 248 250 252 254 256 258 260 262 264 266 268 270 272 274 276 278 280 282 284 286 20 135 1 7 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 51 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 86 87 90 93 96 99 102 105 107 110 113 115 117 119 122 124 126 128 130 132 134 136 138 139 141 143 145 147 149 151 153 155 157 159 163 164 166 168 170 172 174 176 178 180 182 184 186 188 190 192 194 196 198 200 202 204 206 208 210 212 214 216 218 220 222 224 226 228 230 232 234 236 238 240 242 244 246 248 250 252 254 256 258 260 262 264 266 268 270 272 274 276 278 280 282 284 286 35 135 1 7 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 51 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 86 87 90 93 96 99 102 105 107 110 113 115 117 119 121 124 126 128 130 132 134 136 138 139 141 143 145 147 149 151 153 155 157 159 163 164 166 168 170 172 174 176 178 180 182 184 186 188 190 192 194 196 198 200 202 204 206 208 210 212 214 216 218 220 222 224 226 228 230 232 234 236 238 240 242 244 246 248 250 252 254 256 258 260 262 264 266 268 270 272 274 276 278 280 282 284 286 14 135 1 7 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 51 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 86 87 90 93 96 99 102 105 107 110 113 115 117 119 121 123 126 128 130 132 134 136 138 139 141 143 145 147 149 151 153 155 157 159 163 164 166 168 170 172 174 176 178 180 182 184 186 188 190 192 194 196 198 200 202 204 206 208 210 212 214 216 218 220 222 224 226 228 230 232 234 236 238 240 242 244 246 248 250 252 254 256 258 260 262 264 266 268 270 272 274 276 278 280 282 284 286 16 135 1 7 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 51 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 86 87 90 93 96 99 102 105 107 110 113 115 117 119 121 123 125 128 130 132 134 136 138 139 141 143 145 147 149 151 153 155 157 159 163 164 166 168 170 172 174 176 178 180 182 184 186 188 190 192 194 196 198 200 202 204 206 208 210 212 214 216 218 220 222 224 226 228 230 232 234 236 238 240 242 244 246 248 250 252 254 256 258 260 262 264 266 268 270 272 274 276 278 280 282 284 286 27 135 1 7 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 51 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 86 87 90 93 96 99 102 105 107 110 113 115 117 119 121 123 125 127 130 132 134 136 138 139 141 143 145 147 149 151 153 155 157 159 163 164 166 168 170 172 174 176 178 180 182 184 186 188 190 192 194 196 198 200 202 204 206 208 210 212 214 216 218 220 222 224 226 228 230 232 234 236 238 240 242 244 246 248 250 252 254 256 258 260 262 264 266 268 270 272 274 276 278 280 282 284 286 12 135 1 7 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 51 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 86 87 90 93 96 99 102 105 107 110 113 115 117 119 121 123 125 127 129 132 134 136 138 139 141 143 145 147 149 151 153 155 157 159 163 164 166 168 170 172 174 176 178 180 182 184 186 188 190 192 194 196 198 200 202 204 206 208 210 212 214 216 218 220 222 224 226 228 230 232 234 236 238 240 242 244 246 248 250 252 254 256 258 260 262 264 266 268 270 272 274 276 278 280 282 284 286 153 135 1 7 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 51 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 86 87 90 93 96 99 102 105 107 110 113 115 117 119 121 123 125 127 129 131 134 136 138 139 141 143 145 147 149 151 153 155 157 159 163 164 166 168 170 172 174 176 178 180 182 184 186 188 190 192 194 196 198 200 202 204 206 208 210 212 214 216 218 220 222 224 226 228 230 232 234 236 238 240 242 244 246 248 250 252 254 256 258 260 262 264 266 268 270 272 274 276 278 280 282 284 286 18 135 1 7 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 51 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 86 87 90 93 96 99 102 105 107 110 113 115 117 119 121 123 125 127 129 131 133 136 138 139 141 143 145 147 149 151 153 155 157 159 163 164 166 168 170 172 174 176 178 180 182 184 186 188 190 192 194 196 198 200 202 204 206 208 210 212 214 216 218 220 222 224 226 228 230 232 234 236 238 240 242 244 246 248 250 252 254 256 258 260 262 264 266 268 270 272 274 276 278 280 282 284 286 26 135 1 7 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 51 53 56 58 60 62 64 66 68 70 72 74 76 79 81 83 86 87 90 93 96 99 102 105 107 110 113 115 117 119 121 123 125 127 129 131 133 135 138 139 141 143 145 147 149 151 153 155 157 159 163 164 166 168 170 172 174 176 178 180 182 184 186 188 190 192 194 196 198 200 202 204 206 208 210 212 214 216 218 220 222 224 226 228 230 232 234 236 238 240 242 244 246 248 250 252 254 256 258 260 262 264 266 268 270 272 274 276 278 280 282 284 286 24 
-Dot file: /tmp/tmpdhimpjel/policy.dot
+INFO     Planner time: 27.12s

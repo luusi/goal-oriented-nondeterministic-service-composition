@@ -51,10 +51,28 @@
     (q_16)
     (q_16s)
   )
+  (:action startaction
+    :parameters ()
+    :precondition 
+      (and
+        (startsymb)
+        (f_ok)
+        (f_world))
+    :effect
+      (and
+        (f_copy)
+        (not 
+          (startsymb))
+        (not 
+          (f_world))
+      )
+    )
   (:action clean_0_a0
     :parameters ()
     :precondition 
       (and
+        (not 
+          (startsymb))
         (current_state_0 s0_a0)
         (f_ok)
         (f_world))
@@ -77,6 +95,8 @@
     :parameters ()
     :precondition 
       (and
+        (not 
+          (startsymb))
         (current_state_0 s0_a1)
         (f_ok)
         (f_world))
@@ -102,6 +122,8 @@
     :parameters ()
     :precondition 
       (and
+        (not 
+          (startsymb))
         (current_state_1 s1_b1)
         (f_ok)
         (f_world))
@@ -127,6 +149,8 @@
     :parameters ()
     :precondition 
       (and
+        (not 
+          (startsymb))
         (current_state_2 s2_c1)
         (f_ok)
         (f_world))
@@ -152,6 +176,8 @@
     :parameters ()
     :precondition 
       (and
+        (not 
+          (startsymb))
         (current_state_1 s1_b0)
         (f_ok)
         (f_world))
@@ -174,6 +200,8 @@
     :parameters ()
     :precondition 
       (and
+        (not 
+          (startsymb))
         (current_state_2 s2_c0)
         (f_ok)
         (f_world))
@@ -199,6 +227,8 @@
     :parameters ()
     :precondition 
       (and
+        (not 
+          (startsymb))
         (current_state_1 s1_b0)
         (f_ok)
         (f_world))
@@ -221,6 +251,8 @@
     :parameters ()
     :precondition 
       (and
+        (not 
+          (startsymb))
         (current_state_1 s1_b1)
         (f_ok)
         (f_world))

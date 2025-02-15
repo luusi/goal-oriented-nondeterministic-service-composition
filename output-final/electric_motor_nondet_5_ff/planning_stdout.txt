@@ -1,0 +1,79 @@
+Parsing...
+Parsing: [0.010s CPU, 0.007s wall-clock]
+Normalizing task... [0.000s CPU, 0.001s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.001s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.010s CPU, 0.003s wall-clock]
+Preparing model... [0.000s CPU, 0.002s wall-clock]
+Generated 365 rules.
+Computing model... [0.000s CPU, 0.001s wall-clock]
+272 relevant atoms
+0 auxiliary atoms
+272 final queue length
+440 total queue pushes
+Completing instantiation... [0.010s CPU, 0.001s wall-clock]
+Instantiating: [0.020s CPU, 0.008s wall-clock]
+Computing fact groups...
+Finding invariants...
+28 initial candidates
+Finding invariants: [0.700s CPU, 0.705s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+43 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.000s CPU, 0.000s wall-clock]
+Computing fact groups: [0.700s CPU, 0.705s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.000s CPU, 0.000s wall-clock]
+Translating task: [0.010s CPU, 0.004s wall-clock]
+131 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+3 propositions removed
+Detecting unreachable propositions: [0.000s CPU, 0.001s wall-clock]
+Translator variables: 43
+Translator derived variables: 0
+Translator facts: 87
+Translator goal facts: 6
+Translator mutex groups: 1
+Translator total mutex groups size: 3
+Translator operators: 149
+Translator axioms: 0
+Translator task size: 1263
+Translator peak memory: 36316 KB
+Writing output... [0.000s CPU, 0.001s wall-clock]
+Done! [0.740s CPU, 0.727s wall-clock]
+Heuristic: FF-heuristic.
+Algorithm: AO*-search
+The protagonist has got a winning strategy.
+INITIAL IS PROVEN!
+
+Result: Strong plan found.
+
+Time needed for preprocess (Parsing, PDBs, ...):    0.01 seconds.
+Time needed for search:                             124.48 seconds.
+Time needed:                                        124.49 seconds.
+Total Garbage Collections: 29
+Total Garbage Collection Time: 0 seconds.
+
+Out of 208609 nodes, 127696 are proven
+Number of node expansions: 145677
+Policy entries: 182
+Number of sensing applications in policy: 0
+
+45 (assemble_motor) (build_inverter) (build_rotor) (build_stator) (current_state_0 s0_rotor_builder_0) (current_state_0 s0_rotor_builder_broken) (current_state_1 s1_stator_builder_0) (current_state_1 s1_stator_builder_broken) (current_state_2 s2_inverter_builder_0) (current_state_2 s2_inverter_builder_broken) (current_state_3 s3_motor_assembler_0) (current_state_3 s3_motor_assembler_broken) (current_state_4 s4_mechanical_engineer_1_0) (current_state_4 s4_mechanical_engineer_1_broken) (dummy_goal) (electric_test) (newautstate q10) (newautstate q11) (newautstate q12) (newautstate q2) (newautstate q3) (newautstate q4) (newautstate q5) (newautstate q6) (newautstate q7) (newautstate q8) (newautstate q9) (oldautstate q1) (oldautstate q10) (oldautstate q11) (oldautstate q12) (oldautstate q2) (oldautstate q3) (oldautstate q4) (oldautstate q5) (oldautstate q6) (oldautstate q7) (oldautstate q8) (oldautstate q9) (repair) (startsymb) (static_test) (sync_mode) (trans_mode) (world_mode) 
+%%
+28 (trans_aut_q1_t2) (start_sync) (sync_q3_pos) (continue) (startaction) (trans_aut_q3_t4) (build_rotor_1_stator_builder_0) (trans_aut_q3_t16) (sync_q7_pos) (build_inverter_2_inverter_builder_0) (trans_aut_q7_t81) (sync_q8_pos) (build_stator_0_rotor_builder_0) (repair_1_stator_builder_broken) (trans_aut_q8_t98) (trans_aut_q8_t95) (sync_q10_pos) (assemble_motor_3_motor_assembler_0) (trans_aut_q10_t118) (sync_q11_pos) (static_test_5_mechanical_engineer_2_0) (repair_0_rotor_builder_broken) (repair_2_inverter_builder_broken) (trans_aut_q11_t121) (trans_aut_q11_t122) (sync_q12_pos) (repair_3_motor_assembler_broken) (trans_aut_q12_t124) 
+%%
+policy 182 8 4 6 8 10 12 27 40 43 0 9 4 6 8 10 12 20 27 40 43 1 8 4 6 8 10 12 20 40 42 2 8 4 6 8 10 12 32 40 42 3 8 4 6 8 10 12 32 40 44 4 7 4 6 8 10 12 32 43 5 8 4 6 8 10 12 20 32 43 1 7 4 6 8 10 12 20 42 2 7 4 6 8 10 12 32 42 3 7 4 6 8 10 12 32 44 6 8 2 4 7 8 10 12 32 43 7 8 2 4 6 8 10 12 32 43 7 9 2 4 7 8 10 12 24 32 43 1 9 2 4 6 8 10 12 24 32 43 1 8 2 4 7 8 10 12 24 42 8 8 2 4 6 8 10 12 24 42 8 8 2 4 7 8 10 12 36 42 3 8 2 4 6 8 10 12 36 42 3 8 2 4 7 8 10 12 36 44 9 8 2 4 6 8 10 12 36 44 9 8 1 4 7 8 10 12 36 43 10 8 1 4 7 9 10 12 36 43 10 8 1 4 6 8 10 12 36 43 10 8 1 4 6 9 10 12 36 43 10 9 1 4 7 8 10 12 25 36 43 1 9 1 4 7 9 10 12 25 36 43 1 9 1 4 6 8 10 12 25 36 43 1 9 1 4 6 9 10 12 25 36 43 1 8 1 4 7 8 10 12 25 42 11 8 1 4 7 9 10 12 25 42 11 8 1 4 6 8 10 12 25 42 11 8 1 4 6 9 10 12 25 42 11 8 1 4 7 8 10 12 37 42 3 8 1 4 7 9 10 12 37 42 3 8 1 4 6 8 10 12 37 42 3 8 1 4 6 9 10 12 37 42 3 8 1 4 7 8 10 12 37 44 12 8 1 4 7 9 10 12 37 44 13 8 1 4 6 8 10 12 37 44 12 8 1 4 6 9 10 12 37 44 12 8 3 4 7 8 10 12 37 43 14 8 3 5 7 8 10 12 37 43 14 8 4 6 9 10 12 37 39 43 15 8 3 4 6 8 10 12 37 43 14 8 3 5 6 8 10 12 37 43 14 8 3 4 6 9 10 12 37 43 14 8 3 5 6 9 10 12 37 43 14 9 3 4 7 8 10 12 16 37 43 1 9 3 5 7 8 10 12 16 37 43 1 9 4 6 9 10 12 25 37 39 43 1 9 3 4 6 8 10 12 16 37 43 1 9 3 5 6 8 10 12 16 37 43 1 9 3 4 6 9 10 12 16 37 43 1 9 3 5 6 9 10 12 16 37 43 1 8 3 4 7 8 10 12 16 42 16 8 3 5 7 8 10 12 16 42 16 8 4 6 9 10 12 25 39 42 11 8 3 4 6 8 10 12 16 42 16 8 3 5 6 8 10 12 16 42 16 8 3 4 6 9 10 12 16 42 16 8 3 5 6 9 10 12 16 42 16 8 3 4 7 8 10 12 28 42 3 8 3 5 7 8 10 12 28 42 3 8 4 6 9 10 12 37 39 42 3 8 3 4 6 8 10 12 28 42 3 8 3 5 6 8 10 12 28 42 3 8 3 4 6 9 10 12 28 42 3 8 3 5 6 9 10 12 28 42 3 8 3 4 7 8 10 12 28 44 17 8 3 5 7 8 10 12 28 44 17 8 4 6 9 10 12 37 39 44 12 8 3 4 6 8 10 12 28 44 17 8 3 5 6 8 10 12 28 44 17 8 3 4 6 9 10 12 28 44 17 8 3 5 6 9 10 12 28 44 17 8 0 4 7 8 11 12 28 43 18 8 0 4 7 8 10 12 28 43 18 8 0 5 7 8 11 12 28 43 18 8 0 5 7 8 10 12 28 43 18 8 0 4 6 8 11 12 28 43 18 8 0 4 6 8 10 12 28 43 18 8 0 5 6 8 11 12 28 43 18 8 0 5 6 8 10 12 28 43 18 8 0 4 6 9 11 12 28 43 18 8 0 4 6 9 10 12 28 43 18 8 0 5 6 9 11 12 28 43 18 8 0 5 6 9 10 12 28 43 18 9 0 4 7 8 11 12 17 28 43 1 9 0 4 7 8 10 12 17 28 43 1 9 0 5 7 8 11 12 17 28 43 1 9 0 5 7 8 10 12 17 28 43 1 9 0 4 6 8 11 12 17 28 43 1 9 0 4 6 8 10 12 17 28 43 1 9 0 5 6 8 11 12 17 28 43 1 9 0 5 6 8 10 12 17 28 43 1 9 0 4 6 9 11 12 17 28 43 1 9 0 4 6 9 10 12 17 28 43 1 9 0 5 6 9 11 12 17 28 43 1 9 0 5 6 9 10 12 17 28 43 1 8 0 4 7 8 11 12 17 42 19 8 0 4 7 8 10 12 17 42 19 8 0 5 7 8 11 12 17 42 19 8 0 5 7 8 10 12 17 42 19 8 0 4 6 8 11 12 17 42 19 8 0 4 6 8 10 12 17 42 19 8 0 5 6 8 11 12 17 42 19 8 0 5 6 8 10 12 17 42 19 8 0 4 6 9 11 12 17 42 19 8 0 4 6 9 10 12 17 42 19 8 0 5 6 9 11 12 17 42 19 8 0 5 6 9 10 12 17 42 19 8 0 4 7 8 11 12 29 42 3 8 0 4 7 8 10 12 29 42 3 8 0 5 7 8 11 12 29 42 3 8 0 5 7 8 10 12 29 42 3 8 0 4 6 8 11 12 29 42 3 8 0 4 6 8 10 12 29 42 3 8 0 5 6 8 11 12 29 42 3 8 0 5 6 8 10 12 29 42 3 8 0 4 6 9 11 12 29 42 3 8 0 4 6 9 10 12 29 42 3 8 0 5 6 9 11 12 29 42 3 8 0 5 6 9 10 12 29 42 3 8 0 4 7 8 11 12 29 44 13 8 0 4 7 8 10 12 29 44 20 8 0 5 7 8 11 12 29 44 21 8 0 5 7 8 10 12 29 44 21 8 0 4 6 8 11 12 29 44 20 8 0 4 6 8 10 12 29 44 20 8 0 5 6 8 11 12 29 44 21 8 0 5 6 8 10 12 29 44 20 8 0 4 6 9 11 12 29 44 22 8 0 4 6 9 10 12 29 44 20 8 0 5 6 9 11 12 29 44 21 8 0 5 6 9 10 12 29 44 21 8 4 6 8 11 12 29 39 43 23 8 4 7 8 10 12 29 41 43 24 8 4 7 8 11 12 29 39 43 23 8 4 7 8 10 12 29 39 43 23 8 4 6 8 11 12 29 41 43 24 8 4 6 8 10 12 29 41 43 24 8 5 6 8 10 12 29 41 43 24 8 4 6 9 10 12 29 41 43 24 8 4 6 9 11 12 29 39 43 23 8 4 6 9 10 12 29 39 43 23 9 4 6 8 11 12 17 29 39 43 1 10 4 7 8 10 12 14 18 29 41 43 1 9 4 7 8 11 12 17 29 39 43 1 9 4 7 8 10 12 17 29 39 43 1 10 4 6 8 11 12 14 18 29 41 43 1 10 5 6 8 10 12 14 18 29 41 43 1 10 4 6 9 10 12 14 18 29 41 43 1 9 4 6 9 11 12 17 29 39 43 1 9 4 6 9 10 12 17 29 39 43 1 8 4 6 8 11 12 17 39 42 19 9 4 7 8 10 12 14 18 41 42 25 8 4 7 8 11 12 17 39 42 19 8 4 7 8 10 12 17 39 42 19 9 4 6 8 11 12 14 18 41 42 25 9 5 6 8 10 12 14 18 41 42 25 9 4 6 9 10 12 14 18 41 42 25 8 4 6 9 11 12 17 39 42 19 8 4 6 9 10 12 17 39 42 19 8 4 6 8 11 12 29 39 42 3 9 4 7 8 10 12 14 30 41 42 3 8 4 7 8 11 12 29 39 42 3 8 4 7 8 10 12 29 39 42 3 9 4 6 8 11 12 14 30 41 42 3 9 5 6 8 10 12 14 30 41 42 3 9 4 6 9 10 12 14 30 41 42 3 8 4 6 9 11 12 29 39 42 3 8 4 6 9 10 12 29 39 42 3 8 4 6 8 11 12 29 39 44 20 8 4 7 8 10 12 30 41 44 13 8 4 7 8 11 12 29 39 44 13 8 4 7 8 10 12 29 39 44 20 8 4 6 8 11 12 30 41 44 26 8 5 6 8 10 12 30 41 44 21 8 4 6 9 10 12 30 41 44 22 8 4 6 9 11 12 29 39 44 22 8 4 6 9 10 12 29 39 44 20 8 4 6 8 10 12 30 39 43 27 
+Dot file: /tmp/tmp7yq3cqz6/policy.dot

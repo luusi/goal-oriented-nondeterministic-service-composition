@@ -4,7 +4,7 @@ from typing import Sequence
 from experiments.core import ActionMode, Heuristic
 from experiments.domains.electric_motor import BUILD_STATOR, BUILD_ROTOR, BUILD_INVERTER, ASSEMBLE_MOTOR, ELECTRIC_TEST, \
     STATIC_TEST, build_goal
-from experiments.entrypoints._abstract_entrypoint import run_experiment, _main
+from experiments.entrypoints._abstract_entrypoint import run_experiment, _main, run_nondet_experiment
 from experiments.services import breakable_forever_service
 from ltlf_goal_oriented_service_composition.services import Service
 
@@ -26,11 +26,8 @@ def build_services() -> Sequence[Service]:
 
 
 def _do_job(workdir: Path, timeout: float):
-    for action_mode in ActionMode:
-        for heuristic in Heuristic:
-            run_experiment(workdir, timeout,
-                           f"electric_motor_nondet_unsolvable_{action_mode.value}_{heuristic.value}",
-                           build_services, build_goal, action_mode, heuristic)
+    for heuristic in Heuristic:
+        run_nondet_experiment(workdir, timeout, f"electric_motor_nondet_unsolvable_{heuristic.value}", build_services, build_goal, heuristic)
 
 
 if __name__ == '__main__':

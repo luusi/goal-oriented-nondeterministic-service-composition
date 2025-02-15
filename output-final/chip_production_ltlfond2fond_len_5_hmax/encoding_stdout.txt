@@ -1,0 +1,1 @@
+/tmp/tmpa32vpfht/domain.pddl /tmp/tmpa32vpfht/problem.pddl /tmp/tmpa32vpfht/goal.ltl

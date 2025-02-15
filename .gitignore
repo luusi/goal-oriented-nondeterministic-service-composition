@@ -391,3 +391,11 @@ experiment-output
 output-plots
 !output-final/**/output.sas
 !output-final/**/policy.dot
+
+spot-*
+compiled_problem.pddl
+compiled_domain.pddl
+
+*.aux
+*.fls
+*.fdb_latexmk

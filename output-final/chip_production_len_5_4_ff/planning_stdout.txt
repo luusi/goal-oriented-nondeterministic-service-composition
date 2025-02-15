@@ -1,79 +1,764 @@
+INFO     planner time limit: None
+INFO     planner memory limit: None
+
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: None
+INFO     translator memory limit: None
+INFO     translator command line string: /home/ubuntu/.local/share/virtualenvs/ltlf-goal-oriented-service-composition-Ma6B0MlL/bin/python3 /home/ubuntu/ltlf-goal-oriented-service-composition/planners/downward/builds/release/bin/translate/translate.py /tmp/tmpz8dbq8ao/domain_compiled.pddl /tmp/tmpz8dbq8ao/problem_compiled.pddl --sas-file output.sas
 Parsing...
-Parsing: [0.010s CPU, 0.011s wall-clock]
+Parsing: [0.010s CPU, 0.015s wall-clock]
 Normalizing task... [0.000s CPU, 0.001s wall-clock]
 Instantiating...
 Generating Datalog program... [0.000s CPU, 0.001s wall-clock]
 Normalizing Datalog program...
 Normalizing Datalog program: [0.010s CPU, 0.003s wall-clock]
 Preparing model... [0.000s CPU, 0.003s wall-clock]
-Generated 319 rules.
-Computing model... [0.000s CPU, 0.002s wall-clock]
-258 relevant atoms
+Generated 321 rules.
+Computing model... [0.000s CPU, 0.001s wall-clock]
+259 relevant atoms
 0 auxiliary atoms
-258 final queue length
-341 total queue pushes
+259 final queue length
+343 total queue pushes
 Completing instantiation... [0.000s CPU, 0.002s wall-clock]
 Instantiating: [0.010s CPU, 0.010s wall-clock]
 Computing fact groups...
 Finding invariants...
-193 initial candidates
-Finding invariants: [13.900s CPU, 13.905s wall-clock]
+194 initial candidates
+Finding invariants: [6.800s CPU, 6.798s wall-clock]
 Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
 Instantiating groups... [0.000s CPU, 0.000s wall-clock]
 Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
 Choosing groups...
-180 uncovered facts
+182 uncovered facts
 Choosing groups: [0.000s CPU, 0.000s wall-clock]
-Building translation key... [0.000s CPU, 0.000s wall-clock]
-Computing fact groups: [13.900s CPU, 13.906s wall-clock]
-Building STRIPS to SAS dictionary... [0.010s CPU, 0.000s wall-clock]
+Building translation key... [0.010s CPU, 0.000s wall-clock]
+Computing fact groups: [6.810s CPU, 6.800s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
 Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
 Building mutex information...
 Building mutex information: [0.000s CPU, 0.000s wall-clock]
 Translating task...
 Processing axioms...
 Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Translator axioms removed by simplifying: 0
 Processing axioms: [0.000s CPU, 0.000s wall-clock]
-Translating task: [0.000s CPU, 0.004s wall-clock]
-200 effect conditions simplified
+Translating task: [0.000s CPU, 0.005s wall-clock]
+212 effect conditions simplified
 0 implied preconditions added
 Detecting unreachable propositions...
 0 operators removed
-12 propositions removed
-Detecting unreachable propositions: [0.000s CPU, 0.001s wall-clock]
-Translator variables: 178
+0 axioms removed
+11 propositions removed
+Detecting unreachable propositions: [0.000s CPU, 0.002s wall-clock]
+Reordering and filtering variables...
+179 of 179 variables necessary.
+0 of 2 mutex groups necessary.
+56 of 56 operators necessary.
+0 of 0 axiom rules necessary.
+Reordering and filtering variables: [0.010s CPU, 0.003s wall-clock]
+Translator variables: 179
 Translator derived variables: 0
-Translator facts: 358
+Translator facts: 360
 Translator goal facts: 43
-Translator mutex groups: 2
-Translator total mutex groups size: 5
-Translator operators: 55
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 56
 Translator axioms: 0
-Translator task size: 2219
-Translator peak memory: 120752 KB
+Translator task size: 2166
+Translator peak memory: 126084 KB
 Writing output... [0.000s CPU, 0.002s wall-clock]
-Done! [13.930s CPU, 13.936s wall-clock]
-Heuristic: FF-heuristic.
-Algorithm: AO*-search
-The protagonist has got a winning strategy.
-INITIAL IS PROVEN!
+Done! [6.840s CPU, 6.839s wall-clock]
+translate exit code: 0
 
-Result: Strong plan found.
+INFO     Running search (release).
+INFO     search stdin: output.sas
+INFO     search time limit: None
+INFO     search memory limit: None
+INFO     search command line string: /home/ubuntu/ltlf-goal-oriented-service-composition/planners/downward/builds/release/bin/downward --evaluator 'hff=ff()' --search 'astar(hff,verbosity=verbose)' --internal-plan-file sas_plan < output.sas
+[t=0.000088s, 9984 KB] reading input...
+[t=0.000869s, 9984 KB] done reading input!
+[t=0.001692s, 10380 KB] Simplifying 470 unary operators... done! [436 unary operators]
+[t=0.001920s, 10380 KB] time to simplify: 0.000248s
+[t=0.001974s, 10380 KB] Initializing additive heuristic...
+[t=0.001984s, 10380 KB] Initializing FF heuristic...
+[t=0.002014s, 10380 KB] Building successor generator...done!
+[t=0.002055s, 10380 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.002062s, 10380 KB] time for successor generation creation: 0.000022s
+[t=0.002069s, 10380 KB] Variables: 179
+[t=0.002076s, 10380 KB] FactPairs: 360
+[t=0.002082s, 10380 KB] Bytes per state: 24
+[t=0.002096s, 10380 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+[t=0.002130s, 10380 KB] WARNING: overflow on h^add! Costs clamped to 100000000
+[t=0.002155s, 10380 KB] New best heuristic value for ff: 51
+[t=0.002162s, 10380 KB] g=0, 1 evaluated, 0 expanded
+[t=0.002169s, 10380 KB] f = 51, 1 evaluated, 0 expanded
+[t=0.002177s, 10380 KB] Initial heuristic value for ff: 51
+[t=0.002185s, 10380 KB] pruning method: none
+[t=0.002217s, 10380 KB] f = 52, 2 evaluated, 1 expanded
+[t=0.002244s, 10380 KB] New best heuristic value for ff: 50
+[t=0.002251s, 10380 KB] g=2, 3 evaluated, 2 expanded
+[t=0.002277s, 10380 KB] New best heuristic value for ff: 49
+[t=0.002284s, 10380 KB] g=3, 4 evaluated, 3 expanded
+[t=0.002328s, 10380 KB] f = 55, 6 evaluated, 4 expanded
+[t=0.002372s, 10380 KB] f = 56, 8 evaluated, 6 expanded
+[t=0.002413s, 10380 KB] f = 57, 10 evaluated, 8 expanded
+[t=0.002451s, 10380 KB] f = 58, 12 evaluated, 10 expanded
+[t=0.002489s, 10380 KB] f = 59, 14 evaluated, 12 expanded
+[t=0.002528s, 10380 KB] f = 60, 16 evaluated, 14 expanded
+[t=0.002581s, 10380 KB] f = 61, 19 evaluated, 16 expanded
+[t=0.002634s, 10380 KB] f = 62, 22 evaluated, 19 expanded
+[t=0.002688s, 10380 KB] f = 63, 25 evaluated, 22 expanded
+[t=0.002753s, 10380 KB] f = 64, 28 evaluated, 25 expanded
+[t=0.002819s, 10380 KB] f = 65, 31 evaluated, 28 expanded
+[t=0.002889s, 10380 KB] f = 66, 34 evaluated, 31 expanded
+[t=0.002972s, 10380 KB] f = 67, 38 evaluated, 34 expanded
+[t=0.003054s, 10380 KB] f = 68, 42 evaluated, 38 expanded
+[t=0.003136s, 10380 KB] f = 69, 46 evaluated, 42 expanded
+[t=0.003218s, 10380 KB] f = 70, 50 evaluated, 46 expanded
+[t=0.003300s, 10380 KB] f = 71, 54 evaluated, 50 expanded
+[t=0.003382s, 10380 KB] f = 72, 58 evaluated, 54 expanded
+[t=0.003483s, 10380 KB] f = 73, 63 evaluated, 58 expanded
+[t=0.003590s, 10380 KB] f = 74, 68 evaluated, 63 expanded
+[t=0.003692s, 10380 KB] f = 75, 73 evaluated, 68 expanded
+[t=0.003792s, 10380 KB] f = 76, 78 evaluated, 73 expanded
+[t=0.003891s, 10380 KB] f = 77, 83 evaluated, 78 expanded
+[t=0.003989s, 10380 KB] f = 78, 88 evaluated, 83 expanded
+[t=0.004104s, 10380 KB] f = 79, 94 evaluated, 88 expanded
+[t=0.004218s, 10380 KB] f = 80, 100 evaluated, 94 expanded
+[t=0.004275s, 10380 KB] New best heuristic value for ff: 48
+[t=0.004283s, 10380 KB] g=32, 103 evaluated, 97 expanded
+[t=0.004396s, 10380 KB] f = 81, 109 evaluated, 103 expanded
+[t=0.004490s, 10380 KB] f = 82, 114 evaluated, 108 expanded
+[t=0.004583s, 10380 KB] f = 83, 119 evaluated, 113 expanded
+[t=0.004677s, 10380 KB] f = 84, 124 evaluated, 118 expanded
+[t=0.004800s, 10380 KB] f = 85, 130 evaluated, 124 expanded
+[t=0.004916s, 10380 KB] f = 86, 136 evaluated, 130 expanded
+[t=0.005032s, 10380 KB] f = 87, 142 evaluated, 136 expanded
+[t=0.005147s, 10380 KB] f = 88, 148 evaluated, 142 expanded
+[t=0.005369s, 10380 KB] f = 90, 160 evaluated, 154 expanded
+[t=0.005483s, 10380 KB] f = 91, 166 evaluated, 160 expanded
+[t=0.005597s, 10380 KB] f = 92, 172 evaluated, 166 expanded
+[t=0.005711s, 10380 KB] f = 93, 178 evaluated, 172 expanded
+[t=0.005833s, 10380 KB] f = 94, 184 evaluated, 178 expanded
+[t=0.006209s, 10380 KB] f = 96, 202 evaluated, 196 expanded
+[t=0.006284s, 10380 KB] New best heuristic value for ff: 47
+[t=0.006294s, 10380 KB] g=49, 205 evaluated, 199 expanded
+[t=0.006325s, 10380 KB] New best heuristic value for ff: 46
+[t=0.006334s, 10380 KB] g=50, 206 evaluated, 200 expanded
+[t=0.006383s, 10380 KB] New best heuristic value for ff: 45
+[t=0.006392s, 10380 KB] g=51, 208 evaluated, 201 expanded
+[t=0.006421s, 10380 KB] New best heuristic value for ff: 44
+[t=0.006430s, 10380 KB] g=52, 209 evaluated, 202 expanded
+[t=0.006459s, 10380 KB] New best heuristic value for ff: 43
+[t=0.006468s, 10380 KB] g=53, 210 evaluated, 203 expanded
+[t=0.006496s, 10380 KB] New best heuristic value for ff: 42
+[t=0.006504s, 10380 KB] g=54, 211 evaluated, 204 expanded
+[t=0.006532s, 10380 KB] New best heuristic value for ff: 41
+[t=0.006540s, 10380 KB] g=55, 212 evaluated, 205 expanded
+[t=0.006562s, 10380 KB] New best heuristic value for ff: 40
+[t=0.006568s, 10380 KB] g=56, 213 evaluated, 206 expanded
+[t=0.006603s, 10380 KB] New best heuristic value for ff: 39
+[t=0.006610s, 10380 KB] g=57, 215 evaluated, 207 expanded
+[t=0.006631s, 10380 KB] New best heuristic value for ff: 38
+[t=0.006638s, 10380 KB] g=58, 216 evaluated, 208 expanded
+[t=0.006658s, 10380 KB] New best heuristic value for ff: 37
+[t=0.006665s, 10380 KB] g=59, 217 evaluated, 209 expanded
+[t=0.006685s, 10380 KB] New best heuristic value for ff: 36
+[t=0.006692s, 10380 KB] g=60, 218 evaluated, 210 expanded
+[t=0.006714s, 10380 KB] New best heuristic value for ff: 35
+[t=0.006721s, 10380 KB] g=61, 219 evaluated, 211 expanded
+[t=0.006743s, 10380 KB] New best heuristic value for ff: 34
+[t=0.006749s, 10380 KB] g=62, 220 evaluated, 212 expanded
+[t=0.006783s, 10380 KB] New best heuristic value for ff: 33
+[t=0.006790s, 10380 KB] g=63, 222 evaluated, 213 expanded
+[t=0.006810s, 10380 KB] New best heuristic value for ff: 32
+[t=0.006817s, 10380 KB] g=64, 223 evaluated, 214 expanded
+[t=0.006837s, 10380 KB] New best heuristic value for ff: 31
+[t=0.006844s, 10380 KB] g=65, 224 evaluated, 215 expanded
+[t=0.006863s, 10380 KB] New best heuristic value for ff: 30
+[t=0.006869s, 10380 KB] g=66, 225 evaluated, 216 expanded
+[t=0.006889s, 10380 KB] New best heuristic value for ff: 29
+[t=0.006896s, 10380 KB] g=67, 226 evaluated, 217 expanded
+[t=0.006916s, 10380 KB] New best heuristic value for ff: 28
+[t=0.006923s, 10380 KB] g=68, 227 evaluated, 218 expanded
+[t=0.006955s, 10380 KB] New best heuristic value for ff: 27
+[t=0.006962s, 10380 KB] g=69, 229 evaluated, 219 expanded
+[t=0.006982s, 10380 KB] New best heuristic value for ff: 26
+[t=0.006989s, 10380 KB] g=70, 230 evaluated, 220 expanded
+[t=0.007008s, 10380 KB] New best heuristic value for ff: 25
+[t=0.007014s, 10380 KB] g=71, 231 evaluated, 221 expanded
+[t=0.007033s, 10380 KB] New best heuristic value for ff: 24
+[t=0.007040s, 10380 KB] g=72, 232 evaluated, 222 expanded
+[t=0.007059s, 10380 KB] New best heuristic value for ff: 23
+[t=0.007065s, 10380 KB] g=73, 233 evaluated, 223 expanded
+[t=0.007084s, 10380 KB] New best heuristic value for ff: 22
+[t=0.007090s, 10380 KB] g=74, 234 evaluated, 224 expanded
+[t=0.007119s, 10380 KB] New best heuristic value for ff: 21
+[t=0.007126s, 10380 KB] g=75, 236 evaluated, 225 expanded
+[t=0.007143s, 10380 KB] New best heuristic value for ff: 20
+[t=0.007150s, 10380 KB] g=76, 237 evaluated, 226 expanded
+[t=0.007166s, 10380 KB] New best heuristic value for ff: 19
+[t=0.007173s, 10380 KB] g=77, 238 evaluated, 227 expanded
+[t=0.007189s, 10380 KB] New best heuristic value for ff: 18
+[t=0.007195s, 10380 KB] g=78, 239 evaluated, 228 expanded
+[t=0.007211s, 10380 KB] New best heuristic value for ff: 17
+[t=0.007218s, 10380 KB] g=79, 240 evaluated, 229 expanded
+[t=0.007234s, 10380 KB] New best heuristic value for ff: 16
+[t=0.007240s, 10380 KB] g=80, 241 evaluated, 230 expanded
+[t=0.007256s, 10380 KB] New best heuristic value for ff: 15
+[t=0.007262s, 10380 KB] g=81, 242 evaluated, 231 expanded
+[t=0.007277s, 10380 KB] New best heuristic value for ff: 14
+[t=0.007284s, 10380 KB] g=82, 243 evaluated, 232 expanded
+[t=0.007299s, 10380 KB] New best heuristic value for ff: 13
+[t=0.007306s, 10380 KB] g=83, 244 evaluated, 233 expanded
+[t=0.007320s, 10380 KB] New best heuristic value for ff: 12
+[t=0.007327s, 10380 KB] g=84, 245 evaluated, 234 expanded
+[t=0.009563s, 10380 KB] f = 100, 360 evaluated, 339 expanded
+[t=0.009699s, 10380 KB] f = 101, 366 evaluated, 345 expanded
+[t=0.009828s, 10380 KB] f = 102, 372 evaluated, 351 expanded
+[t=0.009954s, 10380 KB] f = 103, 378 evaluated, 357 expanded
+[t=0.010075s, 10380 KB] f = 104, 384 evaluated, 363 expanded
+[t=0.010197s, 10380 KB] f = 105, 390 evaluated, 369 expanded
+[t=0.010335s, 10380 KB] f = 106, 397 evaluated, 375 expanded
+[t=0.010563s, 10380 KB] f = 107, 409 evaluated, 387 expanded
+[t=0.010784s, 10380 KB] f = 108, 421 evaluated, 399 expanded
+[t=0.011010s, 10380 KB] f = 109, 433 evaluated, 411 expanded
+[t=0.011234s, 10380 KB] f = 110, 445 evaluated, 423 expanded
+[t=0.011420s, 10380 KB] f = 111, 456 evaluated, 435 expanded
+[t=0.011629s, 10380 KB] f = 112, 469 evaluated, 446 expanded
+[t=0.011939s, 10380 KB] f = 113, 486 evaluated, 463 expanded
+[t=0.012243s, 10380 KB] f = 114, 503 evaluated, 480 expanded
+[t=0.012594s, 10512 KB] f = 115, 520 evaluated, 497 expanded
+[t=0.012906s, 10512 KB] f = 116, 537 evaluated, 514 expanded
+[t=0.013173s, 10512 KB] f = 117, 552 evaluated, 531 expanded
+[t=0.013488s, 10512 KB] f = 118, 570 evaluated, 546 expanded
+[t=0.013862s, 10512 KB] f = 119, 591 evaluated, 567 expanded
+[t=0.014217s, 10512 KB] f = 120, 612 evaluated, 588 expanded
+[t=0.014568s, 10512 KB] f = 121, 633 evaluated, 609 expanded
+[t=0.014921s, 10512 KB] f = 122, 654 evaluated, 630 expanded
+[t=0.015226s, 10512 KB] f = 123, 672 evaluated, 651 expanded
+[t=0.015580s, 10512 KB] f = 124, 694 evaluated, 669 expanded
+[t=0.015971s, 10512 KB] f = 125, 718 evaluated, 693 expanded
+[t=0.016938s, 10512 KB] f = 126, 783 evaluated, 762 expanded
+[t=0.017193s, 10512 KB] f = 127, 798 evaluated, 777 expanded
+[t=0.017445s, 10512 KB] f = 128, 813 evaluated, 792 expanded
+[t=0.017700s, 10512 KB] f = 129, 828 evaluated, 807 expanded
+[t=0.017975s, 10512 KB] f = 130, 844 evaluated, 823 expanded
+[t=0.018250s, 10512 KB] f = 131, 860 evaluated, 839 expanded
+[t=0.018588s, 10512 KB] f = 132, 880 evaluated, 859 expanded
+[t=0.018801s, 10512 KB] f = 133, 892 evaluated, 871 expanded
+[t=0.019322s, 10512 KB] f = 135, 926 evaluated, 905 expanded
+[t=0.019506s, 10512 KB] f = 136, 941 evaluated, 920 expanded
+[t=0.019701s, 10512 KB] f = 137, 952 evaluated, 931 expanded
+[t=0.019894s, 10512 KB] f = 138, 963 evaluated, 942 expanded
+[t=0.020041s, 10512 KB] f = 139, 974 evaluated, 953 expanded
+[t=0.020837s, 10512 KB] f = 141, 1016 evaluated, 971 expanded
+[t=0.035039s, 10512 KB] f = 145, 1786 evaluated, 1666 expanded
+[t=0.035513s, 10512 KB] f = 146, 1810 evaluated, 1690 expanded
+[t=0.035987s, 10512 KB] f = 147, 1840 evaluated, 1720 expanded
+[t=0.036523s, 10512 KB] f = 148, 1870 evaluated, 1750 expanded
+[t=0.037054s, 10512 KB] f = 149, 1900 evaluated, 1780 expanded
+[t=0.037592s, 10512 KB] f = 150, 1930 evaluated, 1810 expanded
+[t=0.038357s, 10512 KB] f = 151, 1964 evaluated, 1840 expanded
+[t=0.039329s, 10512 KB] f = 152, 2019 evaluated, 1894 expanded
+[t=0.040361s, 10512 KB] f = 153, 2079 evaluated, 1954 expanded
+[t=0.041393s, 10512 KB] f = 154, 2139 evaluated, 2014 expanded
+[t=0.042445s, 10512 KB] f = 155, 2199 evaluated, 2074 expanded
+[t=0.043406s, 10512 KB] f = 156, 2255 evaluated, 2134 expanded
+[t=0.044446s, 10512 KB] f = 157, 2318 evaluated, 2190 expanded
+[t=0.045829s, 10512 KB] f = 158, 2399 evaluated, 2269 expanded
+[t=0.047253s, 10512 KB] f = 159, 2484 evaluated, 2354 expanded
+[t=0.048657s, 10512 KB] f = 160, 2569 evaluated, 2439 expanded
+[t=0.050060s, 10512 KB] f = 161, 2654 evaluated, 2524 expanded
+[t=0.051348s, 10636 KB] f = 162, 2731 evaluated, 2609 expanded
+[t=0.052782s, 10636 KB] f = 163, 2818 evaluated, 2686 expanded
+[t=0.054469s, 10636 KB] f = 164, 2920 evaluated, 2785 expanded
+[t=0.056011s, 10636 KB] f = 165, 3025 evaluated, 2890 expanded
+[t=0.057681s, 10636 KB] f = 166, 3130 evaluated, 2995 expanded
+[t=0.059369s, 10636 KB] f = 167, 3235 evaluated, 3100 expanded
+[t=0.060857s, 10636 KB] f = 168, 3328 evaluated, 3205 expanded
+[t=0.062550s, 10636 KB] f = 169, 3434 evaluated, 3298 expanded
+[t=0.064282s, 10636 KB] f = 170, 3552 evaluated, 3412 expanded
+[t=0.067450s, 10636 KB] f = 171, 3772 evaluated, 3648 expanded
+[t=0.069557s, 10636 KB] f = 172, 3891 evaluated, 3771 expanded
+[t=0.070764s, 10636 KB] f = 173, 3966 evaluated, 3846 expanded
+[t=0.071869s, 10636 KB] f = 174, 4041 evaluated, 3921 expanded
+[t=0.072889s, 10636 KB] f = 175, 4110 evaluated, 3990 expanded
+[t=0.073793s, 10636 KB] f = 176, 4170 evaluated, 4050 expanded
+[t=0.074528s, 10636 KB] f = 177, 4220 evaluated, 4100 expanded
+[t=0.075236s, 10636 KB] f = 178, 4264 evaluated, 4144 expanded
+[t=0.076192s, 10636 KB] f = 179, 4324 evaluated, 4204 expanded
+[t=0.076564s, 10636 KB] f = 180, 4346 evaluated, 4226 expanded
+[t=0.076966s, 10636 KB] f = 181, 4370 evaluated, 4250 expanded
+[t=0.077546s, 10636 KB] f = 182, 4405 evaluated, 4285 expanded
+[t=0.078125s, 10636 KB] f = 183, 4440 evaluated, 4320 expanded
+[t=0.078713s, 10636 KB] f = 184, 4475 evaluated, 4355 expanded
+[t=0.080380s, 10636 KB] f = 185, 4569 evaluated, 4453 expanded
+[t=0.080638s, 10636 KB] f = 186, 4581 evaluated, 4471 expanded
+[t=0.083677s, 10636 KB] f = 187, 4773 evaluated, 4644 expanded
+[t=0.093479s, 10764 KB] f = 197, 5344 evaluated, 5172 expanded
+[t=0.093846s, 10764 KB] f = 198, 5364 evaluated, 5192 expanded
+[t=0.094278s, 10764 KB] f = 199, 5389 evaluated, 5217 expanded
+[t=0.094694s, 10764 KB] f = 200, 5414 evaluated, 5242 expanded
+[t=0.095118s, 10764 KB] f = 201, 5439 evaluated, 5267 expanded
+[t=0.095539s, 10764 KB] f = 202, 5464 evaluated, 5292 expanded
+[t=0.096021s, 10764 KB] f = 203, 5493 evaluated, 5317 expanded
+[t=0.096771s, 10764 KB] f = 204, 5539 evaluated, 5362 expanded
+[t=0.097565s, 10764 KB] f = 205, 5589 evaluated, 5412 expanded
+[t=0.098370s, 10764 KB] f = 206, 5639 evaluated, 5462 expanded
+[t=0.099174s, 10764 KB] f = 207, 5689 evaluated, 5512 expanded
+[t=0.099924s, 10764 KB] f = 208, 5735 evaluated, 5562 expanded
+[t=0.100761s, 10764 KB] f = 209, 5788 evaluated, 5608 expanded
+[t=0.101826s, 10764 KB] f = 210, 5855 evaluated, 5673 expanded
+[t=0.102925s, 10764 KB] f = 211, 5925 evaluated, 5743 expanded
+[t=0.104015s, 10764 KB] f = 212, 5995 evaluated, 5813 expanded
+[t=0.105081s, 10764 KB] f = 213, 6065 evaluated, 5883 expanded
+[t=0.106162s, 10764 KB] f = 214, 6135 evaluated, 5953 expanded
+[t=0.107520s, 10764 KB] f = 215, 6225 evaluated, 6023 expanded
+[t=0.109098s, 10764 KB] f = 216, 6332 evaluated, 6125 expanded
+[t=0.112657s, 10764 KB] f = 217, 6599 evaluated, 6393 expanded
+[t=0.114382s, 10764 KB] f = 218, 6719 evaluated, 6514 expanded
+[t=0.115365s, 10764 KB] f = 219, 6784 evaluated, 6579 expanded
+[t=0.116281s, 10764 KB] f = 220, 6849 evaluated, 6644 expanded
+[t=0.117218s, 10764 KB] f = 221, 6914 evaluated, 6709 expanded
+[t=0.118264s, 10764 KB] f = 222, 6989 evaluated, 6785 expanded
+[t=0.119213s, 10764 KB] f = 223, 7056 evaluated, 6854 expanded
+[t=0.119816s, 10764 KB] f = 224, 7096 evaluated, 6896 expanded
+[t=0.120967s, 10764 KB] f = 225, 7174 evaluated, 6974 expanded
+[t=0.121214s, 10764 KB] f = 226, 7190 evaluated, 6990 expanded
+[t=0.121846s, 10764 KB] f = 227, 7232 evaluated, 7032 expanded
+[t=0.122449s, 10764 KB] f = 228, 7272 evaluated, 7072 expanded
+[t=0.123573s, 10896 KB] f = 229, 7317 evaluated, 7117 expanded
+[t=0.126078s, 10896 KB] f = 230, 7476 evaluated, 7273 expanded
+[t=0.126249s, 10896 KB] f = 231, 7485 evaluated, 7290 expanded
+[t=0.129858s, 10896 KB] f = 232, 7745 evaluated, 7531 expanded
+[t=0.137785s, 10896 KB] f = 233, 8242 evaluated, 7997 expanded
+[t=0.147674s, 10896 KB] f = 243, 8834 evaluated, 8543 expanded
+[t=0.147896s, 10896 KB] f = 244, 8846 evaluated, 8555 expanded
+[t=0.148151s, 10896 KB] f = 245, 8861 evaluated, 8570 expanded
+[t=0.148400s, 10896 KB] f = 246, 8876 evaluated, 8585 expanded
+[t=0.148652s, 10896 KB] f = 247, 8891 evaluated, 8600 expanded
+[t=0.148896s, 10896 KB] f = 248, 8906 evaluated, 8615 expanded
+[t=0.149388s, 10896 KB] f = 249, 8936 evaluated, 8645 expanded
+[t=0.150181s, 10896 KB] f = 250, 8988 evaluated, 8697 expanded
+[t=0.150948s, 10896 KB] f = 251, 9043 evaluated, 8752 expanded
+[t=0.151781s, 10896 KB] f = 252, 9098 evaluated, 8807 expanded
+[t=0.152621s, 10896 KB] f = 253, 9153 evaluated, 8862 expanded
+[t=0.153507s, 10896 KB] f = 254, 9211 evaluated, 8917 expanded
+[t=0.154595s, 11032 KB] f = 255, 9283 evaluated, 8987 expanded
+[t=0.155987s, 11032 KB] f = 256, 9375 evaluated, 9079 expanded
+[t=0.157401s, 11032 KB] f = 257, 9470 evaluated, 9174 expanded
+[t=0.158693s, 11032 KB] f = 258, 9565 evaluated, 9269 expanded
+[t=0.160090s, 11032 KB] f = 259, 9660 evaluated, 9364 expanded
+[t=0.161491s, 11032 KB] f = 260, 9756 evaluated, 9459 expanded
+[t=0.163116s, 11032 KB] f = 261, 9872 evaluated, 9567 expanded
+[t=0.166477s, 11032 KB] f = 262, 10125 evaluated, 9824 expanded
+[t=0.169982s, 11032 KB] f = 263, 10389 evaluated, 10115 expanded
+[t=0.171043s, 11032 KB] f = 264, 10463 evaluated, 10198 expanded
+[t=0.171683s, 11032 KB] f = 265, 10508 evaluated, 10243 expanded
+[t=0.172562s, 11032 KB] f = 266, 10570 evaluated, 10305 expanded
+[t=0.173499s, 11032 KB] f = 267, 10642 evaluated, 10377 expanded
+[t=0.174298s, 11032 KB] f = 268, 10702 evaluated, 10437 expanded
+[t=0.174797s, 11032 KB] f = 269, 10738 evaluated, 10474 expanded
+[t=0.175563s, 11032 KB] f = 270, 10791 evaluated, 10528 expanded
+[t=0.175912s, 11032 KB] f = 271, 10815 evaluated, 10552 expanded
+[t=0.176592s, 11032 KB] f = 272, 10863 evaluated, 10600 expanded
+[t=0.176907s, 11032 KB] f = 273, 10885 evaluated, 10627 expanded
+[t=0.177300s, 11032 KB] f = 274, 10913 evaluated, 10655 expanded
+[t=0.179218s, 11032 KB] f = 275, 11043 evaluated, 10778 expanded
+[t=0.179731s, 11032 KB] f = 276, 11076 evaluated, 10822 expanded
+[t=0.180254s, 11032 KB] New best heuristic value for ff: 11
+[t=0.180265s, 11032 KB] g=265, 11113 evaluated, 10857 expanded
+[t=0.182227s, 11032 KB] f = 277, 11257 evaluated, 10995 expanded
+[t=0.187965s, 11032 KB] f = 278, 11657 evaluated, 11376 expanded
+[t=0.196212s, 11032 KB] f = 279, 12184 evaluated, 11875 expanded
+[t=0.197815s, 11032 KB] f = 294, 12280 evaluated, 11966 expanded
+[t=0.197981s, 11160 KB] f = 295, 12289 evaluated, 11975 expanded
+[t=0.198224s, 11160 KB] f = 296, 12304 evaluated, 11990 expanded
+[t=0.198463s, 11160 KB] f = 297, 12319 evaluated, 12005 expanded
+[t=0.198698s, 11160 KB] f = 298, 12334 evaluated, 12020 expanded
+[t=0.198920s, 11160 KB] f = 299, 12349 evaluated, 12035 expanded
+[t=0.199273s, 11160 KB] f = 300, 12372 evaluated, 12058 expanded
+[t=0.199931s, 11160 KB] f = 301, 12416 evaluated, 12102 expanded
+[t=0.200650s, 11160 KB] f = 302, 12466 evaluated, 12152 expanded
+[t=0.201354s, 11160 KB] f = 303, 12516 evaluated, 12202 expanded
+[t=0.202071s, 11160 KB] f = 304, 12566 evaluated, 12252 expanded
+[t=0.202749s, 11160 KB] f = 305, 12615 evaluated, 12302 expanded
+[t=0.203599s, 11160 KB] f = 306, 12676 evaluated, 12359 expanded
+[t=0.205302s, 11160 KB] f = 307, 12807 evaluated, 12490 expanded
+[t=0.207400s, 11160 KB] f = 308, 12993 evaluated, 12691 expanded
+[t=0.208424s, 11160 KB] f = 309, 13071 evaluated, 12778 expanded
+[t=0.208848s, 11160 KB] f = 310, 13101 evaluated, 12808 expanded
+[t=0.209456s, 11160 KB] f = 311, 13147 evaluated, 12854 expanded
+[t=0.210180s, 11160 KB] f = 312, 13203 evaluated, 12912 expanded
+[t=0.210610s, 11160 KB] f = 313, 13236 evaluated, 12947 expanded
+[t=0.210893s, 11160 KB] f = 314, 13257 evaluated, 12970 expanded
+[t=0.211337s, 11160 KB] f = 315, 13289 evaluated, 13003 expanded
+[t=0.211699s, 11160 KB] f = 318, 13319 evaluated, 13035 expanded
+[t=0.211844s, 11160 KB] f = 319, 13329 evaluated, 13045 expanded
+[t=0.212335s, 11160 KB] New best heuristic value for ff: 10
+[t=0.212344s, 11160 KB] g=308, 13370 evaluated, 13081 expanded
+[t=0.212363s, 11160 KB] New best heuristic value for ff: 9
+[t=0.212372s, 11160 KB] g=309, 13371 evaluated, 13082 expanded
+[t=0.212389s, 11160 KB] New best heuristic value for ff: 8
+[t=0.212398s, 11160 KB] g=310, 13372 evaluated, 13083 expanded
+[t=0.212415s, 11160 KB] New best heuristic value for ff: 7
+[t=0.212423s, 11160 KB] g=311, 13373 evaluated, 13084 expanded
+[t=0.212440s, 11160 KB] New best heuristic value for ff: 6
+[t=0.212449s, 11160 KB] g=312, 13374 evaluated, 13085 expanded
+[t=0.212466s, 11160 KB] New best heuristic value for ff: 5
+[t=0.212474s, 11160 KB] g=313, 13375 evaluated, 13086 expanded
+[t=0.212491s, 11160 KB] New best heuristic value for ff: 4
+[t=0.212499s, 11160 KB] g=314, 13376 evaluated, 13087 expanded
+[t=0.212516s, 11160 KB] New best heuristic value for ff: 3
+[t=0.212524s, 11160 KB] g=315, 13377 evaluated, 13088 expanded
+[t=0.212541s, 11160 KB] New best heuristic value for ff: 2
+[t=0.212549s, 11160 KB] g=316, 13378 evaluated, 13089 expanded
+[t=0.212566s, 11160 KB] New best heuristic value for ff: 1
+[t=0.212574s, 11160 KB] g=317, 13379 evaluated, 13090 expanded
+[t=0.212589s, 11160 KB] New best heuristic value for ff: 0
+[t=0.212597s, 11160 KB] g=318, 13380 evaluated, 13091 expanded
+[t=0.212605s, 11160 KB] Solution found!
+[t=0.212618s, 11160 KB] Actual search time: 0.210434s
+o_copy  (1)
+o_sync_q_1s  (1)
+o_sync_q_2s  (1)
+o_sync_q_3s_1  (1)
+o_sync_q_4s  (1)
+o_sync_q_5s  (1)
+o_sync_q_6s  (1)
+o_sync_q_7s  (1)
+o_sync_q_8s  (1)
+o_sync_q_9s_1  (1)
+o_sync_q_10s  (1)
+o_sync_q_11s  (1)
+o_sync_q_12s  (1)
+o_sync_q_13s  (1)
+o_sync_q_14s  (1)
+o_sync_q_15s_1  (1)
+o_sync_q_16s  (1)
+o_sync_q_17s  (1)
+o_sync_q_18s  (1)
+o_sync_q_19s  (1)
+o_sync_q_20s  (1)
+o_sync_q_21s_1  (1)
+o_sync_q_22s  (1)
+o_sync_q_23s  (1)
+o_sync_q_24s  (1)
+o_sync_q_25s  (1)
+o_sync_q_26s  (1)
+o_sync_q_27s_1  (1)
+o_sync_q_28s  (1)
+o_sync_q_29s  (1)
+o_sync_q_30s  (1)
+o_sync_q_31s  (1)
+o_sync_q_32s  (1)
+o_sync_q_33s  (1)
+o_sync_q_34s  (1)
+o_sync_q_35s  (1)
+o_sync_q_36s  (1)
+o_sync_q_37s  (1)
+o_sync_q_38s  (1)
+o_sync_q_39s  (1)
+o_sync_q_40s  (1)
+o_sync_q_41s  (1)
+o_sync_q_42s  (1)
+o_sync_q_43s  (1)
+o_sync_q_44s  (1)
+startaction  (1)
+o_copy  (1)
+o_sync_q_1s  (1)
+o_sync_q_2s  (1)
+o_sync_q_3s_2  (1)
+o_sync_q_4s  (1)
+o_sync_q_5s  (1)
+o_sync_q_6s  (1)
+o_sync_q_7s  (1)
+o_sync_q_8s  (1)
+o_sync_q_9s_1  (1)
+o_sync_q_10s  (1)
+o_sync_q_11s  (1)
+o_sync_q_12s  (1)
+o_sync_q_13s  (1)
+o_sync_q_14s  (1)
+o_sync_q_15s_1  (1)
+o_sync_q_16s  (1)
+o_sync_q_17s  (1)
+o_sync_q_18s  (1)
+o_sync_q_19s  (1)
+o_sync_q_20s  (1)
+o_sync_q_21s_1  (1)
+o_sync_q_22s  (1)
+o_sync_q_23s  (1)
+o_sync_q_24s  (1)
+o_sync_q_25s  (1)
+o_sync_q_26s  (1)
+o_sync_q_27s_1  (1)
+o_sync_q_28s  (1)
+o_sync_q_29s  (1)
+o_sync_q_30s  (1)
+o_sync_q_31s  (1)
+o_sync_q_32s  (1)
+o_sync_q_33s  (1)
+o_sync_q_34s  (1)
+o_sync_q_35s  (1)
+o_sync_q_36s  (1)
+o_sync_q_37s  (1)
+o_sync_q_38s  (1)
+o_sync_q_39s  (1)
+o_sync_q_40s  (1)
+o_sync_q_41s  (1)
+o_sync_q_42s  (1)
+o_sync_q_43s  (1)
+o_sync_q_44s  (1)
+cleaning_0_handler_cleaning_0  (1)
+o_copy  (1)
+o_sync_q_1s  (1)
+o_sync_q_2s  (1)
+o_sync_q_3s_1  (1)
+o_sync_q_4s  (1)
+o_sync_q_5s  (1)
+o_sync_q_6s  (1)
+o_sync_q_7s  (1)
+o_sync_q_8s  (1)
+o_sync_q_9s_2  (1)
+o_sync_q_10s  (1)
+o_sync_q_11s  (1)
+o_sync_q_12s  (1)
+o_sync_q_13s  (1)
+o_sync_q_14s  (1)
+o_sync_q_15s_1  (1)
+o_sync_q_16s  (1)
+o_sync_q_17s  (1)
+o_sync_q_18s  (1)
+o_sync_q_19s  (1)
+o_sync_q_20s  (1)
+o_sync_q_21s_1  (1)
+o_sync_q_22s  (1)
+o_sync_q_23s  (1)
+o_sync_q_24s  (1)
+o_sync_q_25s  (1)
+o_sync_q_26s  (1)
+o_sync_q_27s_1  (1)
+o_sync_q_28s  (1)
+o_sync_q_29s  (1)
+o_sync_q_30s  (1)
+o_sync_q_31s  (1)
+o_sync_q_32s  (1)
+o_sync_q_33s  (1)
+o_sync_q_34s  (1)
+o_sync_q_35s  (1)
+o_sync_q_36s  (1)
+o_sync_q_37s  (1)
+o_sync_q_38s  (1)
+o_sync_q_39s  (1)
+o_sync_q_40s  (1)
+o_sync_q_41s  (1)
+o_sync_q_42s  (1)
+o_sync_q_43s  (1)
+o_sync_q_44s  (1)
+film_deposition_1_handler_film_deposition_0  (1)
+o_copy  (1)
+o_sync_q_1s  (1)
+o_sync_q_2s  (1)
+o_sync_q_3s_1  (1)
+o_sync_q_4s  (1)
+o_sync_q_5s  (1)
+o_sync_q_6s  (1)
+o_sync_q_7s  (1)
+o_sync_q_8s  (1)
+o_sync_q_9s_1  (1)
+o_sync_q_10s  (1)
+o_sync_q_11s  (1)
+o_sync_q_12s  (1)
+o_sync_q_13s  (1)
+o_sync_q_14s  (1)
+o_sync_q_15s_2  (1)
+o_sync_q_16s  (1)
+o_sync_q_17s  (1)
+o_sync_q_18s  (1)
+o_sync_q_19s  (1)
+o_sync_q_20s  (1)
+o_sync_q_21s_1  (1)
+o_sync_q_22s  (1)
+o_sync_q_23s  (1)
+o_sync_q_24s  (1)
+o_sync_q_25s  (1)
+o_sync_q_26s  (1)
+o_sync_q_27s_1  (1)
+o_sync_q_28s  (1)
+o_sync_q_29s  (1)
+o_sync_q_30s  (1)
+o_sync_q_31s  (1)
+o_sync_q_32s  (1)
+o_sync_q_33s  (1)
+o_sync_q_34s  (1)
+o_sync_q_35s  (1)
+o_sync_q_36s  (1)
+o_sync_q_37s  (1)
+o_sync_q_38s  (1)
+o_sync_q_39s  (1)
+o_sync_q_40s  (1)
+o_sync_q_41s  (1)
+o_sync_q_42s  (1)
+o_sync_q_43s  (1)
+o_sync_q_44s  (1)
+resist_coating_2_handler_resist_coating_0  (1)
+o_copy  (1)
+o_sync_q_1s  (1)
+o_sync_q_2s  (1)
+o_sync_q_3s_1  (1)
+o_sync_q_4s  (1)
+o_sync_q_5s  (1)
+o_sync_q_6s  (1)
+o_sync_q_7s  (1)
+o_sync_q_8s  (1)
+o_sync_q_9s_1  (1)
+o_sync_q_10s  (1)
+o_sync_q_11s  (1)
+o_sync_q_12s  (1)
+o_sync_q_13s  (1)
+o_sync_q_14s  (1)
+o_sync_q_15s_1  (1)
+o_sync_q_16s  (1)
+o_sync_q_17s  (1)
+o_sync_q_18s  (1)
+o_sync_q_19s  (1)
+o_sync_q_20s  (1)
+o_sync_q_21s_2  (1)
+o_sync_q_22s  (1)
+o_sync_q_23s  (1)
+o_sync_q_24s  (1)
+o_sync_q_25s  (1)
+o_sync_q_26s  (1)
+o_sync_q_27s_1  (1)
+o_sync_q_28s  (1)
+o_sync_q_29s  (1)
+o_sync_q_30s  (1)
+o_sync_q_31s  (1)
+o_sync_q_32s  (1)
+o_sync_q_33s  (1)
+o_sync_q_34s  (1)
+o_sync_q_35s  (1)
+o_sync_q_36s  (1)
+o_sync_q_37s  (1)
+o_sync_q_38s  (1)
+o_sync_q_39s  (1)
+o_sync_q_40s  (1)
+o_sync_q_41s  (1)
+o_sync_q_42s  (1)
+o_sync_q_43s  (1)
+o_sync_q_44s  (1)
+exposure_3_handler_exposure_0  (1)
+o_copy  (1)
+o_sync_q_1s  (1)
+o_sync_q_2s  (1)
+o_sync_q_3s_1  (1)
+o_sync_q_4s  (1)
+o_sync_q_5s  (1)
+o_sync_q_6s  (1)
+o_sync_q_7s  (1)
+o_sync_q_8s  (1)
+o_sync_q_9s_1  (1)
+o_sync_q_10s  (1)
+o_sync_q_11s  (1)
+o_sync_q_12s  (1)
+o_sync_q_13s  (1)
+o_sync_q_14s  (1)
+o_sync_q_15s_1  (1)
+o_sync_q_16s  (1)
+o_sync_q_17s  (1)
+o_sync_q_18s  (1)
+o_sync_q_19s  (1)
+o_sync_q_20s  (1)
+o_sync_q_21s_1  (1)
+o_sync_q_22s  (1)
+o_sync_q_23s  (1)
+o_sync_q_24s  (1)
+o_sync_q_25s  (1)
+o_sync_q_26s  (1)
+o_sync_q_27s_2  (1)
+o_sync_q_28s  (1)
+o_sync_q_29s  (1)
+o_sync_q_30s  (1)
+o_sync_q_31s  (1)
+o_sync_q_32s  (1)
+o_sync_q_33s  (1)
+o_sync_q_34s  (1)
+o_sync_q_35s  (1)
+o_sync_q_36s  (1)
+o_sync_q_37s  (1)
+o_sync_q_38s  (1)
+o_sync_q_39s  (1)
+o_sync_q_40s  (1)
+o_sync_q_41s  (1)
+o_sync_q_42s  (1)
+o_sync_q_43s  (1)
+o_sync_q_44s  (1)
+development_4_handler_development_0  (1)
+o_copy  (1)
+o_sync_q_1s  (1)
+o_sync_q_2s  (1)
+o_sync_q_3s_1  (1)
+o_sync_q_4s  (1)
+o_sync_q_5s  (1)
+o_sync_q_6s  (1)
+o_sync_q_7s  (1)
+o_sync_q_8s  (1)
+o_sync_q_9s_1  (1)
+o_sync_q_10s  (1)
+o_sync_q_11s  (1)
+o_sync_q_12s  (1)
+o_sync_q_13s  (1)
+o_sync_q_14s  (1)
+o_sync_q_15s_1  (1)
+o_sync_q_16s  (1)
+o_sync_q_17s  (1)
+o_sync_q_18s  (1)
+o_sync_q_19s  (1)
+o_sync_q_20s  (1)
+o_sync_q_21s_1  (1)
+o_sync_q_22s  (1)
+o_sync_q_23s  (1)
+o_sync_q_24s  (1)
+o_sync_q_25s  (1)
+o_sync_q_26s  (1)
+o_sync_q_27s_1  (1)
+o_sync_q_28s  (1)
+o_sync_q_29s  (1)
+o_sync_q_30s  (1)
+o_sync_q_31s  (1)
+o_sync_q_32s  (1)
+o_sync_q_33s  (1)
+o_sync_q_34s  (1)
+o_sync_q_35s  (1)
+o_sync_q_36s  (1)
+o_sync_q_37s  (1)
+o_sync_q_38s  (1)
+o_sync_q_39s  (1)
+o_sync_q_40s  (1)
+o_sync_q_41s  (1)
+[t=0.212628s, 11160 KB] Plan length: 318 step(s).
+[t=0.212628s, 11160 KB] Plan cost: 318
+[t=0.212628s, 11160 KB] Expanded 13092 state(s).
+[t=0.212628s, 11160 KB] Reopened 0 state(s).
+[t=0.212628s, 11160 KB] Evaluated 13380 state(s).
+[t=0.212628s, 11160 KB] Evaluations: 13380
+[t=0.212628s, 11160 KB] Generated 14825 state(s).
+[t=0.212628s, 11160 KB] Dead ends: 261 state(s).
+[t=0.212628s, 11160 KB] Expanded until last jump: 13045 state(s).
+[t=0.212628s, 11160 KB] Reopened until last jump: 0 state(s).
+[t=0.212628s, 11160 KB] Evaluated until last jump: 13329 state(s).
+[t=0.212628s, 11160 KB] Generated until last jump: 14770 state(s).
+[t=0.212628s, 11160 KB] Number of registered states: 13380
+[t=0.212628s, 11160 KB] Int hash set load factor: 13380/16384 = 0.816650
+[t=0.212628s, 11160 KB] Int hash set resizes: 14
+[t=0.212628s, 11160 KB] Search time: 0.210532s
+[t=0.212628s, 11160 KB] Total time: 0.212628s
+Solution found.
+Peak memory: 11160 KB
+Remove intermediate file output.sas
+search exit code: 0
 
-Time needed for preprocess (Parsing, PDBs, ...):    0.011 seconds.
-Time needed for search:                             4.072 seconds.
-Time needed:                                        4.083 seconds.
-Total Garbage Collections: 11
-Total Garbage Collection Time: 0 seconds.
-
-Out of 11868 nodes, 4365 are proven
-Number of node expansions: 11569
-Policy entries: 272
-Number of sensing applications in policy: 0
-
-181 (cleaning) (development) (exposure) (f_copy) (f_sync) (f_world) (f_ok) (film_deposition) (q_1) (q_1s) (q_10) (q_10d) (q_10s) (q_10t) (q_11) (q_11d) (q_11s) (q_11t) (q_12) (q_12d) (q_12s) (q_12t) (q_13) (q_13d) (q_13s) (q_13t) (q_14) (q_14d) (q_14s) (q_14t) (q_15) (q_15d) (q_15s) (q_15t) (q_16) (q_16d) (q_16s) (q_16t) (q_17) (q_17d) (q_17s) (q_17t) (q_18) (q_18d) (q_18s) (q_18t) (q_19) (q_19d) (q_19s) (q_19t) (q_1d) (q_1t) (q_2) (q_20) (q_20d) (q_20s) (q_20t) (q_21) (q_21d) (q_21s) (q_21t) (q_22) (q_22d) (q_22s) (q_22t) (q_23) (q_23d) (q_23s) (q_23t) (q_24) (q_24d) (q_24s) (q_24t) (q_25) (q_25d) (q_25s) (q_25t) (q_26) (q_26d) (q_26s) (q_26t) (q_27) (q_27d) (q_27s) (q_27t) (q_28) (q_28d) (q_28s) (q_28t) (q_29) (q_29d) (q_29s) (q_29t) (q_2d) (q_2s) (q_2t) (q_3) (q_30) (q_30d) (q_30s) (q_30t) (q_31) (q_31d) (q_31s) (q_31t) (q_32) (q_32d) (q_32s) (q_32t) (q_33) (q_33d) (q_33s) (q_33t) (q_34) (q_34d) (q_34s) (q_34t) (q_35) (q_35d) (q_35s) (q_35t) (q_36) (q_36d) (q_36s) (q_36t) (q_37) (q_37d) (q_37s) (q_37t) (q_38) (q_38d) (q_38s) (q_38t) (q_39) (q_39d) (q_39s) (q_39t) (q_3d) (q_3s) (q_3t) (q_4) (q_40) (q_40d) (q_40s) (q_40t) (q_41) (q_41d) (q_41s) (q_41t) (q_42) (q_42d) (q_42s) (q_42t) (q_43) (q_43s) (q_43t) (q_44t) (q_4d) (q_4s) (q_4t) (q_5) (q_5d) (q_5s) (q_5t) (q_6) (q_6d) (q_6s) (q_6t) (q_7) (q_7d) (q_7s) (q_7t) (q_8) (q_8d) (q_8s) (q_8t) (q_9) (q_9d) (q_9s) (q_9t) (resist_coating) 
-%%
-54 (o_copy) (o_sync_q_1s) (o_sync_q_2s) (o_sync_q_3s_1) (o_sync_q_4s) (o_sync_q_5s) (o_sync_q_6s) (o_sync_q_7s) (o_sync_q_8s) (o_sync_q_9s_1) (o_sync_q_10s) (o_sync_q_11s) (o_sync_q_12s) (o_sync_q_13s) (o_sync_q_14s) (o_sync_q_15s_2) (o_sync_q_16s) (o_sync_q_17s) (o_sync_q_18s) (o_sync_q_19s) (o_sync_q_20s) (o_sync_q_21s_1) (o_sync_q_22s) (o_sync_q_23s) (o_sync_q_24s) (o_sync_q_25s) (o_sync_q_26s) (o_sync_q_27s_1) (o_sync_q_28s) (o_sync_q_29s) (o_sync_q_30s) (o_sync_q_31s) (o_sync_q_32s) (o_sync_q_33s) (o_sync_q_34s) (o_sync_q_35s) (o_sync_q_36s) (o_sync_q_37s) (o_sync_q_38s) (o_sync_q_39s) (o_sync_q_40s) (o_sync_q_41s) (o_sync_q_42s) (o_sync_q_43s) (o_sync_q_44s) (cleaning_0_handler_cleaning_0) (o_sync_q_9s_2) (o_sync_q_15s_1) (o_sync_q_21s_2) (film_deposition_1_handler_film_deposition_0) (o_sync_q_27s_2) (resist_coating_2_handler_resist_coating_0) (exposure_3_handler_exposure_0) (development_4_handler_development_0) 
-%%
-policy 272 3 3 6 8 0 4 4 6 9 51 1 6 4 6 50 94 95 127 2 8 4 6 50 93 96 127 139 153 3 9 4 6 50 93 96 127 137 153 159 4 10 4 6 50 93 96 127 137 153 157 163 5 11 4 6 50 93 96 127 137 153 157 161 167 6 12 4 6 50 93 96 127 137 153 157 161 165 171 7 13 4 6 50 93 96 127 137 153 157 161 165 169 175 8 14 4 6 50 93 96 127 137 153 157 161 165 169 173 179 9 15 4 6 13 50 93 96 127 137 153 157 161 165 169 173 177 10 16 4 6 11 17 50 93 96 127 137 153 157 161 165 169 173 177 11 17 4 6 11 15 21 50 93 96 127 137 153 157 161 165 169 173 177 12 18 4 6 11 15 19 25 50 93 96 127 137 153 157 161 165 169 173 177 13 19 4 6 11 15 19 23 29 50 93 96 127 137 153 157 161 165 169 173 177 14 20 4 6 11 15 19 23 27 33 50 93 96 127 137 153 157 161 165 169 173 177 15 20 4 6 11 15 19 23 27 37 50 93 96 127 137 153 157 161 165 169 173 177 16 20 4 6 11 15 19 23 27 41 50 93 96 127 137 153 157 161 165 169 173 177 17 20 4 6 11 15 19 23 27 45 50 93 96 127 137 153 157 161 165 169 173 177 18 20 4 6 11 15 19 23 27 49 50 93 96 127 137 153 157 161 165 169 173 177 19 20 4 6 11 15 19 23 27 50 56 93 96 127 137 153 157 161 165 169 173 177 20 20 4 6 11 15 19 23 27 50 60 93 96 127 137 153 157 161 165 169 173 177 21 20 4 6 11 15 19 23 27 50 64 93 96 127 137 153 157 161 165 169 173 177 22 20 4 6 11 15 19 23 27 50 68 93 96 127 137 153 157 161 165 169 173 177 23 20 4 6 11 15 19 23 27 50 72 93 96 127 137 153 157 161 165 169 173 177 24 20 4 6 11 15 19 23 27 50 76 93 96 127 137 153 157 161 165 169 173 177 25 20 4 6 11 15 19 23 27 50 80 93 96 127 137 153 157 161 165 169 173 177 26 20 4 6 11 15 19 23 27 50 84 93 96 127 137 153 157 161 165 169 173 177 27 20 4 6 11 15 19 23 27 50 88 93 96 127 137 153 157 161 165 169 173 177 28 20 4 6 11 15 19 23 27 50 92 93 96 127 137 153 157 161 165 169 173 177 29 20 4 6 11 15 19 23 27 50 93 96 100 127 137 153 157 161 165 169 173 177 30 20 4 6 11 15 19 23 27 50 93 96 104 127 137 153 157 161 165 169 173 177 31 20 4 6 11 15 19 23 27 50 93 96 108 127 137 153 157 161 165 169 173 177 32 20 4 6 11 15 19 23 27 50 93 96 112 127 137 153 157 161 165 169 173 177 33 20 4 6 11 15 19 23 27 50 93 96 116 127 137 153 157 161 165 169 173 177 34 20 4 6 11 15 19 23 27 50 93 96 120 127 137 153 157 161 165 169 173 177 35 20 4 6 11 15 19 23 27 50 93 96 124 127 137 153 157 161 165 169 173 177 36 20 4 6 11 15 19 23 27 50 93 96 127 128 137 153 157 161 165 169 173 177 37 20 4 6 11 15 19 23 27 50 93 96 126 132 137 153 157 161 165 169 173 177 38 20 4 6 11 15 19 23 27 50 93 96 126 136 137 153 157 161 165 169 173 177 39 20 4 6 11 15 19 23 27 50 93 96 126 137 144 153 157 161 165 169 173 177 40 20 4 6 11 15 19 23 27 50 93 96 126 137 148 153 157 161 165 169 173 177 41 20 4 6 11 15 19 23 27 50 93 96 126 137 152 153 157 161 165 169 173 177 42 20 4 6 11 15 19 23 27 50 93 96 126 137 153 155 157 161 165 169 173 177 43 20 4 6 11 15 19 23 27 50 93 96 126 137 153 156 157 161 165 169 173 177 44 19 5 6 11 15 19 23 27 50 93 96 126 137 153 157 161 165 169 173 177 45 20 0 3 6 11 15 19 23 27 50 93 96 126 137 153 157 161 165 169 173 177 0 21 0 4 6 11 15 19 23 27 50 51 93 126 137 138 154 157 161 165 169 173 177 1 21 0 4 6 11 15 19 23 27 50 93 95 126 137 138 154 157 161 165 169 173 177 2 21 0 4 6 11 15 19 23 27 50 93 126 137 138 139 154 157 161 165 169 173 177 3 21 0 4 6 11 15 19 23 27 50 93 126 137 154 157 158 159 161 165 169 173 177 4 22 0 4 6 11 15 19 23 27 50 93 126 137 151 154 157 161 162 163 165 169 173 177 5 23 0 4 6 11 15 19 23 27 50 93 111 126 137 151 154 157 161 165 166 167 169 173 177 6 24 0 4 6 11 15 19 23 27 50 93 107 111 126 137 151 154 157 161 165 169 170 171 173 177 7 25 0 4 6 11 15 19 23 27 50 93 107 111 115 126 137 151 154 157 161 165 169 173 174 175 177 8 26 0 4 6 11 15 19 23 27 50 93 107 111 115 119 126 137 151 154 157 161 165 169 173 177 178 179 46 27 0 4 6 11 13 15 19 23 27 50 93 107 111 115 119 126 137 151 153 154 157 161 165 169 173 176 177 10 27 0 4 6 11 15 17 19 23 27 50 93 107 111 115 119 126 137 151 153 154 157 161 165 169 173 176 177 11 27 0 4 6 11 15 19 21 23 27 50 93 107 111 115 119 126 137 151 153 154 157 161 165 169 173 176 177 12 27 0 4 6 11 15 19 23 25 27 50 93 107 111 115 119 126 137 151 153 154 157 161 165 169 173 176 177 13 27 0 4 6 11 15 19 23 27 29 50 93 107 111 115 119 126 137 151 153 154 157 161 165 169 173 176 177 14 27 0 4 6 11 15 19 23 27 33 50 93 107 111 115 119 126 137 151 153 154 157 161 165 169 173 176 177 47 28 0 4 6 11 15 19 23 27 31 37 50 93 107 111 115 119 126 137 151 153 154 157 161 165 169 173 176 177 16 29 0 4 6 11 15 19 23 27 31 35 41 50 93 107 111 115 119 126 137 151 153 154 157 161 165 169 173 176 177 17 30 0 4 6 11 15 19 23 27 31 35 39 45 50 93 107 111 115 119 126 137 151 153 154 157 161 165 169 173 176 177 18 31 0 4 6 11 15 19 23 27 31 35 39 43 49 50 93 107 111 115 119 126 137 151 153 154 157 161 165 169 173 176 177 19 32 0 4 6 11 15 19 23 27 31 35 39 43 47 50 56 93 107 111 115 119 126 137 151 153 154 157 161 165 169 173 176 177 20 33 0 4 6 11 15 19 23 27 31 35 39 43 47 50 54 60 93 107 111 115 119 126 137 151 153 154 157 161 165 169 173 176 177 48 33 0 4 6 11 15 19 23 27 31 35 39 43 47 50 54 64 93 107 111 115 119 126 137 151 153 154 157 161 165 169 173 176 177 22 33 0 4 6 11 15 19 23 27 31 35 39 43 47 50 54 68 93 107 111 115 119 126 137 151 153 154 157 161 165 169 173 176 177 23 33 0 4 6 11 15 19 23 27 31 35 39 43 47 50 54 72 93 107 111 115 119 126 137 151 153 154 157 161 165 169 173 176 177 24 33 0 4 6 11 15 19 23 27 31 35 39 43 47 50 54 76 93 107 111 115 119 126 137 151 153 154 157 161 165 169 173 176 177 25 33 0 4 6 11 15 19 23 27 31 35 39 43 47 50 54 80 93 107 111 115 119 126 137 151 153 154 157 161 165 169 173 176 177 26 33 0 4 6 11 15 19 23 27 31 35 39 43 47 50 54 84 93 107 111 115 119 126 137 151 153 154 157 161 165 169 173 176 177 27 33 0 4 6 11 15 19 23 27 31 35 39 43 47 50 54 88 93 107 111 115 119 126 137 151 153 154 157 161 165 169 173 176 177 28 33 0 4 6 11 15 19 23 27 31 35 39 43 47 50 54 92 93 107 111 115 119 126 137 151 153 154 157 161 165 169 173 176 177 29 33 0 4 6 11 15 19 23 27 31 35 39 43 47 50 54 93 100 107 111 115 119 126 137 151 153 154 157 161 165 169 173 176 177 30 33 0 4 6 11 15 19 23 27 31 35 39 43 47 50 54 93 104 107 111 115 119 126 137 151 153 154 157 161 165 169 173 176 177 31 33 0 4 6 11 15 19 23 27 31 35 39 43 47 50 54 93 107 108 111 115 119 126 137 151 153 154 157 161 165 169 173 176 177 32 32 0 4 6 11 15 19 23 27 31 35 39 43 47 50 54 93 111 112 115 119 126 137 151 153 154 157 161 165 169 173 176 177 33 31 0 4 6 11 15 19 23 27 31 35 39 43 47 50 54 93 115 116 119 126 137 151 153 154 157 161 165 169 173 176 177 34 30 0 4 6 11 15 19 23 27 31 35 39 43 47 50 54 93 119 120 126 137 151 153 154 157 161 165 169 173 176 177 35 29 0 4 6 11 15 19 23 27 31 35 39 43 47 50 54 93 124 126 137 151 153 154 157 161 165 169 173 176 177 36 29 0 4 6 11 15 19 23 27 31 35 39 43 47 50 54 93 126 128 137 151 153 154 157 161 165 169 173 176 177 37 29 0 4 6 11 15 19 23 27 31 35 39 43 47 50 54 93 126 132 137 151 153 154 157 161 165 169 173 176 177 38 29 0 4 6 11 15 19 23 27 31 35 39 43 47 50 54 93 126 136 137 151 153 154 157 161 165 169 173 176 177 39 29 0 4 6 11 15 19 23 27 31 35 39 43 47 50 54 93 126 137 144 151 153 154 157 161 165 169 173 176 177 40 29 0 4 6 11 15 19 23 27 31 35 39 43 47 50 54 93 126 137 148 151 153 154 157 161 165 169 173 176 177 41 29 0 4 6 11 15 19 23 27 31 35 39 43 47 50 54 93 126 137 151 152 153 154 157 161 165 169 173 176 177 42 29 0 4 6 11 15 19 23 27 31 35 39 43 47 50 54 93 126 137 150 153 154 155 157 161 165 169 173 176 177 43 28 0 4 6 11 15 19 23 27 31 35 39 43 47 50 54 93 126 137 150 153 156 157 161 165 169 173 176 177 44 27 0 5 6 11 15 19 23 27 31 35 39 43 47 50 54 93 126 137 150 153 157 161 165 169 173 176 177 49 27 3 6 7 11 15 19 23 27 31 35 39 43 47 50 54 93 126 137 150 153 157 161 165 169 173 176 177 0 28 4 6 7 11 15 19 23 27 31 35 39 43 47 50 51 54 93 126 137 150 154 157 161 165 169 173 177 178 1 28 4 6 7 11 15 19 23 27 31 35 39 43 47 50 54 93 95 126 137 150 154 157 161 165 169 173 177 178 2 28 4 6 7 11 15 19 23 27 31 35 39 43 47 50 54 93 126 137 139 150 154 157 161 165 169 173 177 178 3 28 4 6 7 11 15 19 23 27 31 35 39 43 47 50 54 93 126 137 150 154 157 159 161 165 169 173 177 178 4 28 4 6 7 11 15 19 23 27 31 35 39 43 47 50 54 93 126 137 150 154 157 161 163 165 169 173 177 178 5 28 4 6 7 11 15 19 23 27 31 35 39 43 47 50 54 93 126 137 150 154 157 161 165 167 169 173 177 178 6 28 4 6 7 11 15 19 23 27 31 35 39 43 47 50 54 93 126 137 150 154 157 161 165 169 171 173 177 178 7 28 4 6 7 11 15 19 23 27 31 35 39 43 47 50 54 93 126 137 150 154 157 161 165 169 173 175 177 178 8 28 4 6 7 11 15 19 23 27 31 35 39 43 47 50 54 93 126 137 150 154 157 161 165 169 173 177 178 179 9 28 4 6 7 11 12 13 15 19 23 27 31 35 39 43 47 50 54 93 126 137 150 154 157 161 165 169 173 177 10 29 4 6 7 11 15 16 17 19 23 27 31 35 39 43 47 50 54 93 126 135 137 150 154 157 161 165 169 173 177 11 30 4 6 7 11 15 19 20 21 23 27 31 35 39 43 47 50 54 93 123 126 135 137 150 154 157 161 165 169 173 177 12 31 4 6 7 11 15 19 23 24 25 27 31 35 39 43 47 50 54 93 107 123 126 135 137 150 154 157 161 165 169 173 177 13 32 4 6 7 11 15 19 23 27 28 29 31 35 39 43 47 50 54 93 107 115 123 126 135 137 150 154 157 161 165 169 173 177 14 33 4 6 7 11 15 19 23 27 31 32 33 35 39 43 47 50 54 93 107 115 119 123 126 135 137 150 154 157 161 165 169 173 177 15 34 4 6 7 11 15 19 23 27 30 31 35 37 39 43 47 50 54 93 107 115 119 123 126 135 137 150 153 154 157 161 165 169 173 177 16 34 4 6 7 11 15 19 23 27 30 31 35 39 41 43 47 50 54 93 107 115 119 123 126 135 137 150 153 154 157 161 165 169 173 177 17 34 4 6 7 11 15 19 23 27 30 31 35 39 43 45 47 50 54 93 107 115 119 123 126 135 137 150 153 154 157 161 165 169 173 177 18 34 4 6 7 11 15 19 23 27 30 31 35 39 43 47 49 50 54 93 107 115 119 123 126 135 137 150 153 154 157 161 165 169 173 177 19 34 4 6 7 11 15 19 23 27 30 31 35 39 43 47 50 54 56 93 107 115 119 123 126 135 137 150 153 154 157 161 165 169 173 177 20 34 4 6 7 11 15 19 23 27 30 31 35 39 43 47 50 54 60 93 107 115 119 123 126 135 137 150 153 154 157 161 165 169 173 177 21 35 4 6 7 11 15 19 23 27 30 31 35 39 43 47 50 54 58 64 93 107 115 119 123 126 135 137 150 153 154 157 161 165 169 173 177 22 36 4 6 7 11 15 19 23 27 30 31 35 39 43 47 50 54 58 62 68 93 107 115 119 123 126 135 137 150 153 154 157 161 165 169 173 177 23 37 4 6 7 11 15 19 23 27 30 31 35 39 43 47 50 54 58 62 66 72 93 107 115 119 123 126 135 137 150 153 154 157 161 165 169 173 177 24 38 4 6 7 11 15 19 23 27 30 31 35 39 43 47 50 54 58 62 66 70 76 93 107 115 119 123 126 135 137 150 153 154 157 161 165 169 173 177 25 39 4 6 7 11 15 19 23 27 30 31 35 39 43 47 50 54 58 62 66 70 74 80 93 107 115 119 123 126 135 137 150 153 154 157 161 165 169 173 177 26 40 4 6 7 11 15 19 23 27 30 31 35 39 43 47 50 54 58 62 66 70 74 78 84 93 107 115 119 123 126 135 137 150 153 154 157 161 165 169 173 177 50 40 4 6 7 11 15 19 23 27 30 31 35 39 43 47 50 54 58 62 66 70 74 78 88 93 107 115 119 123 126 135 137 150 153 154 157 161 165 169 173 177 28 40 4 6 7 11 15 19 23 27 30 31 35 39 43 47 50 54 58 62 66 70 74 78 92 93 107 115 119 123 126 135 137 150 153 154 157 161 165 169 173 177 29 40 4 6 7 11 15 19 23 27 30 31 35 39 43 47 50 54 58 62 66 70 74 78 93 100 107 115 119 123 126 135 137 150 153 154 157 161 165 169 173 177 30 40 4 6 7 11 15 19 23 27 30 31 35 39 43 47 50 54 58 62 66 70 74 78 93 104 107 115 119 123 126 135 137 150 153 154 157 161 165 169 173 177 31 40 4 6 7 11 15 19 23 27 30 31 35 39 43 47 50 54 58 62 66 70 74 78 93 107 108 115 119 123 126 135 137 150 153 154 157 161 165 169 173 177 32 39 4 6 7 11 15 19 23 27 30 31 35 39 43 47 50 54 58 62 66 70 74 78 93 112 115 119 123 126 135 137 150 153 154 157 161 165 169 173 177 33 39 4 6 7 11 15 19 23 27 30 31 35 39 43 47 50 54 58 62 66 70 74 78 93 115 116 119 123 126 135 137 150 153 154 157 161 165 169 173 177 34 38 4 6 7 11 15 19 23 27 30 31 35 39 43 47 50 54 58 62 66 70 74 78 93 119 120 123 126 135 137 150 153 154 157 161 165 169 173 177 35 38 4 6 7 11 15 19 23 27 30 31 35 39 43 47 50 54 58 62 66 70 74 78 93 118 123 124 126 135 137 150 153 154 157 161 165 169 173 177 36 37 4 6 7 11 15 19 23 27 30 31 35 39 43 47 50 54 58 62 66 70 74 78 93 118 126 128 135 137 150 153 154 157 161 165 169 173 177 37 37 4 6 7 11 15 19 23 27 30 31 35 39 43 47 50 54 58 62 66 70 74 78 93 118 126 132 135 137 150 153 154 157 161 165 169 173 177 38 37 4 6 7 11 15 19 23 27 30 31 35 39 43 47 50 54 58 62 66 70 74 78 93 118 126 135 136 137 150 153 154 157 161 165 169 173 177 39 37 4 6 7 11 15 19 23 27 30 31 35 39 43 47 50 54 58 62 66 70 74 78 93 118 126 134 137 144 150 153 154 157 161 165 169 173 177 40 37 4 6 7 11 15 19 23 27 30 31 35 39 43 47 50 54 58 62 66 70 74 78 93 118 126 134 137 148 150 153 154 157 161 165 169 173 177 41 37 4 6 7 11 15 19 23 27 30 31 35 39 43 47 50 54 58 62 66 70 74 78 93 118 126 134 137 150 152 153 154 157 161 165 169 173 177 42 37 4 6 7 11 15 19 23 27 30 31 35 39 43 47 50 54 58 62 66 70 74 78 93 118 126 134 137 150 153 154 155 157 161 165 169 173 177 43 36 4 6 7 11 15 19 23 27 30 31 35 39 43 47 50 54 58 62 66 70 74 78 93 118 126 134 137 150 153 156 157 161 165 169 173 177 44 35 5 6 7 11 15 19 23 27 30 31 35 39 43 47 50 54 58 62 66 70 74 78 93 118 126 134 137 150 153 157 161 165 169 173 177 51 35 3 6 11 15 19 23 27 30 31 35 39 43 47 50 54 58 62 66 70 74 78 93 118 126 134 137 150 153 157 161 165 169 173 177 180 0 36 4 6 11 15 19 23 27 31 32 35 39 43 47 50 51 54 58 62 66 70 74 78 93 118 126 134 137 150 154 157 161 165 169 173 177 180 1 36 4 6 11 15 19 23 27 31 32 35 39 43 47 50 54 58 62 66 70 74 78 93 95 118 126 134 137 150 154 157 161 165 169 173 177 180 2 36 4 6 11 15 19 23 27 31 32 35 39 43 47 50 54 58 62 66 70 74 78 93 118 126 134 137 139 150 154 157 161 165 169 173 177 180 3 36 4 6 11 15 19 23 27 31 32 35 39 43 47 50 54 58 62 66 70 74 78 93 118 126 134 137 150 154 157 159 161 165 169 173 177 180 4 36 4 6 11 15 19 23 27 31 32 35 39 43 47 50 54 58 62 66 70 74 78 93 118 126 134 137 150 154 157 161 163 165 169 173 177 180 5 36 4 6 11 15 19 23 27 31 32 35 39 43 47 50 54 58 62 66 70 74 78 93 118 126 134 137 150 154 157 161 165 167 169 173 177 180 6 36 4 6 11 15 19 23 27 31 32 35 39 43 47 50 54 58 62 66 70 74 78 93 118 126 134 137 150 154 157 161 165 169 171 173 177 180 7 36 4 6 11 15 19 23 27 31 32 35 39 43 47 50 54 58 62 66 70 74 78 93 118 126 134 137 150 154 157 161 165 169 173 175 177 180 8 36 4 6 11 15 19 23 27 31 32 35 39 43 47 50 54 58 62 66 70 74 78 93 118 126 134 137 150 154 157 161 165 169 173 177 179 180 9 36 4 6 11 13 15 19 23 27 31 32 35 39 43 47 50 54 58 62 66 70 74 78 93 118 126 134 137 150 154 157 161 165 169 173 177 180 10 36 4 6 11 15 17 19 23 27 31 32 35 39 43 47 50 54 58 62 66 70 74 78 93 118 126 134 137 150 154 157 161 165 169 173 177 180 11 36 4 6 11 15 19 21 23 27 31 32 35 39 43 47 50 54 58 62 66 70 74 78 93 118 126 134 137 150 154 157 161 165 169 173 177 180 12 36 4 6 11 15 19 23 25 27 31 32 35 39 43 47 50 54 58 62 66 70 74 78 93 118 126 134 137 150 154 157 161 165 169 173 177 180 13 36 4 6 11 15 19 23 27 29 31 32 35 39 43 47 50 54 58 62 66 70 74 78 93 118 126 134 137 150 154 157 161 165 169 173 177 180 14 36 4 6 11 15 19 23 27 31 32 33 35 39 43 47 50 54 58 62 66 70 74 78 93 118 126 134 137 150 154 157 161 165 169 173 177 180 47 36 4 6 11 15 19 23 27 31 35 36 37 39 43 47 50 54 58 62 66 70 74 78 93 118 126 134 137 150 154 157 161 165 169 173 177 180 16 37 4 6 11 15 19 23 27 31 35 39 40 41 43 47 50 54 58 62 66 70 74 78 93 118 126 131 134 137 150 154 157 161 165 169 173 177 180 17 38 4 6 11 15 19 23 27 31 35 39 43 44 45 47 50 54 58 62 66 70 74 78 93 118 123 126 131 134 137 150 154 157 161 165 169 173 177 180 18 39 4 6 11 15 19 23 27 31 35 39 43 47 48 49 50 54 58 62 66 70 74 78 93 111 118 123 126 131 134 137 150 154 157 161 165 169 173 177 180 19 40 4 6 11 15 19 23 27 31 35 39 43 47 50 54 55 56 58 62 66 70 74 78 93 111 115 118 123 126 131 134 137 150 154 157 161 165 169 173 177 180 20 41 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 59 60 62 66 70 74 78 93 111 115 118 119 123 126 131 134 137 150 154 157 161 165 169 173 177 180 48 42 4 6 11 15 19 23 27 31 35 39 43 47 50 54 57 58 62 64 66 70 74 78 93 111 115 118 119 123 126 131 134 137 150 153 154 157 161 165 169 173 177 180 22 42 4 6 11 15 19 23 27 31 35 39 43 47 50 54 57 58 62 66 68 70 74 78 93 111 115 118 119 123 126 131 134 137 150 153 154 157 161 165 169 173 177 180 23 42 4 6 11 15 19 23 27 31 35 39 43 47 50 54 57 58 62 66 70 72 74 78 93 111 115 118 119 123 126 131 134 137 150 153 154 157 161 165 169 173 177 180 24 42 4 6 11 15 19 23 27 31 35 39 43 47 50 54 57 58 62 66 70 74 76 78 93 111 115 118 119 123 126 131 134 137 150 153 154 157 161 165 169 173 177 180 25 42 4 6 11 15 19 23 27 31 35 39 43 47 50 54 57 58 62 66 70 74 78 80 93 111 115 118 119 123 126 131 134 137 150 153 154 157 161 165 169 173 177 180 26 42 4 6 11 15 19 23 27 31 35 39 43 47 50 54 57 58 62 66 70 74 78 84 93 111 115 118 119 123 126 131 134 137 150 153 154 157 161 165 169 173 177 180 27 43 4 6 11 15 19 23 27 31 35 39 43 47 50 54 57 58 62 66 70 74 78 82 88 93 111 115 118 119 123 126 131 134 137 150 153 154 157 161 165 169 173 177 180 28 44 4 6 11 15 19 23 27 31 35 39 43 47 50 54 57 58 62 66 70 74 78 82 86 92 93 111 115 118 119 123 126 131 134 137 150 153 154 157 161 165 169 173 177 180 29 45 4 6 11 15 19 23 27 31 35 39 43 47 50 54 57 58 62 66 70 74 78 82 86 90 93 100 111 115 118 119 123 126 131 134 137 150 153 154 157 161 165 169 173 177 180 30 46 4 6 11 15 19 23 27 31 35 39 43 47 50 54 57 58 62 66 70 74 78 82 86 90 93 98 104 111 115 118 119 123 126 131 134 137 150 153 154 157 161 165 169 173 177 180 31 47 4 6 11 15 19 23 27 31 35 39 43 47 50 54 57 58 62 66 70 74 78 82 86 90 93 98 102 108 111 115 118 119 123 126 131 134 137 150 153 154 157 161 165 169 173 177 180 32 47 4 6 11 15 19 23 27 31 35 39 43 47 50 54 57 58 62 66 70 74 78 82 86 90 93 98 102 111 112 115 118 119 123 126 131 134 137 150 153 154 157 161 165 169 173 177 180 33 47 4 6 11 15 19 23 27 31 35 39 43 47 50 54 57 58 62 66 70 74 78 82 86 90 93 98 102 110 115 116 118 119 123 126 131 134 137 150 153 154 157 161 165 169 173 177 180 34 47 4 6 11 15 19 23 27 31 35 39 43 47 50 54 57 58 62 66 70 74 78 82 86 90 93 98 102 110 114 118 119 120 123 126 131 134 137 150 153 154 157 161 165 169 173 177 180 35 46 4 6 11 15 19 23 27 31 35 39 43 47 50 54 57 58 62 66 70 74 78 82 86 90 93 98 102 110 114 118 123 124 126 131 134 137 150 153 154 157 161 165 169 173 177 180 36 46 4 6 11 15 19 23 27 31 35 39 43 47 50 54 57 58 62 66 70 74 78 82 86 90 93 98 102 110 114 118 122 126 128 131 134 137 150 153 154 157 161 165 169 173 177 180 37 46 4 6 11 15 19 23 27 31 35 39 43 47 50 54 57 58 62 66 70 74 78 82 86 90 93 98 102 110 114 118 122 126 131 132 134 137 150 153 154 157 161 165 169 173 177 180 38 46 4 6 11 15 19 23 27 31 35 39 43 47 50 54 57 58 62 66 70 74 78 82 86 90 93 98 102 110 114 118 122 126 130 134 136 137 150 153 154 157 161 165 169 173 177 180 39 46 4 6 11 15 19 23 27 31 35 39 43 47 50 54 57 58 62 66 70 74 78 82 86 90 93 98 102 110 114 118 122 126 130 134 137 144 150 153 154 157 161 165 169 173 177 180 40 46 4 6 11 15 19 23 27 31 35 39 43 47 50 54 57 58 62 66 70 74 78 82 86 90 93 98 102 110 114 118 122 126 130 134 137 148 150 153 154 157 161 165 169 173 177 180 41 46 4 6 11 15 19 23 27 31 35 39 43 47 50 54 57 58 62 66 70 74 78 82 86 90 93 98 102 110 114 118 122 126 130 134 137 150 152 153 154 157 161 165 169 173 177 180 42 46 4 6 11 15 19 23 27 31 35 39 43 47 50 54 57 58 62 66 70 74 78 82 86 90 93 98 102 110 114 118 122 126 130 134 137 150 153 154 155 157 161 165 169 173 177 180 43 45 4 6 11 15 19 23 27 31 35 39 43 47 50 54 57 58 62 66 70 74 78 82 86 90 93 98 102 110 114 118 122 126 130 134 137 150 153 156 157 161 165 169 173 177 180 44 44 5 6 11 15 19 23 27 31 35 39 43 47 50 54 57 58 62 66 70 74 78 82 86 90 93 98 102 110 114 118 122 126 130 134 137 150 153 157 161 165 169 173 177 180 52 44 2 3 6 11 15 19 23 27 31 35 39 43 47 50 54 57 58 62 66 70 74 78 82 86 90 93 98 102 110 114 118 122 126 130 134 137 150 153 157 161 165 169 173 177 0 45 2 4 6 11 15 19 23 27 31 35 39 43 47 50 51 54 58 59 62 66 70 74 78 82 86 90 93 98 102 110 114 118 122 126 130 134 137 150 154 157 161 165 169 173 177 1 45 2 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 59 62 66 70 74 78 82 86 90 93 95 98 102 110 114 118 122 126 130 134 137 150 154 157 161 165 169 173 177 2 45 2 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 59 62 66 70 74 78 82 86 90 93 98 102 110 114 118 122 126 130 134 137 139 150 154 157 161 165 169 173 177 3 45 2 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 59 62 66 70 74 78 82 86 90 93 98 102 110 114 118 122 126 130 134 137 150 154 157 159 161 165 169 173 177 4 45 2 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 59 62 66 70 74 78 82 86 90 93 98 102 110 114 118 122 126 130 134 137 150 154 157 161 163 165 169 173 177 5 45 2 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 59 62 66 70 74 78 82 86 90 93 98 102 110 114 118 122 126 130 134 137 150 154 157 161 165 167 169 173 177 6 45 2 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 59 62 66 70 74 78 82 86 90 93 98 102 110 114 118 122 126 130 134 137 150 154 157 161 165 169 171 173 177 7 45 2 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 59 62 66 70 74 78 82 86 90 93 98 102 110 114 118 122 126 130 134 137 150 154 157 161 165 169 173 175 177 8 45 2 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 59 62 66 70 74 78 82 86 90 93 98 102 110 114 118 122 126 130 134 137 150 154 157 161 165 169 173 177 179 9 45 2 4 6 11 13 15 19 23 27 31 35 39 43 47 50 54 58 59 62 66 70 74 78 82 86 90 93 98 102 110 114 118 122 126 130 134 137 150 154 157 161 165 169 173 177 10 45 2 4 6 11 15 17 19 23 27 31 35 39 43 47 50 54 58 59 62 66 70 74 78 82 86 90 93 98 102 110 114 118 122 126 130 134 137 150 154 157 161 165 169 173 177 11 45 2 4 6 11 15 19 21 23 27 31 35 39 43 47 50 54 58 59 62 66 70 74 78 82 86 90 93 98 102 110 114 118 122 126 130 134 137 150 154 157 161 165 169 173 177 12 45 2 4 6 11 15 19 23 25 27 31 35 39 43 47 50 54 58 59 62 66 70 74 78 82 86 90 93 98 102 110 114 118 122 126 130 134 137 150 154 157 161 165 169 173 177 13 45 2 4 6 11 15 19 23 27 29 31 35 39 43 47 50 54 58 59 62 66 70 74 78 82 86 90 93 98 102 110 114 118 122 126 130 134 137 150 154 157 161 165 169 173 177 14 45 2 4 6 11 15 19 23 27 31 33 35 39 43 47 50 54 58 59 62 66 70 74 78 82 86 90 93 98 102 110 114 118 122 126 130 134 137 150 154 157 161 165 169 173 177 47 45 2 4 6 11 15 19 23 27 31 35 37 39 43 47 50 54 58 59 62 66 70 74 78 82 86 90 93 98 102 110 114 118 122 126 130 134 137 150 154 157 161 165 169 173 177 16 45 2 4 6 11 15 19 23 27 31 35 39 41 43 47 50 54 58 59 62 66 70 74 78 82 86 90 93 98 102 110 114 118 122 126 130 134 137 150 154 157 161 165 169 173 177 17 45 2 4 6 11 15 19 23 27 31 35 39 43 45 47 50 54 58 59 62 66 70 74 78 82 86 90 93 98 102 110 114 118 122 126 130 134 137 150 154 157 161 165 169 173 177 18 45 2 4 6 11 15 19 23 27 31 35 39 43 47 49 50 54 58 59 62 66 70 74 78 82 86 90 93 98 102 110 114 118 122 126 130 134 137 150 154 157 161 165 169 173 177 19 45 2 4 6 11 15 19 23 27 31 35 39 43 47 50 54 56 58 59 62 66 70 74 78 82 86 90 93 98 102 110 114 118 122 126 130 134 137 150 154 157 161 165 169 173 177 20 45 2 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 59 60 62 66 70 74 78 82 86 90 93 98 102 110 114 118 122 126 130 134 137 150 154 157 161 165 169 173 177 21 45 2 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 63 64 66 70 74 78 82 86 90 93 98 102 110 114 118 122 126 130 134 137 150 154 157 161 165 169 173 177 22 46 2 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 67 68 70 74 78 82 86 90 93 98 102 110 114 118 122 126 130 134 137 143 150 154 157 161 165 169 173 177 23 47 2 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 71 72 74 78 82 86 90 93 98 102 110 114 118 122 123 126 130 134 137 143 150 154 157 161 165 169 173 177 24 48 2 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 75 76 78 82 86 90 93 98 102 110 111 114 118 122 123 126 130 134 137 143 150 154 157 161 165 169 173 177 25 49 2 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 79 80 82 86 90 93 98 102 107 110 111 114 118 122 123 126 130 134 137 143 150 154 157 161 165 169 173 177 26 50 2 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 82 83 84 86 90 93 98 102 107 110 111 114 118 119 122 123 126 130 134 137 143 150 154 157 161 165 169 173 177 50 51 2 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 81 82 86 88 90 93 98 102 107 110 111 114 118 119 122 123 126 130 134 137 143 150 153 154 157 161 165 169 173 177 28 51 2 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 81 82 86 90 92 93 98 102 107 110 111 114 118 119 122 123 126 130 134 137 143 150 153 154 157 161 165 169 173 177 29 51 2 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 81 82 86 90 93 98 100 102 107 110 111 114 118 119 122 123 126 130 134 137 143 150 153 154 157 161 165 169 173 177 30 51 2 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 81 82 86 90 93 98 102 104 107 110 111 114 118 119 122 123 126 130 134 137 143 150 153 154 157 161 165 169 173 177 31 51 2 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 81 82 86 90 93 98 102 107 108 110 111 114 118 119 122 123 126 130 134 137 143 150 153 154 157 161 165 169 173 177 32 51 2 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 81 82 86 90 93 98 102 106 110 111 112 114 118 119 122 123 126 130 134 137 143 150 153 154 157 161 165 169 173 177 33 50 2 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 81 82 86 90 93 98 102 106 110 114 116 118 119 122 123 126 130 134 137 143 150 153 154 157 161 165 169 173 177 34 50 2 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 81 82 86 90 93 98 102 106 110 114 118 119 120 122 123 126 130 134 137 143 150 153 154 157 161 165 169 173 177 35 49 2 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 81 82 86 90 93 98 102 106 110 114 118 122 123 124 126 130 134 137 143 150 153 154 157 161 165 169 173 177 36 48 2 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 81 82 86 90 93 98 102 106 110 114 118 122 126 128 130 134 137 143 150 153 154 157 161 165 169 173 177 37 48 2 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 81 82 86 90 93 98 102 106 110 114 118 122 126 130 132 134 137 143 150 153 154 157 161 165 169 173 177 38 48 2 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 81 82 86 90 93 98 102 106 110 114 118 122 126 130 134 136 137 143 150 153 154 157 161 165 169 173 177 39 48 2 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 81 82 86 90 93 98 102 106 110 114 118 122 126 130 134 137 143 144 150 153 154 157 161 165 169 173 177 40 48 2 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 81 82 86 90 93 98 102 106 110 114 118 122 126 130 134 137 142 148 150 153 154 157 161 165 169 173 177 41 48 2 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 81 82 86 90 93 98 102 106 110 114 118 122 126 130 134 137 142 150 152 153 154 157 161 165 169 173 177 42 48 2 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 81 82 86 90 93 98 102 106 110 114 118 122 126 130 134 137 142 150 153 154 155 157 161 165 169 173 177 43 47 2 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 81 82 86 90 93 98 102 106 110 114 118 122 126 130 134 137 142 150 153 156 157 161 165 169 173 177 44 46 2 5 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 81 82 86 90 93 98 102 106 110 114 118 122 126 130 134 137 142 150 153 157 161 165 169 173 177 53 46 1 3 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 81 82 86 90 93 98 102 106 110 114 118 122 126 130 134 137 142 150 153 157 161 165 169 173 177 0 47 1 4 6 11 15 19 23 27 31 35 39 43 47 50 51 54 58 62 66 70 74 78 82 83 86 90 93 98 102 106 110 114 118 122 126 130 134 137 142 150 154 157 161 165 169 173 177 1 47 1 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 82 83 86 90 93 95 98 102 106 110 114 118 122 126 130 134 137 142 150 154 157 161 165 169 173 177 2 47 1 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 82 83 86 90 93 98 102 106 110 114 118 122 126 130 134 137 139 142 150 154 157 161 165 169 173 177 3 47 1 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 82 83 86 90 93 98 102 106 110 114 118 122 126 130 134 137 142 150 154 157 159 161 165 169 173 177 4 47 1 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 82 83 86 90 93 98 102 106 110 114 118 122 126 130 134 137 142 150 154 157 161 163 165 169 173 177 5 47 1 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 82 83 86 90 93 98 102 106 110 114 118 122 126 130 134 137 142 150 154 157 161 165 167 169 173 177 6 47 1 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 82 83 86 90 93 98 102 106 110 114 118 122 126 130 134 137 142 150 154 157 161 165 169 171 173 177 7 47 1 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 82 83 86 90 93 98 102 106 110 114 118 122 126 130 134 137 142 150 154 157 161 165 169 173 175 177 8 47 1 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 82 83 86 90 93 98 102 106 110 114 118 122 126 130 134 137 142 150 154 157 161 165 169 173 177 179 9 47 1 4 6 11 13 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 82 83 86 90 93 98 102 106 110 114 118 122 126 130 134 137 142 150 154 157 161 165 169 173 177 10 47 1 4 6 11 15 17 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 82 83 86 90 93 98 102 106 110 114 118 122 126 130 134 137 142 150 154 157 161 165 169 173 177 11 47 1 4 6 11 15 19 21 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 82 83 86 90 93 98 102 106 110 114 118 122 126 130 134 137 142 150 154 157 161 165 169 173 177 12 47 1 4 6 11 15 19 23 25 27 31 35 39 43 47 50 54 58 62 66 70 74 78 82 83 86 90 93 98 102 106 110 114 118 122 126 130 134 137 142 150 154 157 161 165 169 173 177 13 47 1 4 6 11 15 19 23 27 29 31 35 39 43 47 50 54 58 62 66 70 74 78 82 83 86 90 93 98 102 106 110 114 118 122 126 130 134 137 142 150 154 157 161 165 169 173 177 14 47 1 4 6 11 15 19 23 27 31 33 35 39 43 47 50 54 58 62 66 70 74 78 82 83 86 90 93 98 102 106 110 114 118 122 126 130 134 137 142 150 154 157 161 165 169 173 177 47 47 1 4 6 11 15 19 23 27 31 35 37 39 43 47 50 54 58 62 66 70 74 78 82 83 86 90 93 98 102 106 110 114 118 122 126 130 134 137 142 150 154 157 161 165 169 173 177 16 47 1 4 6 11 15 19 23 27 31 35 39 41 43 47 50 54 58 62 66 70 74 78 82 83 86 90 93 98 102 106 110 114 118 122 126 130 134 137 142 150 154 157 161 165 169 173 177 17 47 1 4 6 11 15 19 23 27 31 35 39 43 45 47 50 54 58 62 66 70 74 78 82 83 86 90 93 98 102 106 110 114 118 122 126 130 134 137 142 150 154 157 161 165 169 173 177 18 47 1 4 6 11 15 19 23 27 31 35 39 43 47 49 50 54 58 62 66 70 74 78 82 83 86 90 93 98 102 106 110 114 118 122 126 130 134 137 142 150 154 157 161 165 169 173 177 19 47 1 4 6 11 15 19 23 27 31 35 39 43 47 50 54 56 58 62 66 70 74 78 82 83 86 90 93 98 102 106 110 114 118 122 126 130 134 137 142 150 154 157 161 165 169 173 177 20 47 1 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 60 62 66 70 74 78 82 83 86 90 93 98 102 106 110 114 118 122 126 130 134 137 142 150 154 157 161 165 169 173 177 21 47 1 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 64 66 70 74 78 82 83 86 90 93 98 102 106 110 114 118 122 126 130 134 137 142 150 154 157 161 165 169 173 177 22 47 1 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 68 70 74 78 82 83 86 90 93 98 102 106 110 114 118 122 126 130 134 137 142 150 154 157 161 165 169 173 177 23 47 1 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 72 74 78 82 83 86 90 93 98 102 106 110 114 118 122 126 130 134 137 142 150 154 157 161 165 169 173 177 24 47 1 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 76 78 82 83 86 90 93 98 102 106 110 114 118 122 126 130 134 137 142 150 154 157 161 165 169 173 177 25 47 1 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 80 82 83 86 90 93 98 102 106 110 114 118 122 126 130 134 137 142 150 154 157 161 165 169 173 177 26 47 1 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 82 83 84 86 90 93 98 102 106 110 114 118 122 126 130 134 137 142 150 154 157 161 165 169 173 177 27 47 1 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 82 86 87 88 90 93 98 102 106 110 114 118 122 126 130 134 137 142 150 154 157 161 165 169 173 177 28 48 1 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 82 86 90 91 92 93 98 102 106 110 114 118 122 126 130 134 137 142 147 150 154 157 161 165 169 173 177 29 49 1 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 82 86 90 93 98 99 100 102 106 110 114 118 122 123 126 130 134 137 142 147 150 154 157 161 165 169 173 177 30 50 1 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 82 86 90 93 98 102 103 104 106 110 111 114 118 122 123 126 130 134 137 142 147 150 154 157 161 165 169 173 177 31 51 1 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 82 86 90 93 98 102 106 107 108 110 111 114 115 118 122 123 126 130 134 137 142 147 150 154 157 161 165 169 173 177 32 50 1 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 82 86 90 93 98 102 106 110 111 112 114 115 118 122 123 126 130 134 137 142 147 150 154 157 161 165 169 173 177 33 49 1 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 82 86 90 93 98 102 106 110 114 115 116 118 122 123 126 130 134 137 142 147 150 154 157 161 165 169 173 177 34 48 1 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 82 86 90 93 98 102 106 110 114 118 120 122 123 126 130 134 137 142 147 150 154 157 161 165 169 173 177 35 48 1 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 82 86 90 93 98 102 106 110 114 118 122 123 124 126 130 134 137 142 147 150 154 157 161 165 169 173 177 36 47 1 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 82 86 90 93 98 102 106 110 114 118 122 126 128 130 134 137 142 147 150 154 157 161 165 169 173 177 37 47 1 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 82 86 90 93 98 102 106 110 114 118 122 126 130 132 134 137 142 147 150 154 157 161 165 169 173 177 38 47 1 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 82 86 90 93 98 102 106 110 114 118 122 126 130 134 136 137 142 147 150 154 157 161 165 169 173 177 39 47 1 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 82 86 90 93 98 102 106 110 114 118 122 126 130 134 137 142 144 147 150 154 157 161 165 169 173 177 40 47 1 4 6 11 15 19 23 27 31 35 39 43 47 50 54 58 62 66 70 74 78 82 86 90 93 98 102 106 110 114 118 122 126 130 134 137 142 147 148 150 154 157 161 165 169 173 177 41 
-Dot file: /tmp/tmp5m7sglur/policy.dot
+INFO     Planner time: 7.18s

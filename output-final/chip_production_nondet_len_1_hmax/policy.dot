@@ -1,0 +1,57 @@
+digraph G {
+0 [label="{ (not (cleaning)), (current_state_0 s0_handler_cleaning_0), (not (current_state_0 s0_handler_cleaning_broken)), (not (dummy_goal)), (not (newautstate q2)), (not (newautstate q3)), (not (newautstate q4)), (oldautstate q1), (not (oldautstate q2)), (not (oldautstate q3)), (not (oldautstate q4)), (not (repair)), (startsymb), (trans_mode) }"];
+1 [label="{ (not (cleaning)), (current_state_0 s0_handler_cleaning_0), (not (current_state_0 s0_handler_cleaning_broken)), (not (dummy_goal)), (not (newautstate q2)), (newautstate q3), (not (newautstate q4)), (oldautstate q1), (not (oldautstate q2)), (not (oldautstate q3)), (not (oldautstate q4)), (not (repair)), (startsymb), (trans_mode) }"];
+2 [label="{ (not (cleaning)), (current_state_0 s0_handler_cleaning_0), (not (current_state_0 s0_handler_cleaning_broken)), (not (dummy_goal)), (not (newautstate q2)), (newautstate q3), (not (newautstate q4)), (not (oldautstate q1)), (not (oldautstate q2)), (not (oldautstate q3)), (not (oldautstate q4)), (not (repair)), (startsymb), (sync_mode) }"];
+3 [label="{ (not (cleaning)), (current_state_0 s0_handler_cleaning_0), (not (current_state_0 s0_handler_cleaning_broken)), (not (dummy_goal)), (not (newautstate q2)), (not (newautstate q3)), (not (newautstate q4)), (not (oldautstate q1)), (not (oldautstate q2)), (oldautstate q3), (not (oldautstate q4)), (not (repair)), (startsymb), (sync_mode) }"];
+4 [label="{ (not (cleaning)), (current_state_0 s0_handler_cleaning_0), (not (current_state_0 s0_handler_cleaning_broken)), (not (dummy_goal)), (not (newautstate q2)), (not (newautstate q3)), (not (newautstate q4)), (not (oldautstate q1)), (not (oldautstate q2)), (oldautstate q3), (not (oldautstate q4)), (not (repair)), (startsymb), (world_mode) }"];
+5 [label="{ (not (cleaning)), (current_state_0 s0_handler_cleaning_0), (not (current_state_0 s0_handler_cleaning_broken)), (not (dummy_goal)), (not (newautstate q2)), (not (newautstate q3)), (not (newautstate q4)), (not (oldautstate q1)), (not (oldautstate q2)), (oldautstate q3), (not (oldautstate q4)), (not (repair)), (not (startsymb)), (trans_mode) }"];
+6 [label="{ (not (cleaning)), (current_state_0 s0_handler_cleaning_0), (not (current_state_0 s0_handler_cleaning_broken)), (not (dummy_goal)), (not (newautstate q2)), (newautstate q3), (not (newautstate q4)), (not (oldautstate q1)), (not (oldautstate q2)), (oldautstate q3), (not (oldautstate q4)), (not (repair)), (not (startsymb)), (trans_mode) }"];
+7 [label="{ (not (cleaning)), (current_state_0 s0_handler_cleaning_0), (not (current_state_0 s0_handler_cleaning_broken)), (not (dummy_goal)), (not (newautstate q2)), (newautstate q3), (not (newautstate q4)), (not (oldautstate q1)), (not (oldautstate q2)), (not (oldautstate q3)), (not (oldautstate q4)), (not (repair)), (not (startsymb)), (sync_mode) }"];
+8 [label="{ (not (cleaning)), (current_state_0 s0_handler_cleaning_0), (not (current_state_0 s0_handler_cleaning_broken)), (not (dummy_goal)), (not (newautstate q2)), (not (newautstate q3)), (not (newautstate q4)), (not (oldautstate q1)), (not (oldautstate q2)), (oldautstate q3), (not (oldautstate q4)), (not (repair)), (not (startsymb)), (sync_mode) }"];
+9 [label="{ (not (cleaning)), (current_state_0 s0_handler_cleaning_0), (not (current_state_0 s0_handler_cleaning_broken)), (not (dummy_goal)), (not (newautstate q2)), (not (newautstate q3)), (not (newautstate q4)), (not (oldautstate q1)), (not (oldautstate q2)), (oldautstate q3), (not (oldautstate q4)), (not (repair)), (not (startsymb)), (world_mode) }"];
+10 [label="{ (cleaning), (current_state_0 s0_handler_cleaning_0), (not (current_state_0 s0_handler_cleaning_broken)), (not (dummy_goal)), (not (newautstate q2)), (not (newautstate q3)), (not (newautstate q4)), (not (oldautstate q1)), (not (oldautstate q2)), (oldautstate q3), (not (oldautstate q4)), (not (repair)), (not (startsymb)), (trans_mode) }"];
+11 [label="{ (cleaning), (not (current_state_0 s0_handler_cleaning_0)), (current_state_0 s0_handler_cleaning_broken), (not (dummy_goal)), (not (newautstate q2)), (not (newautstate q3)), (not (newautstate q4)), (not (oldautstate q1)), (not (oldautstate q2)), (oldautstate q3), (not (oldautstate q4)), (not (repair)), (not (startsymb)), (trans_mode) }"];
+12 [label="{ (cleaning), (current_state_0 s0_handler_cleaning_0), (not (current_state_0 s0_handler_cleaning_broken)), (dummy_goal), (not (newautstate q2)), (not (newautstate q3)), (newautstate q4), (not (oldautstate q1)), (not (oldautstate q2)), (oldautstate q3), (not (oldautstate q4)), (not (repair)), (not (startsymb)), (trans_mode) }"];
+13 [label="{ (cleaning), (not (current_state_0 s0_handler_cleaning_0)), (current_state_0 s0_handler_cleaning_broken), (dummy_goal), (not (newautstate q2)), (not (newautstate q3)), (newautstate q4), (not (oldautstate q1)), (not (oldautstate q2)), (oldautstate q3), (not (oldautstate q4)), (not (repair)), (not (startsymb)), (trans_mode) }"];
+14 [label="{ (cleaning), (not (current_state_0 s0_handler_cleaning_0)), (current_state_0 s0_handler_cleaning_broken), (dummy_goal), (not (newautstate q2)), (not (newautstate q3)), (newautstate q4), (not (oldautstate q1)), (not (oldautstate q2)), (not (oldautstate q3)), (not (oldautstate q4)), (not (repair)), (not (startsymb)), (sync_mode) }"];
+15 [label="{ (cleaning), (not (current_state_0 s0_handler_cleaning_0)), (current_state_0 s0_handler_cleaning_broken), (dummy_goal), (not (newautstate q2)), (not (newautstate q3)), (not (newautstate q4)), (not (oldautstate q1)), (not (oldautstate q2)), (not (oldautstate q3)), (oldautstate q4), (not (repair)), (not (startsymb)), (sync_mode) }"];
+16 [label="{ (cleaning), (not (current_state_0 s0_handler_cleaning_0)), (current_state_0 s0_handler_cleaning_broken), (not (dummy_goal)), (not (newautstate q2)), (not (newautstate q3)), (not (newautstate q4)), (not (oldautstate q1)), (not (oldautstate q2)), (not (oldautstate q3)), (oldautstate q4), (not (repair)), (not (startsymb)), (world_mode) }"];
+17 [label="{ (not (cleaning)), (current_state_0 s0_handler_cleaning_0), (not (current_state_0 s0_handler_cleaning_broken)), (not (dummy_goal)), (not (newautstate q2)), (not (newautstate q3)), (not (newautstate q4)), (not (oldautstate q1)), (not (oldautstate q2)), (not (oldautstate q3)), (oldautstate q4), (repair), (not (startsymb)), (trans_mode) }"];
+18 [label="{ (not (cleaning)), (current_state_0 s0_handler_cleaning_0), (not (current_state_0 s0_handler_cleaning_broken)), (dummy_goal), (not (newautstate q2)), (not (newautstate q3)), (newautstate q4), (not (oldautstate q1)), (not (oldautstate q2)), (not (oldautstate q3)), (oldautstate q4), (repair), (not (startsymb)), (trans_mode) }"];
+0 -> 1 [label="trans_aut_q1_t2", color="#7DBDBC", fontcolor="#7DBDBC"];
+1 -> 2 [label="start_sync", color="#C7218C", fontcolor="#C7218C"];
+2 -> 3 [label="sync_q3_pos", color="#2DE478", fontcolor="#2DE478"];
+3 -> 4 [label="continue", color="#FCE315", fontcolor="#FCE315"];
+4 -> 5 [label="startaction", color="#859FB2", fontcolor="#859FB2"];
+5 -> 6 [label="trans_aut_q3_t4", color="#99B350", fontcolor="#99B350"];
+6 -> 7 [label="start_sync", color="#5D9839", fontcolor="#5D9839"];
+7 -> 8 [label="sync_q3_pos", color="#2EBEFF", fontcolor="#2EBEFF"];
+8 -> 9 [label="continue", color="#8CCCCE", fontcolor="#8CCCCE"];
+9 -> 10 [label="cleaning_0_handler_cleaning_0", color="#3C4CBE", fontcolor="#3C4CBE"];
+9 -> 11 [label="cleaning_0_handler_cleaning_0", color="#3C4CBE", fontcolor="#3C4CBE"];
+10 -> 12 [label="trans_aut_q3_t5", color="#36DA37", fontcolor="#36DA37"];
+11 -> 13 [label="trans_aut_q3_t5", color="#594345", fontcolor="#594345"];
+13 -> 14 [label="start_sync", color="#998EE4", fontcolor="#998EE4"];
+14 -> 15 [label="sync_q4_pos", color="#921CD8", fontcolor="#921CD8"];
+15 -> 16 [label="continue", color="#181665", fontcolor="#181665"];
+16 -> 17 [label="repair_0_handler_cleaning_broken", color="#891BA7", fontcolor="#891BA7"];
+17 -> 18 [label="trans_aut_q4_t6", color="#C999DE", fontcolor="#C999DE"];
+subgraph cluster_goal_12 {
+style=filled;
+color=palegreen;
+12;
+label="GOAL";
+}
+subgraph cluster_goal_18 {
+style=filled;
+color=palegreen;
+18;
+label="GOAL";
+}
+subgraph cluster_init {
+style=filled;
+color=lightblue;
+0;
+label="INIT";
+}
+}

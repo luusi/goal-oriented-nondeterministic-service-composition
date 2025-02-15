@@ -1,0 +1,6 @@
+(define (problem service-problem)
+(:domain composition)
+(:objects q0 - qstate q1 - qstate q2 - qstate q3 - qstate q4 - qstate q5 - qstate q6 - qstate q7 - qstate q8 - qstate q9 - qstate q10 - qstate q11 - qstate q12 - qstate q13 - qstate)
+(:init (current_state_0 s0_rotor_builder_0) (current_state_1 s1_stator_builder_0) (current_state_2 s2_inverter_builder_0) (current_state_3 s3_motor_assembler_0) (current_state_4 s4_mechanical_engineer_1_0) (current_state_5 s5_mechanical_engineer_2_0) (startsymb) (trans_mode) (oldautstate q1) (oldcnt_idx0 q1))
+(:goal (and (dummy_goal) (current_state_0 s0_rotor_builder_0)  (current_state_1 s1_stator_builder_0)  (current_state_2 s2_inverter_builder_0)  (current_state_3 s3_motor_assembler_0)  (current_state_4 s4_mechanical_engineer_1_0)  (current_state_5 s5_mechanical_engineer_2_0) ))
+)

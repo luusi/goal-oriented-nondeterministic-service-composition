@@ -1,0 +1,1 @@
+/tmp/tmpapqsmitb/domain.pddl /tmp/tmpapqsmitb/problem.pddl /tmp/tmpapqsmitb/goal.ltl

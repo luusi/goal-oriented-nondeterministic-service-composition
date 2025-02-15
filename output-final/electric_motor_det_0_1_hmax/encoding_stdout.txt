@@ -1,0 +1,11 @@
+/home/ubuntu/ltlf-goal-oriented-service-composition/prologex/pddl2effax.sh /tmp/tmp3tril28j/domain.pddl /tmp/tmp3tril28j/problem.pddl /home/ubuntu/ltlf-goal-oriented-service-composition/prologex/tmp/domain-problem.pl /home/ubuntu/ltlf-goal-oriented-service-composition/prologex/tmp/problem.pl /home/ubuntu/ltlf-goal-oriented-service-composition/prologex/tmp/plpddldom-steinway-1114543.pl /home/ubuntu/ltlf-goal-oriented-service-composition/prologex/tmp/plpddlprob-steinway-1114543.pl 1
+/usr/bin/swipl -s pddl2effax.pl -q -t pddl2effax('/home/ubuntu/ltlf-goal-oriented-service-composition/prologex/tmp/plpddldom-steinway-1114543.pl','/home/ubuntu/ltlf-goal-oriented-service-composition/prologex/tmp/plpddlprob-steinway-1114543.pl','/home/ubuntu/ltlf-goal-oriented-service-composition/prologex/tmp/old_domain.pl','/home/ubuntu/ltlf-goal-oriented-service-composition/prologex/tmp/old_problem.pl').
+No constraints have been declared.
+No metric declaration/usr/bin/swipl -s alt_aut_translator.pl -q -t time(effax2alt('/home/ubuntu/ltlf-goal-oriented-service-composition/prologex/tmp/old_domain.pl','/home/ubuntu/ltlf-goal-oriented-service-composition/prologex/tmp/old_problem.pl','/home/ubuntu/ltlf-goal-oriented-service-composition/prologex/tmp/domain-problem.pl','/home/ubuntu/ltlf-goal-oriented-service-composition/prologex/tmp/problem.pl','/home/ubuntu/ltlf-goal-oriented-service-composition/prologex/tmp/trans_states.pl',1)).
+
+Translation CPU time: 0.079536315, Number of Inferences: 689962
+
+swipl -s /home/ubuntu/ltlf-goal-oriented-service-composition/prologex/topddl.pl -q -t topddl('/home/ubuntu/ltlf-goal-oriented-service-composition/prologex/tmp','domain-problem','problem',dp).
+New Goal=f_goal
+ToPddl CPU time: 0.029020435, Number of Inferences: 243024
+

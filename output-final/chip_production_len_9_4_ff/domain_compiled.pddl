@@ -477,10 +477,28 @@
     (q_112t)
     (q_112d)
   )
+  (:action startaction
+    :parameters ()
+    :precondition 
+      (and
+        (startsymb)
+        (f_ok)
+        (f_world))
+    :effect
+      (and
+        (f_copy)
+        (not 
+          (startsymb))
+        (not 
+          (f_world))
+      )
+    )
   (:action activation_7_handler_activation_0
     :parameters ()
     :precondition 
       (and
+        (not 
+          (startsymb))
         (current_state_7 s7_handler_activation_0)
         (f_ok)
         (f_world))
@@ -513,6 +531,8 @@
     :parameters ()
     :precondition 
       (and
+        (not 
+          (startsymb))
         (current_state_0 s0_handler_cleaning_0)
         (f_ok)
         (f_world))
@@ -545,6 +565,8 @@
     :parameters ()
     :precondition 
       (and
+        (not 
+          (startsymb))
         (current_state_4 s4_handler_development_0)
         (f_ok)
         (f_world))
@@ -577,6 +599,8 @@
     :parameters ()
     :precondition 
       (and
+        (not 
+          (startsymb))
         (current_state_5 s5_handler_etching_0)
         (f_ok)
         (f_world))
@@ -609,6 +633,8 @@
     :parameters ()
     :precondition 
       (and
+        (not 
+          (startsymb))
         (current_state_3 s3_handler_exposure_0)
         (f_ok)
         (f_world))
@@ -641,6 +667,8 @@
     :parameters ()
     :precondition 
       (and
+        (not 
+          (startsymb))
         (current_state_1 s1_handler_film_deposition_0)
         (f_ok)
         (f_world))
@@ -673,6 +701,8 @@
     :parameters ()
     :precondition 
       (and
+        (not 
+          (startsymb))
         (current_state_6 s6_handler_impurities_implantation_0)
         (f_ok)
         (f_world))
@@ -705,6 +735,8 @@
     :parameters ()
     :precondition 
       (and
+        (not 
+          (startsymb))
         (current_state_2 s2_handler_resist_coating_0)
         (f_ok)
         (f_world))
@@ -737,6 +769,8 @@
     :parameters ()
     :precondition 
       (and
+        (not 
+          (startsymb))
         (current_state_8 s8_handler_resist_stripping_0)
         (f_ok)
         (f_world))

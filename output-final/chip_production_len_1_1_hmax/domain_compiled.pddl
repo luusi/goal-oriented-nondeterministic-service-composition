@@ -28,10 +28,28 @@
     (q_7)
     (q_7s)
   )
+  (:action startaction
+    :parameters ()
+    :precondition 
+      (and
+        (startsymb)
+        (f_ok)
+        (f_world))
+    :effect
+      (and
+        (f_copy)
+        (not 
+          (startsymb))
+        (not 
+          (f_world))
+      )
+    )
   (:action cleaning_0_handler_cleaning_0
     :parameters ()
     :precondition 
       (and
+        (not 
+          (startsymb))
         (current_state_0 s0_handler_cleaning_0)
         (f_ok)
         (f_world))

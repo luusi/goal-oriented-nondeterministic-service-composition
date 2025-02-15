@@ -1,5 +1,4 @@
-+ cd ./planners/mynd
-+ rm -f ./output.sas
-+ ./translator-fond/translate.py /tmp/tmp7y468c5m/domain_compiled.pddl /tmp/tmp7y468c5m/problem_compiled.pddl
-Error: Could not read file: /tmp/tmp7y468c5m/domain_compiled.pddl
-Reason: [Errno 2] No such file or directory: '/tmp/tmp7y468c5m/domain_compiled.pddl'.
++ cd ./planners/downward
++ rm -f '*.pddl'
++ ./fast-downward.py /tmp/tmp3mv3u9dn/domain_compiled.pddl /tmp/tmp3mv3u9dn/problem_compiled.pddl --evaluator 'hhmax=hmax()' --search 'astar(hhmax,verbosity=verbose)'
+b"Error: Could not read file: /tmp/tmp3mv3u9dn/domain_compiled.pddl\nReason: [Errno 2] No such file or directory: '/tmp/tmp3mv3u9dn/domain_compiled.pddl'\n"

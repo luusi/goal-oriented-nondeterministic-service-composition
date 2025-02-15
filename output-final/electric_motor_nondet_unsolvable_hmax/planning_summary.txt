@@ -1,0 +1,3 @@
+self.total=861.7079541990533
+self.returncode=4
+self.timed_out=False

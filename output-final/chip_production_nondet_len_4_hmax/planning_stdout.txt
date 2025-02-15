@@ -1,0 +1,79 @@
+Parsing...
+Parsing: [0.000s CPU, 0.003s wall-clock]
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.000s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.000s CPU, 0.002s wall-clock]
+Preparing model... [0.000s CPU, 0.001s wall-clock]
+Generated 123 rules.
+Computing model... [0.000s CPU, 0.000s wall-clock]
+125 relevant atoms
+0 auxiliary atoms
+125 final queue length
+172 total queue pushes
+Completing instantiation... [0.010s CPU, 0.001s wall-clock]
+Instantiating: [0.010s CPU, 0.004s wall-clock]
+Computing fact groups...
+Finding invariants...
+22 initial candidates
+Finding invariants: [0.090s CPU, 0.098s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+28 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.000s CPU, 0.000s wall-clock]
+Computing fact groups: [0.090s CPU, 0.099s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.000s CPU, 0.000s wall-clock]
+Translating task: [0.010s CPU, 0.001s wall-clock]
+71 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+1 propositions removed
+Detecting unreachable propositions: [0.000s CPU, 0.000s wall-clock]
+Translator variables: 29
+Translator derived variables: 0
+Translator facts: 59
+Translator goal facts: 5
+Translator mutex groups: 1
+Translator total mutex groups size: 3
+Translator operators: 41
+Translator axioms: 0
+Translator task size: 437
+Translator peak memory: 25560 KB
+Writing output... [0.000s CPU, 0.000s wall-clock]
+Done! [0.110s CPU, 0.108s wall-clock]
+Heuristic: HMAX heuristic.
+Algorithm: AO*-search
+The protagonist has got a winning strategy.
+INITIAL IS PROVEN!
+
+Result: Strong plan found.
+
+Time needed for preprocess (Parsing, PDBs, ...):    0.008 seconds.
+Time needed for search:                             0.405 seconds.
+Time needed:                                        0.413 seconds.
+Total Garbage Collections: 6
+Total Garbage Collection Time: 0 seconds.
+
+Out of 9613 nodes, 6078 are proven
+Number of node expansions: 7401
+Policy entries: 182
+Number of sensing applications in policy: 0
+
+31 (cleaning) (current_state_0 s0_handler_cleaning_0) (current_state_0 s0_handler_cleaning_broken) (current_state_1 s1_handler_film_deposition_0) (current_state_1 s1_handler_film_deposition_broken) (current_state_2 s2_handler_resist_coating_0) (current_state_2 s2_handler_resist_coating_broken) (current_state_3 s3_handler_exposure_0) (current_state_3 s3_handler_exposure_broken) (dummy_goal) (exposure) (film_deposition) (newautstate q2) (newautstate q3) (newautstate q4) (newautstate q5) (newautstate q6) (newautstate q7) (oldautstate q1) (oldautstate q2) (oldautstate q3) (oldautstate q4) (oldautstate q5) (oldautstate q6) (oldautstate q7) (repair) (resist_coating) (startsymb) (sync_mode) (trans_mode) (world_mode) 
+%%
+24 (trans_aut_q1_t2) (start_sync) (sync_q3_pos) (continue) (startaction) (trans_aut_q3_t4) (cleaning_0_handler_cleaning_0) (trans_aut_q3_t5) (sync_q4_pos) (film_deposition_1_handler_film_deposition_0) (trans_aut_q4_t10) (sync_q5_pos) (resist_coating_2_handler_resist_coating_0) (trans_aut_q5_t15) (sync_q6_pos) (exposure_3_handler_exposure_0) (repair_1_handler_film_deposition_broken) (trans_aut_q6_t20) (trans_aut_q6_t19) (sync_q7_pos) (repair_0_handler_cleaning_broken) (repair_3_handler_exposure_broken) (repair_2_handler_resist_coating_broken) (trans_aut_q7_t24) 
+%%
+policy 182 7 1 3 5 7 18 27 29 0 8 1 3 5 7 13 18 27 29 1 7 1 3 5 7 13 27 28 2 7 1 3 5 7 20 27 28 3 7 1 3 5 7 20 27 30 4 6 1 3 5 7 20 29 5 7 1 3 5 7 13 20 29 1 6 1 3 5 7 13 28 2 6 1 3 5 7 20 28 3 6 1 3 5 7 20 30 6 7 0 2 3 5 7 20 29 7 7 0 1 3 5 7 20 29 7 8 0 2 3 5 7 14 20 29 1 8 0 1 3 5 7 14 20 29 1 7 0 2 3 5 7 14 28 8 7 0 1 3 5 7 14 28 8 7 0 2 3 5 7 21 28 3 7 0 1 3 5 7 21 28 3 7 0 2 3 5 7 21 30 9 7 0 1 3 5 7 21 30 9 7 2 3 5 7 11 21 29 10 7 2 4 5 7 11 21 29 10 7 1 3 5 7 11 21 29 10 7 1 4 5 7 11 21 29 10 8 2 3 5 7 11 15 21 29 1 8 2 4 5 7 11 15 21 29 1 8 1 3 5 7 11 15 21 29 1 8 1 4 5 7 11 15 21 29 1 7 2 3 5 7 11 15 28 11 7 2 4 5 7 11 15 28 11 7 1 3 5 7 11 15 28 11 7 1 4 5 7 11 15 28 11 7 2 3 5 7 11 22 28 3 7 2 4 5 7 11 22 28 3 7 1 3 5 7 11 22 28 3 7 1 4 5 7 11 22 28 3 7 2 3 5 7 11 22 30 12 7 2 4 5 7 11 22 30 12 7 1 3 5 7 11 22 30 12 7 1 4 5 7 11 22 30 12 7 2 3 6 7 22 26 29 13 7 2 3 5 7 22 26 29 13 7 2 4 6 7 22 26 29 13 7 2 4 5 7 22 26 29 13 7 1 3 6 7 22 26 29 13 7 1 3 5 7 22 26 29 13 7 1 4 6 7 22 26 29 13 7 1 4 5 7 22 26 29 13 8 2 3 6 7 16 22 26 29 1 8 2 3 5 7 16 22 26 29 1 8 2 4 6 7 16 22 26 29 1 8 2 4 5 7 16 22 26 29 1 8 1 3 6 7 16 22 26 29 1 8 1 3 5 7 16 22 26 29 1 8 1 4 6 7 16 22 26 29 1 8 1 4 5 7 16 22 26 29 1 7 2 3 6 7 16 26 28 14 7 2 3 5 7 16 26 28 14 7 2 4 6 7 16 26 28 14 7 2 4 5 7 16 26 28 14 7 1 3 6 7 16 26 28 14 7 1 3 5 7 16 26 28 14 7 1 4 6 7 16 26 28 14 7 1 4 5 7 16 26 28 14 7 2 3 6 7 23 26 28 3 7 2 3 5 7 23 26 28 3 7 2 4 6 7 23 26 28 3 7 2 4 5 7 23 26 28 3 7 1 3 6 7 23 26 28 3 7 1 3 5 7 23 26 28 3 7 1 4 6 7 23 26 28 3 7 1 4 5 7 23 26 28 3 7 2 3 6 7 23 26 30 15 7 2 3 5 7 23 26 30 15 7 2 4 6 7 23 26 30 16 7 2 4 5 7 23 26 30 15 7 1 3 6 7 23 26 30 15 7 1 3 5 7 23 26 30 15 7 1 4 6 7 23 26 30 15 7 1 4 5 7 23 26 30 15 7 2 3 6 7 10 23 29 17 7 2 3 6 8 10 23 29 17 7 2 3 5 7 10 23 29 17 7 2 3 5 8 10 23 29 17 7 2 3 6 7 23 25 29 18 7 2 4 5 7 10 23 29 17 7 2 4 5 8 10 23 29 17 7 1 3 6 7 10 23 29 17 7 1 3 6 8 10 23 29 17 7 1 3 5 7 10 23 29 17 7 1 3 5 8 10 23 29 17 7 1 4 6 7 10 23 29 17 7 1 4 6 8 10 23 29 17 7 1 4 5 7 10 23 29 17 7 1 4 5 8 10 23 29 17 9 2 3 6 7 9 10 17 23 29 1 9 2 3 6 8 9 10 17 23 29 1 9 2 3 5 7 9 10 17 23 29 1 9 2 3 5 8 9 10 17 23 29 1 8 2 3 6 7 16 23 25 29 1 9 2 4 5 7 9 10 17 23 29 1 9 2 4 5 8 9 10 17 23 29 1 9 1 3 6 7 9 10 17 23 29 1 9 1 3 6 8 9 10 17 23 29 1 9 1 3 5 8 9 10 17 23 29 1 9 1 4 6 7 9 10 17 23 29 1 9 1 4 6 8 9 10 17 23 29 1 9 1 4 5 7 9 10 17 23 29 1 9 1 4 5 8 9 10 17 23 29 1 8 2 3 6 7 9 10 17 28 19 8 2 3 6 8 9 10 17 28 19 8 2 3 5 7 9 10 17 28 19 8 2 3 5 8 9 10 17 28 19 7 2 3 6 7 16 25 28 14 8 2 4 5 7 9 10 17 28 19 8 2 4 5 8 9 10 17 28 19 8 1 3 6 7 9 10 17 28 19 8 1 3 6 8 9 10 17 28 19 8 1 3 5 8 9 10 17 28 19 8 1 4 6 7 9 10 17 28 19 8 1 4 6 8 9 10 17 28 19 8 1 4 5 7 9 10 17 28 19 8 1 4 5 8 9 10 17 28 19 8 2 3 6 7 9 10 24 28 3 8 2 3 6 8 9 10 24 28 3 8 2 3 5 7 9 10 24 28 3 8 2 3 5 8 9 10 24 28 3 7 2 3 6 7 23 25 28 3 8 2 4 5 7 9 10 24 28 3 8 2 4 5 8 9 10 24 28 3 8 1 3 6 7 9 10 24 28 3 8 1 3 6 8 9 10 24 28 3 8 1 3 5 8 9 10 24 28 3 8 1 4 6 7 9 10 24 28 3 8 1 4 6 8 9 10 24 28 3 8 1 4 5 7 9 10 24 28 3 8 1 4 5 8 9 10 24 28 3 7 2 3 6 7 10 24 30 20 7 2 3 6 8 10 24 30 20 7 2 3 5 7 10 24 30 20 7 2 3 5 8 10 24 30 21 7 2 3 6 7 23 25 30 15 7 2 4 5 7 10 24 30 20 7 2 4 5 8 10 24 30 20 7 1 3 6 7 10 24 30 22 7 1 3 6 8 10 24 30 22 7 1 3 5 8 10 24 30 21 7 1 4 6 7 10 24 30 16 7 1 4 6 8 10 24 30 16 7 1 4 5 7 10 24 30 16 7 1 4 5 8 10 24 30 21 7 1 3 6 7 24 25 29 23 7 1 3 6 8 24 25 29 23 7 1 3 5 7 24 25 29 23 7 2 3 5 7 24 25 29 23 7 1 4 5 7 24 25 29 23 7 1 4 5 8 24 25 29 23 7 1 3 5 8 24 25 29 23 9 1 3 6 7 9 17 24 25 29 1 9 1 3 6 8 9 17 24 25 29 1 9 2 3 5 7 9 17 24 25 29 1 9 1 4 5 7 9 17 24 25 29 1 9 1 4 5 8 9 17 24 25 29 1 9 1 3 5 8 9 17 24 25 29 1 8 1 3 6 7 9 17 25 28 19 8 1 3 6 8 9 17 25 28 19 8 2 3 5 7 9 17 25 28 19 8 1 4 5 7 9 17 25 28 19 8 1 4 5 8 9 17 25 28 19 8 1 3 5 8 9 17 25 28 19 8 1 3 6 7 9 24 25 28 3 8 1 3 6 8 9 24 25 28 3 8 2 3 5 7 9 24 25 28 3 8 1 4 5 7 9 24 25 28 3 8 1 4 5 8 9 24 25 28 3 8 1 3 5 8 9 24 25 28 3 7 1 3 6 7 24 25 30 22 7 1 3 6 8 24 25 30 22 7 2 3 5 7 24 25 30 20 7 1 4 5 7 24 25 30 16 7 1 4 5 8 24 25 30 16 7 1 3 5 8 24 25 30 21 
+Dot file: /tmp/tmpttgw0y39/policy.dot

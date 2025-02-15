@@ -198,10 +198,28 @@
     (q_58s)
     (q_58t)
   )
+  (:action startaction
+    :parameters ()
+    :precondition 
+      (and
+        (startsymb)
+        (f_ok)
+        (f_world))
+    :effect
+      (and
+        (f_copy)
+        (not 
+          (startsymb))
+        (not 
+          (f_world))
+      )
+    )
   (:action cleaning_0_handler_cleaning_0
     :parameters ()
     :precondition 
       (and
+        (not 
+          (startsymb))
         (current_state_0 s0_handler_cleaning_0)
         (f_ok)
         (f_world))
@@ -228,6 +246,8 @@
     :parameters ()
     :precondition 
       (and
+        (not 
+          (startsymb))
         (current_state_4 s4_handler_development_0)
         (f_ok)
         (f_world))
@@ -254,6 +274,8 @@
     :parameters ()
     :precondition 
       (and
+        (not 
+          (startsymb))
         (current_state_5 s5_handler_etching_0)
         (f_ok)
         (f_world))
@@ -280,6 +302,8 @@
     :parameters ()
     :precondition 
       (and
+        (not 
+          (startsymb))
         (current_state_3 s3_handler_exposure_0)
         (f_ok)
         (f_world))
@@ -306,6 +330,8 @@
     :parameters ()
     :precondition 
       (and
+        (not 
+          (startsymb))
         (current_state_1 s1_handler_film_deposition_0)
         (f_ok)
         (f_world))
@@ -332,6 +358,8 @@
     :parameters ()
     :precondition 
       (and
+        (not 
+          (startsymb))
         (current_state_2 s2_handler_resist_coating_0)
         (f_ok)
         (f_world))

@@ -1,0 +1,1 @@
+/tmp/tmpu5k1iy8i/domain.pddl /tmp/tmpu5k1iy8i/problem.pddl /tmp/tmpu5k1iy8i/goal.ltl

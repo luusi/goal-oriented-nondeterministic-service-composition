@@ -1,0 +1,9 @@
++ cd ./planners/mynd
++ rm -f ./output.sas
++ rm -f '*.pddl'
++ rm -f '*.dot'
++ ./translator-fond/translate.py /tmp/tmp6uadbo8z/compiled_domain.pddl /tmp/tmp6uadbo8z/compiled_problem.pddl
+
+Warning: :types specification not allowed here (cf. PDDL BNF)
++ java -Xmx16g -cp target/mynd-1.0-SNAPSHOT.jar mynd.MyNDPlanner -search aostar ./output.sas -heuristic hmax -exportDot /tmp/tmp6uadbo8z/policy.dot -dumpPlan
++ cd ../../

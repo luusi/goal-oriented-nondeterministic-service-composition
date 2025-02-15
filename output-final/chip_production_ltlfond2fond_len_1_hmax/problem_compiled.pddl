@@ -1,0 +1,6 @@
+(define (problem service-problem)
+(:domain composition)
+(:objects q0 - qstate q1 - qstate q2 - qstate q3 - qstate q4 - qstate q5 - qstate)
+(:init (current_state_0 s0_handler_cleaning_0) (startsymb) (trans_mode) (oldautstate q1) (oldcnt_idx0 q1))
+(:goal (and (dummy_goal) (current_state_0 s0_handler_cleaning_0) ))
+)

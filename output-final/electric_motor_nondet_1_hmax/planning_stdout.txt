@@ -1,0 +1,79 @@
+Parsing...
+Parsing: [0.010s CPU, 0.006s wall-clock]
+Normalizing task... [0.000s CPU, 0.001s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.001s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.000s CPU, 0.003s wall-clock]
+Preparing model... [0.000s CPU, 0.002s wall-clock]
+Generated 337 rules.
+Computing model... [0.000s CPU, 0.001s wall-clock]
+252 relevant atoms
+0 auxiliary atoms
+252 final queue length
+400 total queue pushes
+Completing instantiation... [0.000s CPU, 0.001s wall-clock]
+Instantiating: [0.000s CPU, 0.008s wall-clock]
+Computing fact groups...
+Finding invariants...
+28 initial candidates
+Finding invariants: [0.540s CPU, 0.537s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+39 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.000s CPU, 0.000s wall-clock]
+Computing fact groups: [0.540s CPU, 0.537s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.000s CPU, 0.000s wall-clock]
+Translating task: [0.000s CPU, 0.003s wall-clock]
+75 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+11 propositions removed
+Detecting unreachable propositions: [0.000s CPU, 0.001s wall-clock]
+Translator variables: 35
+Translator derived variables: 0
+Translator facts: 71
+Translator goal facts: 2
+Translator mutex groups: 1
+Translator total mutex groups size: 3
+Translator operators: 145
+Translator axioms: 0
+Translator task size: 1119
+Translator peak memory: 38364 KB
+Writing output... [0.010s CPU, 0.001s wall-clock]
+Done! [0.560s CPU, 0.557s wall-clock]
+Heuristic: HMAX heuristic.
+Algorithm: AO*-search
+The protagonist has got a winning strategy.
+INITIAL IS PROVEN!
+
+Result: Strong plan found.
+
+Time needed for preprocess (Parsing, PDBs, ...):    0.009 seconds.
+Time needed for search:                             0.388 seconds.
+Time needed:                                        0.397 seconds.
+Total Garbage Collections: 6
+Total Garbage Collection Time: 0 seconds.
+
+Out of 8265 nodes, 3930 are proven
+Number of node expansions: 6148
+Policy entries: 46
+Number of sensing applications in policy: 0
+
+37 (assemble_motor) (build_inverter) (build_rotor) (build_stator) (current_state_0 s0_rotor_builder_0) (current_state_0 s0_rotor_builder_broken) (dummy_goal) (electric_test) (newautstate q10) (newautstate q11) (newautstate q12) (newautstate q2) (newautstate q3) (newautstate q4) (newautstate q5) (newautstate q6) (newautstate q7) (newautstate q8) (newautstate q9) (oldautstate q1) (oldautstate q10) (oldautstate q11) (oldautstate q12) (oldautstate q2) (oldautstate q3) (oldautstate q4) (oldautstate q5) (oldautstate q6) (oldautstate q7) (oldautstate q8) (oldautstate q9) (repair) (startsymb) (static_test) (sync_mode) (trans_mode) (world_mode) 
+%%
+22 (trans_aut_q1_t2) (start_sync) (sync_q3_pos) (continue) (startaction) (trans_aut_q3_t4) (build_rotor_1_stator_builder_0) (trans_aut_q3_t16) (sync_q7_pos) (build_stator_0_rotor_builder_0) (trans_aut_q7_t84) (sync_q9_pos) (build_inverter_2_inverter_builder_0) (trans_aut_q9_t108) (sync_q10_pos) (assemble_motor_3_motor_assembler_0) (repair_0_rotor_builder_broken) (trans_aut_q10_t118) (trans_aut_q10_t115) (sync_q11_pos) (electric_test_4_mechanical_engineer_1_0) (trans_aut_q11_t123) 
+%%
+policy 46 4 4 19 32 35 0 5 4 12 19 32 35 1 4 4 12 32 34 2 4 4 24 32 34 3 4 4 24 32 36 4 3 4 24 35 5 4 4 12 24 35 1 3 4 12 34 2 3 4 24 34 3 3 4 24 36 6 4 2 4 24 35 7 5 2 4 16 24 35 1 4 2 4 16 34 8 4 2 4 28 34 3 4 2 4 28 36 9 4 3 4 28 35 10 4 3 5 28 35 10 5 3 4 18 28 35 1 5 3 5 18 28 35 1 4 3 4 18 34 11 4 3 5 18 34 11 4 3 4 30 34 3 4 3 5 30 34 3 4 3 4 30 36 12 4 3 5 30 36 12 4 1 4 30 35 13 4 1 5 30 35 13 5 1 4 8 30 35 1 5 1 5 8 30 35 1 4 1 4 8 34 14 4 1 5 8 34 14 4 1 4 20 34 3 4 1 5 20 34 3 4 1 4 20 36 15 4 1 5 20 36 16 4 0 4 20 35 17 4 4 20 31 35 18 5 0 4 9 20 35 1 5 4 8 20 31 35 1 4 0 4 9 34 19 4 4 8 31 34 14 4 0 4 21 34 3 4 4 20 31 34 3 4 0 4 21 36 20 4 4 20 31 36 15 4 4 7 21 35 21 
+Dot file: /tmp/tmp_0_hv1ey/policy.dot

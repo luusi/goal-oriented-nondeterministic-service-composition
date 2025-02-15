@@ -1,0 +1,31 @@
+diff --git a/ext/ltlfkit b/ext/ltlfkit
+--- a/ext/ltlfkit
++++ b/ext/ltlfkit
+@@ -1 +1 @@
+-Subproject commit ce10e2e72f498a7aa4a763418452b2a0edaaed63
++Subproject commit ce10e2e72f498a7aa4a763418452b2a0edaaed63-dirty
+diff --git a/modules/ltlffond2fond_seq.py b/modules/ltlffond2fond_seq.py
+index 236dac2..b2834bf 100644
+--- a/modules/ltlffond2fond_seq.py
++++ b/modules/ltlffond2fond_seq.py
+@@ -57,6 +57,7 @@ def update_predicates(parser,aut_dynamics):
+     parser.predicates += [ new_aut.split() ]
+     parser.predicates += [[world_mode]]
+     parser.predicates += [[trans_mode]]
++    parser.predicates += [[sync_mode]]
+     parser.predicates += [[dummy_goal]]
+     
+ def update_initial_state(parser,aut_dynamics,vars_dict,mutexes):
+diff --git a/utils/ltlgoal.py b/utils/ltlgoal.py
+index 6d46715..1335ec3 100644
+--- a/utils/ltlgoal.py
++++ b/utils/ltlgoal.py
+@@ -2,7 +2,7 @@ import spot
+ 
+ class LTLGoal():
+     def __init__(self,fml):
+-        fml = fml.replace(' ', '__space__')
++        # fml = fml.replace(' ', '__space__')
+         fml_spot = spot.formula(fml)
+         vocabulary = list(spot.atomic_prop_collect(fml_spot)) # vocabulary before relabeling
+         m = spot.relabeling_map()

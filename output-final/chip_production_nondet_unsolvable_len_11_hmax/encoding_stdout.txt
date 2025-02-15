@@ -1,0 +1,1 @@
+/tmp/tmp_c_fsne2/domain.pddl /tmp/tmp_c_fsne2/problem.pddl /tmp/tmp_c_fsne2/goal.ltl

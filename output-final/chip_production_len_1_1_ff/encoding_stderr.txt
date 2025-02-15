@@ -1,23 +1,23 @@
-+ TB_encode /tmp/tmp34k9dgla/domain.pddl /tmp/tmp34k9dgla/problem.pddl 1
-++ realpath /tmp/tmp34k9dgla/domain.pddl
-+ local _DOMAIN_FILE=/tmp/tmp34k9dgla/domain.pddl
-++ realpath /tmp/tmp34k9dgla/problem.pddl
-+ local _PROBLEM_FILE=/tmp/tmp34k9dgla/problem.pddl
++ TB_encode /tmp/tmpflq8n4qn/domain.pddl /tmp/tmpflq8n4qn/problem.pddl 1
+++ realpath /tmp/tmpflq8n4qn/domain.pddl
++ local _DOMAIN_FILE=/tmp/tmpflq8n4qn/domain.pddl
+++ realpath /tmp/tmpflq8n4qn/problem.pddl
++ local _PROBLEM_FILE=/tmp/tmpflq8n4qn/problem.pddl
 + local _ACTION_MODE=1
-+ _COMPILED_DOMAIN_FILE=/tmp/tmp34k9dgla/domain_compiled.pddl
-+ _COMPILED_PROBLEM_FILE=/tmp/tmp34k9dgla/problem_compiled.pddl
-++ dirname /tmp/tmp34k9dgla/domain.pddl
-+ FINAL_CONDITION_FILE=/tmp/tmp34k9dgla/services_condition.txt
-++ cat /tmp/tmp34k9dgla/services_condition.txt
++ _COMPILED_DOMAIN_FILE=/tmp/tmpflq8n4qn/domain_compiled.pddl
++ _COMPILED_PROBLEM_FILE=/tmp/tmpflq8n4qn/problem_compiled.pddl
+++ dirname /tmp/tmpflq8n4qn/domain.pddl
++ FINAL_CONDITION_FILE=/tmp/tmpflq8n4qn/services_condition.txt
+++ cat /tmp/tmpflq8n4qn/services_condition.txt
 + FINAL_CONDITION='(current_state_0 s0_handler_cleaning_0) '
 + [[ -z 1 ]]
 + [[ 1 != \1 ]]
 + cd prologex
-+ ./convert.sh /tmp/tmp34k9dgla/domain.pddl /tmp/tmp34k9dgla/problem.pddl dp 1
-% 469,868 inferences, 0.043 CPU in 0.043 seconds (100% CPU, 11030402 Lips)
-+ cp ../prologex/tmp/domain-problem_problem_dp.pddl /tmp/tmp34k9dgla/domain_compiled.pddl
-+ cp ../prologex/tmp/problem_dp.pddl /tmp/tmp34k9dgla/problem_compiled.pddl
++ ./convert.sh /tmp/tmpflq8n4qn/domain.pddl /tmp/tmpflq8n4qn/problem.pddl dp 1
+% 471,324 inferences, 0.049 CPU in 0.049 seconds (100% CPU, 9688206 Lips)
++ cp ../prologex/tmp/domain-problem_problem_dp.pddl /tmp/tmpflq8n4qn/domain_compiled.pddl
++ cp ../prologex/tmp/problem_dp.pddl /tmp/tmpflq8n4qn/problem_compiled.pddl
 + cd ../
-+ python3 scripts/fix_tb_oneof.py --domain-file /tmp/tmp34k9dgla/domain_compiled.pddl
++ python3 scripts/fix_tb_oneof.py --domain-file /tmp/tmpflq8n4qn/domain_compiled.pddl
 + [[ 1 == \1 ]]
-+ sed -i 's/(:goal (f_goal))/(:goal (and (f_goal) (current_state_0 s0_handler_cleaning_0) ))/g' /tmp/tmp34k9dgla/problem_compiled.pddl
++ sed -i 's/(:goal (f_goal))/(:goal (and (f_goal) (current_state_0 s0_handler_cleaning_0) ))/g' /tmp/tmpflq8n4qn/problem_compiled.pddl

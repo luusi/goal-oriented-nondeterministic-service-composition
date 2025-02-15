@@ -1,25 +1,25 @@
-+ TB_encode /tmp/tmplfqb1mr9/domain.pddl /tmp/tmplfqb1mr9/problem.pddl 2
-++ realpath /tmp/tmplfqb1mr9/domain.pddl
-+ local _DOMAIN_FILE=/tmp/tmplfqb1mr9/domain.pddl
-++ realpath /tmp/tmplfqb1mr9/problem.pddl
-+ local _PROBLEM_FILE=/tmp/tmplfqb1mr9/problem.pddl
++ TB_encode /tmp/tmpg2yugpkh/domain.pddl /tmp/tmpg2yugpkh/problem.pddl 2
+++ realpath /tmp/tmpg2yugpkh/domain.pddl
++ local _DOMAIN_FILE=/tmp/tmpg2yugpkh/domain.pddl
+++ realpath /tmp/tmpg2yugpkh/problem.pddl
++ local _PROBLEM_FILE=/tmp/tmpg2yugpkh/problem.pddl
 + local _ACTION_MODE=2
-+ _COMPILED_DOMAIN_FILE=/tmp/tmplfqb1mr9/domain_compiled.pddl
-+ _COMPILED_PROBLEM_FILE=/tmp/tmplfqb1mr9/problem_compiled.pddl
-++ dirname /tmp/tmplfqb1mr9/domain.pddl
-+ FINAL_CONDITION_FILE=/tmp/tmplfqb1mr9/services_condition.txt
-++ cat /tmp/tmplfqb1mr9/services_condition.txt
++ _COMPILED_DOMAIN_FILE=/tmp/tmpg2yugpkh/domain_compiled.pddl
++ _COMPILED_PROBLEM_FILE=/tmp/tmpg2yugpkh/problem_compiled.pddl
+++ dirname /tmp/tmpg2yugpkh/domain.pddl
++ FINAL_CONDITION_FILE=/tmp/tmpg2yugpkh/services_condition.txt
+++ cat /tmp/tmpg2yugpkh/services_condition.txt
 + FINAL_CONDITION='(current_state_0 s0_handler_cleaning_0)  (current_state_1 s1_handler_film_deposition_0)  (current_state_2 s2_handler_resist_coating_0)  (current_state_3 s3_handler_exposure_0) '
 + [[ -z 2 ]]
 + [[ 2 != \1 ]]
 + [[ 2 != \2 ]]
 + cd prologex
-+ ./convert.sh /tmp/tmplfqb1mr9/domain.pddl /tmp/tmplfqb1mr9/problem.pddl dp 2
-% 601,082 inferences, 0.075 CPU in 0.075 seconds (100% CPU, 8001537 Lips)
-+ cp ../prologex/tmp/domain-problem_problem_dp.pddl /tmp/tmplfqb1mr9/domain_compiled.pddl
-+ cp ../prologex/tmp/problem_dp.pddl /tmp/tmplfqb1mr9/problem_compiled.pddl
++ ./convert.sh /tmp/tmpg2yugpkh/domain.pddl /tmp/tmpg2yugpkh/problem.pddl dp 2
+% 602,937 inferences, 0.060 CPU in 0.060 seconds (100% CPU, 10005480 Lips)
++ cp ../prologex/tmp/domain-problem_problem_dp.pddl /tmp/tmpg2yugpkh/domain_compiled.pddl
++ cp ../prologex/tmp/problem_dp.pddl /tmp/tmpg2yugpkh/problem_compiled.pddl
 + cd ../
-+ python3 scripts/fix_tb_oneof.py --domain-file /tmp/tmplfqb1mr9/domain_compiled.pddl
++ python3 scripts/fix_tb_oneof.py --domain-file /tmp/tmpg2yugpkh/domain_compiled.pddl
 + [[ 2 == \1 ]]
 + [[ 2 == \2 ]]
-+ sed -i 's/(:goal (f_goal))/(:goal (and (f_goal) (current_state_0 s0_handler_cleaning_0)  (current_state_1 s1_handler_film_deposition_0)  (current_state_2 s2_handler_resist_coating_0)  (current_state_3 s3_handler_exposure_0) ))/g' /tmp/tmplfqb1mr9/problem_compiled.pddl
++ sed -i 's/(:goal (f_goal))/(:goal (and (f_goal) (current_state_0 s0_handler_cleaning_0)  (current_state_1 s1_handler_film_deposition_0)  (current_state_2 s2_handler_resist_coating_0)  (current_state_3 s3_handler_exposure_0) ))/g' /tmp/tmpg2yugpkh/problem_compiled.pddl

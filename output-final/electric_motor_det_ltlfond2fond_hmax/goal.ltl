@@ -1,0 +1,1 @@
+startsymb & X((F(assemble_motor)) & ((!assemble_motor) U build_rotor) & ((!assemble_motor) U build_stator) & ((!assemble_motor) U build_inverter) & ((!electric_test) U assemble_motor) & ((!static_test) U assemble_motor) & (F(static_test | electric_test)))

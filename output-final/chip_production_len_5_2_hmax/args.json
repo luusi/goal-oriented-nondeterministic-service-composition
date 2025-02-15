@@ -1,1 +1,1 @@
-{"heuristic": "hmax", "action_mode": "2", "planner_args": "", "timeout": 1000.0}
+{"timeout": 1000.0, "heuristic": "hmax", "action_mode": "2", "planner_args": ""}

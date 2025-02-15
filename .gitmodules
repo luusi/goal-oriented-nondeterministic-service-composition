@@ -1,3 +1,9 @@
 [submodule "planners/mynd"]
 	path = planners/mynd
 	url = https://bitbucket.org/robertmattmueller/mynd.git
+[submodule "planners/downward"]
+	path = planners/downward
+	url = https://github.com/aibasel/downward.git
+[submodule "ltlfond2fond"]
+	path = ltlfond2fond
+	url = https://bitbucket.org/acamacho/ltlfond2fond.git

@@ -23,13 +23,13 @@ def build_goal():
     constraints.append(f"F({ASSEMBLE_MOTOR})")
 
     # but not before rotor, stator and inverter have been built
-    constraints.append(f"!{ASSEMBLE_MOTOR} U {BUILD_ROTOR}")
-    constraints.append(f"!{ASSEMBLE_MOTOR} U {BUILD_STATOR}")
-    constraints.append(f"!{ASSEMBLE_MOTOR} U {BUILD_INVERTER}")
+    constraints.append(f"(!{ASSEMBLE_MOTOR}) U {BUILD_ROTOR}")
+    constraints.append(f"(!{ASSEMBLE_MOTOR}) U {BUILD_STATOR}")
+    constraints.append(f"(!{ASSEMBLE_MOTOR}) U {BUILD_INVERTER}")
 
     # after assemble, either electric or static test, but not both
-    constraints.append(f"!{ELECTRIC_TEST} U {ASSEMBLE_MOTOR}")
-    constraints.append(f"!{STATIC_TEST} U {ASSEMBLE_MOTOR}")
+    constraints.append(f"(!{ELECTRIC_TEST}) U {ASSEMBLE_MOTOR}")
+    constraints.append(f"(!{STATIC_TEST}) U {ASSEMBLE_MOTOR}")
     constraints.append(f"F({STATIC_TEST} | {ELECTRIC_TEST})")
 
     formula_str = " & ".join(map(lambda s: f"({s})", constraints))
